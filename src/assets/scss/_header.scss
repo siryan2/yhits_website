@@ -1,0 +1,32 @@
+@import '_variables';
+@import 'modules/_nav__main';
+@import 'modules/_hero';
+
+/**
+ * @module: Header
+ * @desc: allgemeiner Header
+ * @author: Yannick Herzog
+ * @last-modified: 2015-12-10
+ **/
+
+.header {
+	border-top: 8px solid $baseColor;
+	padding-top: 2em;
+	padding-bottom: 2em;
+}
+
+.logo-container {
+	a {
+		display: inline-block;
+	}
+}
+
+.logo {
+	max-width: 100%;
+}
+
+@media screen and (max-width: $media-tablet-max) {
+	.logo-container {
+		text-align: center;
+	}	
+}

@@ -1,0 +1,115 @@
+@import '../_variables';
+
+/**
+ * @module: Hero
+ * @desc: Hero
+ * @author: Yannick Herzog
+ * @last-modified: 2015-12-10
+ **/
+
+// Claim
+.claim {
+	hyphens: auto;
+}
+
+.claim--dark {
+	color: $baseColor;
+}
+
+.claim--light {
+	color: $lightGray;
+}
+
+.claim--big {
+
+}
+
+.claim--sub {
+	
+}
+
+// Hero
+.hero {
+	background: $lightGray;
+	padding: 4em 0;
+}
+
+.claim__hero {
+	text-align: center;
+}
+
+.claim__hero--big {
+	display: block;
+	font-family: $heroFont;
+	font-size: 3.8em;
+	font-style: $heroFont--style;
+	margin-bottom: .3em;
+}
+
+.claim__hero--sub {
+	display: block;
+	display: block;
+	font-family: $baseFont;
+	font-size: 2em;
+	margin-bottom: 1.4em;
+}
+
+@media screen and (max-width: $media-sm-max) {
+	.hero {
+		.claim__button {
+			background: $baseColor;
+			color: #ffffff;
+			&:focus {
+				background: transparent;
+				color: $baseColor;
+			}
+		}
+	}
+
+}
+
+@media screen and (min-width: $media-tablet-min) {
+	.hero {
+		background: url(../img/hero.jpg) no-repeat;
+		background-size: cover;
+	}
+	.claim__hero {
+		strong {
+			background: rgba(0,0,0,0.08);
+			padding-right: 0.2em; 
+			padding-left: 0.2em; 
+		}
+	}
+}
+
+@media screen and (min-width: $media-desktop-min) {
+	.hero {
+		padding: 6em 0;
+	}
+	.claim__hero--big {
+		font-size: 4.7em;
+		margin-bottom: .1em;
+	}
+	.claim__hero--sub {
+		font-size: 2.3em;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.hero {
+		// padding: 6em 0;
+	}
+}
+
+@media screen and (min-width: 1500px) {
+	.hero {
+		padding: 8em 0 14em;
+	}
+	.claim__hero--big {
+		font-size: 5em;
+	}
+	.claim__hero--sub {
+		font-size: 3em;
+	}
+}
+

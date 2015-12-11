@@ -1,0 +1,31 @@
+/*
+ * Colors
+ */
+$baseColor: #123654;
+$lightBaseColor: lighten($baseColor, 20%);//#456987;
+
+$lighterGray: #f9f9f9;
+$lightGray: #f3f3f3;
+$mediumGray: #e9e9e9;
+$darkGray: #333333;
+
+/*
+ * Fonts
+ */
+$baseFont: 'Roboto Slab', serif;
+$navFont: 'Noto Sans', sans-serif;
+$navFont--size: 1.1em;
+$navFont--weight: 700;
+$heroFont: 'Changa One', serif;
+$heroFont--size: 4em;
+$heroFont--style: italic;
+
+/*
+ * Grid
+ */
+$container-max-width: 1400px;
+
+/*
+ * Media Queries
+ */
+$media-sm-max: 480px !default;

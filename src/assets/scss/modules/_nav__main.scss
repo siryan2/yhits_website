@@ -1,0 +1,71 @@
+@import '../_variables';
+
+/**
+ * @module: Navigation
+ * @desc: Hauptnavigation
+ * @author: Yannick Herzog
+ * @last-modified: 2015-12-10
+ **/
+
+.nav {
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	li {
+		display: inline-block;
+		margin-left: 2.5em;
+		&:first-child {
+			margin-left: 0;
+		}
+	}
+	a {
+		display: inline-block;
+		font-family: $navFont;
+		font-weight: $navFont--weight;
+		text-decoration: none;
+		text-transform: uppercase;
+	}
+}
+
+.nav__main {
+	ul {
+		padding: 1.2em 0;
+	}
+	li {
+	}
+	a {
+		color: $baseColor;
+		font-size: $navFont--size;
+		line-height: 1.4em;
+		padding-top: 0.7em;
+		padding-bottom: 0.4em;
+		position: relative;
+
+		&.active {
+			&:after {
+				content: '';
+				width: 100%;
+				position: absolute;
+				bottom: -0.2em;
+				height: 4px;
+				background: $baseColor;
+				left: 0;
+			}
+		}
+
+	}
+}
+
+@media screen and (max-width: $media-tablet-max) {
+	.nav__main {
+		ul {
+			text-align: center;
+		}
+		li {
+			margin-left: 1.5em;
+		}
+	}
+}
+

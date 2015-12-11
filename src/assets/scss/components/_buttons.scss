@@ -1,0 +1,77 @@
+@import '../_variables';
+
+/**
+ * @component: Buttons
+ * @desc: Buttons
+ * @author: Yannick Herzog
+ * @last-modified: 2015-12-10
+ **/
+
+$btn-radius: 30px;
+
+.btn {
+	font-size: 1em;
+	line-height: 1em;
+	padding: 1em 1.6em;
+	white-space: nowrap;
+	display: inline-block;
+	text-decoration: none;
+	transition: background .3s ease-in-out, color .3s ease-in-out;
+}
+
+.btn__primary {
+
+}
+
+.btn__primary--rounded {
+	background: $baseColor;
+	border-radius: $btn-radius;
+	color: #ffffff;
+
+	&:hover,
+	&:focus {
+		background: lighten($baseColor, 15%);
+	}
+}
+
+.btn__ghost--dark {
+	border: 1px solid $baseColor;
+	border-radius: $btn-radius;
+	color: $baseColor;
+
+	&:hover,
+	&:focus {
+		background: $baseColor;
+		color: #ffffff;
+	}
+}
+
+.btn__ghost--light--filled {
+	
+}
+
+.button-bar {
+	.btn {
+		margin-left: 1em;
+		&:first-child {
+			margin-left: 0;
+		}
+	}
+}
+
+.button-bar--center {
+	text-align: center;
+}
+
+@media screen and (max-width: $media-sm-max) {
+	.button-bar {
+		.btn {
+			display: block;
+			margin-top: 0.85em;
+			margin-left: 0;
+			&:first-child {
+				margin-top: 0;
+			}
+		}
+	}
+}

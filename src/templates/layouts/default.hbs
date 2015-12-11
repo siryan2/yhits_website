@@ -1,0 +1,21 @@
+<html class="no-js" lang="de">
+	<head>
+		{{> head }}
+	</head>
+	<body>
+		{{> header }}
+		{{> hero }}
+		<section>
+			<div class="grid-container">
+				<div class="grid-100">
+					<h2 class="section__headline"><span>Leistungen</span></h2>
+				</div>
+				{{#each leistungen}}
+				<div class="grid-25 tablet-grid-50">
+					{{> card }}
+				</div>
+				{{/each}}
+			</div>
+		</section>
+	</body>
+</html>
