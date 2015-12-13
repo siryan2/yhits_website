@@ -11,16 +11,15 @@ $int: 20%;
 
 .process {
 	&:nth-child(1n) {
-		background: lighten($baseColor, $int);
-
+		background: lighten($baseColor, $int * 3.4);
 		.process__text {
-			color: lighten($darkGray, 100%);
+			color: $darkGray;
 		}
 	}
 	&:nth-child(2n) {
-		background: lighten($baseColor, $int * 1.2);
+		background: lighten($baseColor, $int * 2.6);
 		.process__text {
-			color: lighten($darkGray, 90%);
+			color: $darkGray;
 		}
 	}
 	&:nth-child(3n) {
@@ -30,15 +29,16 @@ $int: 20%;
 		}
 	}
 	&:nth-child(4n) {
-		background: lighten($baseColor, $int * 2.6);
+		background: lighten($baseColor, $int * 1.2);
 		.process__text {
-			color: $darkGray;
+			color: lighten($darkGray, 90%);
 		}
 	}
 	&:nth-child(5n) {
-		background: lighten($baseColor, $int * 3.4);
+		background: lighten($baseColor, $int);
+
 		.process__text {
-			color: $darkGray;
+			color: lighten($darkGray, 100%);
 		}
 	}
 }
@@ -139,5 +139,7 @@ $int: 20%;
 	font-size: 1em;
 	line-height: 1.4em;
 	margin-bottom: $gutter-half * 2;
+	padding-right: $gutter-half * 2;
+	padding-left: $gutter-half * 2;
 }
 
