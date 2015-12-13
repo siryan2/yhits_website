@@ -4,8 +4,20 @@
  * @module: Section
  * @desc: Section
  * @author: Yannick Herzog
- * @last-modified: 2015-12-10
+ * @last-modified: 2015-12-11
  **/
+
+.section {
+	padding-bottom: 6em;
+}
+
+.section--dark {
+	background: $lightGray;
+}
+
+.section--darker {
+	background: $baseColor;
+}
 
 .section__headline {
 	color: $baseColor;
@@ -25,11 +37,11 @@
 			content:'';
 			position: absolute;
 			bottom: -0.4em;
-			width: 25%;
-			height: 4px;
+			width: 35px;
+			height: 5px;
 			background: $baseColor;
 			left: 50%;
-			margin-left: -12.5%;
+			margin-left: -17.5px;
 		}
 	}
 	
