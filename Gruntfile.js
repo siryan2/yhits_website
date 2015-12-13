@@ -177,6 +177,17 @@ module.exports = function (grunt) {
 						dest: '<%=config.dist_assets%>/fonts/'
 					}
 				]
+			},
+			vendor: {
+				files: [
+					{
+						expand: true,
+						flatten: true,
+						cwd: '<%=config.assets%>/vendor/',
+						src: '**',
+						dest: '<%=config.dist_assets%>/vendor/'
+					}
+				]
 			}
 		}
 
