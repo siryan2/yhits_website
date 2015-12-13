@@ -4,12 +4,18 @@
  * @module: Cards
  * @desc: Cards
  * @author: Yannick Herzog
- * @last-modified: 2015-12-10
+ * @last-modified: 2015-12-11
  **/
 
 .card {
 	border: 1px solid $mediumGray;
 	padding: 1em;
+}
+
+@media screen and (max-width: $media-tablet-max) {
+	.card {
+		margin-bottom: $gutter-half * 2;
+	}
 }
 
 .card__header {
@@ -40,7 +46,7 @@
 
 .card__link {
 	color: $darkGray;
-	font-family: $baseFont;
+	font-family: $navFont;
 	font-size: 1em;
 	font-weight: 300;
 	text-decoration: none;
