@@ -1,5 +1,5 @@
 @import '_variables';
-@import 'modules/_nav__main';
+@import 'modules/_nav';
 @import 'modules/_hero';
 
 /**
@@ -9,7 +9,7 @@
  * @last-modified: 2015-12-10
  **/
 
-.header {
+.page__header {
 	border-top: 8px solid $baseColor;
 	padding-top: 2em;
 	padding-bottom: 2em;

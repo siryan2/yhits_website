@@ -21,6 +21,7 @@
 		}
 	}
 	a {
+		color: $baseColor;
 		display: inline-block;
 		font-family: $navFont;
 		font-weight: $navFont--weight;
@@ -32,16 +33,22 @@
 .nav__main {
 	ul {
 		padding: 1.2em 0;
+		text-align: right;
 	}
 	li {
 	}
 	a {
-		color: $baseColor;
 		font-size: $navFont--size;
 		line-height: 1.4em;
 		padding-top: 0.7em;
 		padding-bottom: 0.4em;
 		position: relative;
+		transition: color .3s ease-in-out;
+		
+		&:hover,
+		&:focus {
+			color: lighten($baseColor, 10%);
+		}
 
 		&.active {
 			&:after {
@@ -68,4 +75,17 @@
 		}
 	}
 }
+
+.nav__footer {
+	margin: 1em 0;
+	a {
+		font-size: 0.8em;
+
+		&:hover,
+		&:focus {
+			text-decoration: underline;
+		}
+	}
+}
+
 
