@@ -7,15 +7,16 @@
  * @last-modified: 2015-12-10
  **/
 
-$btn-radius: 30px;
+$btn-radius: 40px;
 
 .btn {
+	display: inline-block;
+	font-family: $baseFont;
 	font-size: 1em;
 	line-height: 1em;
-	padding: 1em 1.6em;
-	white-space: nowrap;
-	display: inline-block;
+	padding: 1em 1.6em 1.2em;
 	text-decoration: none;
+	white-space: nowrap;
 	transition: background .3s ease-in-out, color .3s ease-in-out;
 }
 
@@ -35,7 +36,7 @@ $btn-radius: 30px;
 }
 
 .btn__ghost--dark {
-	border: 1px solid $baseColor;
+	border: 2px solid $baseColor;
 	border-radius: $btn-radius;
 	color: $baseColor;
 
@@ -46,8 +47,29 @@ $btn-radius: 30px;
 	}
 }
 
+.btn__ghost--light {
+	border: 1px solid #ffffff;
+	border-radius: $btn-radius;
+	color: #ffffff;
+
+	&:hover,
+	&:focus {
+		background: #ffffff;
+		color: $baseColor;
+	}
+}
+
 .btn__ghost--light--filled {
-	
+	background: lighten($baseColor, 10%);
+	border: 1px solid #ffffff;
+	border-radius: $btn-radius;
+	color: #ffffff;
+
+	&:hover,
+	&:focus {
+		background: #ffffff;
+		color: $baseColor;
+	}
 }
 
 .button-bar {
