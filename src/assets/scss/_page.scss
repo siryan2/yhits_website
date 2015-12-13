@@ -1,0 +1,25 @@
+@import '_variables';
+
+/**
+ * @module: Page
+ * @desc: Page specific styles
+ * @author: Yannick Herzog
+ * @last-modified: 2015-12-13
+ **/
+
+.page__headline {
+	color: $baseColor;
+	font-size: 3em;
+	font-family: $baseFont;
+	text-align: center;
+	margin-bottom: 0;
+}
+
+.page__headline--sub {
+	color: lighten($darkGray, 30%);
+	font-family: $baseFont;
+	font-size: 1.4em;
+	line-height: 1.5em;
+	text-align: center;
+	margin-top: 0.5em;
+}
