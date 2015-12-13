@@ -1,4 +1,5 @@
 @import '../_variables';
+@import '../components/_claim';
 
 /**
  * @module: Hero
@@ -7,34 +8,13 @@
  * @last-modified: 2015-12-10
  **/
 
-// Claim
-.claim {
-	hyphens: auto;
-}
-
-.claim--dark {
-	color: $baseColor;
-}
-
-.claim--light {
-	color: $lightGray;
-}
-
-.claim--big {
-
-}
-
-.claim--sub {
-	
-}
-
-// Hero
 .hero {
 	background: $lightGray;
 	padding: 4em 0;
 }
 
 .claim__hero {
+	color: $baseColor;
 	text-align: center;
 }
 
@@ -48,10 +28,15 @@
 
 .claim__hero--sub {
 	display: block;
-	display: block;
 	font-family: $baseFont;
 	font-size: 2em;
 	margin-bottom: 1.4em;
+}
+
+@media screen and (min-width: $media-md-min) {
+	.hero {
+		background: url(../img/hero.jpg) no-repeat; // Bild muss verkleinert werden
+	}
 }
 
 @media screen and (max-width: $media-sm-max) {

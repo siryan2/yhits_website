@@ -1,0 +1,39 @@
+@import '../_variables';
+
+/**
+ * @module: Claim
+ * @desc: Claim
+ * @author: Yannick Herzog
+ * @last-modified: 2015-12-11
+ **/
+
+.claim {
+	display: block;
+	hyphens: auto;
+	font-family: $baseFont;
+	text-align: center;
+}
+
+.claim__container--dark {
+	color: $baseColor;
+}
+
+.claim__container--light {
+}
+
+.claim--big {
+	color: #ffffff;
+	font-size: 2em;
+	margin-top: 1.7em;
+}
+
+.claim--sub {
+	color: $gray;
+	font-size: 1.3em;
+	margin-top: 0.5em;
+	margin-bottom: 2em;
+}
+
+.claim__button {
+	margin: 0 0 3em;
+}
