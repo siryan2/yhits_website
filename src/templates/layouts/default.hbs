@@ -4,54 +4,10 @@
 		{{> head }}
 	</head>
 	<body>
+		{{!-- Header --}}
 		{{> header }}
-		{{> hero }}
-		{{!-- Leistungen --}}
-		<section class="section">
-			<div class="grid-container">
-				<div class="grid-100">
-				{{#parseJSON '{"headline":"Ich biete Ihnen an"}' }}
-					{{> section__headline }}
-				{{/parseJSON}}
-				</div>
-				{{#each leistungen}}
-				<div class="grid-25 tablet-grid-50">
-					{{> card }}
-				</div>
-				{{/each}}
-			</div>
-		</section>
-		{{!-- Projekte --}}
-		<section class="section section--dark">
-			<div class="grid-container">
-				<div class="grid-100">
-				{{#parseJSON '{"headline":"Eine Auswahl meiner Arbeiten"}' }}
-					{{> section__headline }}
-				{{/parseJSON}}
-				</div>
-				
-				<div class="grid-33">
-					{{> project__card }}
-				</div>
-				<div class="grid-33">
-					{{> project__card }}
-				</div>
-				<div class="grid-33">
-					{{> project__card }}
-				</div>
-				<div class="grid-100">
-					<div class="button-bar button-bar--center">
-						<a href="" class="btn btn__ghost--dark">mehr Projekte anzeigen</a>
-					</div>
-				</div>
-			</div>
-		</section>
-		{{!-- Prozess Timeline --}}
-		<section class="section section--light">
-			<div class="grid-container">
-				{{> process__timeline}}
-			</div>
-		</section>
+		{{!-- Site Content --}}
+		{{> body }}
 		{{!-- Hilfe? --}}
 		{{> ruf_mich_an }}
 		{{!-- Footer --}}
