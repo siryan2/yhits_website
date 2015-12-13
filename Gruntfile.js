@@ -56,7 +56,8 @@ module.exports = function (grunt) {
 				layoutdir: 	'src/templates/layouts',
 				partials: 	['src/templates/partials/**/*.hbs'],
 				helpers: ['node_modules/handlebars-helpers/lib/helpers/*.js'],
-				production: false
+				production: false,
+				pkg: '<%= pkg %>'
 			},
 			home: {
 				options: {
