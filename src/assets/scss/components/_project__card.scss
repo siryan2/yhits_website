@@ -7,6 +7,11 @@
  * @last-modified: 2015-12-11
  **/
 
+.project__card {
+	margin-top: $gutter-half * 2;
+	margin-bottom: $gutter-half * 2;
+}
+
 .project__card-container {
 	margin: 0;
 	position: relative;
