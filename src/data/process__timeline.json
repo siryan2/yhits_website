@@ -1,0 +1,27 @@
+[
+	{
+		"name": "Persönliches Gespräch",
+		"iconClass": "fa fa-comments fa-lg",
+		"text": "Überall dieselbe alte Leier. Das Layout ist fertig, der Text lässt auf sich warten. Damit das Layout nun nicht nackt im Raume steht und sich klein und leer vorkommt, springe ich ein: der Blindtext."
+	},
+	{
+		"name": "Konzeption",
+		"iconClass": "fa fa-gears fa-lg",
+		"text": "Überall dieselbe alte Leier. Das Layout ist fertig, der Text lässt auf sich warten. Damit das Layout nun nicht nackt im Raume steht und sich klein und leer vorkommt, springe ich ein: der Blindtext."
+	},
+	{
+		"name": "Design",
+		"iconClass": "fa fa-heart fa-lg",
+		"text": "Überall dieselbe alte Leier. Das Layout ist fertig, der Text lässt auf sich warten. Damit das Layout nun nicht nackt im Raume steht und sich klein und leer vorkommt, springe ich ein: der Blindtext."
+	},
+	{
+		"name": "Programmierung",
+		"iconClass": "fa fa-code fa-lg",
+		"text": "Überall dieselbe alte Leier. Das Layout ist fertig, der Text lässt auf sich warten. Damit das Layout nun nicht nackt im Raume steht und sich klein und leer vorkommt, springe ich ein: der Blindtext."
+	},
+	{
+		"name": "Launch",
+		"iconClass": "fa fa-diamond fa-lg",
+		"text": "Überall dieselbe alte Leier. Das Layout ist fertig, der Text lässt auf sich warten. Damit das Layout nun nicht nackt im Raume steht und sich klein und leer vorkommt, springe ich ein: der Blindtext."
+	}
+]

@@ -1,0 +1,142 @@
+@import '../_variables';
+
+/**
+ * @module: Process Timeline
+ * @desc: Von heute bis zum Ziel
+ * @author: Yannick Herzog
+ * @last-modified: 2015-12-13
+ **/
+
+$int: 20%;
+
+.process {
+	&:nth-child(1n) {
+		background: lighten($baseColor, $int);
+
+		.process__text {
+			color: lighten($darkGray, 100%);
+		}
+	}
+	&:nth-child(2n) {
+		background: lighten($baseColor, $int * 1.2);
+		.process__text {
+			color: lighten($darkGray, 90%);
+		}
+	}
+	&:nth-child(3n) {
+		background: lighten($baseColor, $int * 1.9);
+		.process__text {
+			color: lighten($darkGray, 80%);
+		}
+	}
+	&:nth-child(4n) {
+		background: lighten($baseColor, $int * 2.6);
+		.process__text {
+			color: $darkGray;
+		}
+	}
+	&:nth-child(5n) {
+		background: lighten($baseColor, $int * 3.4);
+		.process__text {
+			color: $darkGray;
+		}
+	}
+}
+
+@media screen and (max-width: $media-tablet-max) {
+	.process {
+		padding-bottom: $gutter-half * 3;
+	}
+}
+
+// Icon
+.process__icon-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	margin-top: $gutter-half * 2;
+}
+
+@media screen and (min-width: $media-tablet-min) {
+	.process__icon-wrapper {
+		position: relative;
+		&:after {
+			content: '';
+			height: 1px;
+			width: 100%;
+			position: absolute;
+			top: 50%;
+			left: 0;
+			border-bottom: 1px dashed #ffffff;
+			z-index: auto;
+		}
+	}
+}
+
+.process__icon {
+	background: #ffffff;
+	color: $baseColor;
+	border-radius: 100%;
+	border: 1px solid #ffffff;
+	height: 60px;
+	width: 60px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	position: relative;
+	z-index: 1;
+}
+
+.no-flexbox {
+	.process__icon-wrapper {
+		position: relative;
+		width: 100%;
+	}
+
+	.process__icon {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translate(-50%, 0);
+
+		> * {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+}
+
+// Headline
+.process__headline {
+	color: darken($baseColor, 20%);
+	font-family: $baseFont;	
+	font-size: 1.1em;
+	font-weight: 700;
+	text-align: center;
+	margin-top: 1.5em;
+	margin-bottom: 1.5em;
+}
+
+@media screen and (max-width: $media-tablet-max) {
+	.process__headline {
+		font-size: 1.4em;
+		line-height: 1.8em;
+		margin-top: 1em;
+		margin-bottom: 1em;
+	}
+}
+
+// Text
+.process__text {
+	color: $darkGray;
+	font-family: $baseFont;
+	font-size: 1em;
+	line-height: 1.4em;
+	margin-bottom: $gutter-half * 2;
+}
+
