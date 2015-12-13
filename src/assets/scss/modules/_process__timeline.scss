@@ -113,7 +113,8 @@ $int: 20%;
 
 // Headline
 .process__headline {
-	color: darken($baseColor, 20%);
+	color: $lighterBlue;
+	text-shadow: 0 0 3px $baseColor;
 	font-family: $baseFont;	
 	font-size: 1.1em;
 	font-weight: 700;
