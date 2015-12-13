@@ -1,0 +1,19 @@
+@import '_variables';
+@import 'modules/_nav';
+
+/**
+ * @module: Footer
+ * @desc: allgemeiner Footer
+ * @author: Yannick Herzog
+ * @last-modified: 2015-12-11
+ **/
+
+.page__footer {
+	background: $lightGray;
+
+	p {
+		font-family: $navFont;
+		font-size: 0.8em;
+		font-weight: 700;
+	}
+}
