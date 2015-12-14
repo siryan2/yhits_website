@@ -1,0 +1,14 @@
+<section class="article__pagination">
+	{{#if prev}}
+	<div class="{{#if next}}grid-50{{else}}grid-100{{/if}} article__pagination-item article__pagination-item--prev">
+		<span class="article__pagination-item-text"><i class="fa fa-angle-double-left"></i> {{#if isProject}}vorheriges Projekt{{else}}vorheriger Artikel{{/if}}</span>
+		<a href="{{prev.detailUrl}}" class="article__pagination-item-link">{{prev.projectTitle}}</a>
+	</div>
+	{{/if}}
+	{{#if next}}
+	<div class="{{#if prev}}grid-50{{else}}grid-100{{/if}} article__pagination-item article__pagination-item--next">
+		<span class="article__pagination-item-text">{{#if isProject}}nächstes Projekt{{else}}nächster Artikel{{/if}} <i class="fa fa-angle-double-right"></i></span>
+		<a href="{{next.detailUrl}}" class="article__pagination-item-link">{{next.projectTitle}}</a>
+	</div>
+	{{/if}}
+</section>

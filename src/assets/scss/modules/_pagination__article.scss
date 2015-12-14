@@ -1,0 +1,45 @@
+@import '../_variables';
+
+/**
+ * @module: Article Paginierung
+ * @desc: Paginierung für die einzelnen Artikel 
+ * @author: Yannick Herzog
+ * @last-modified: 2015-12-14
+ **/
+
+
+.article__pagination {
+	background: $gray;
+	overflow: hidden;
+}
+
+.article__pagination-item {
+	padding-top: 2em; 
+	padding-bottom: 2em; 
+}
+
+.article__pagination-item--prev {
+	background: lighten($baseColor, 20%);
+	padding-left: 1em;
+}
+
+.article__pagination-item--next {
+	background: lighten($baseColor, 10%);
+	text-align: right;
+	padding-right: 1em;
+}
+
+.article__pagination-item-text {
+	color: darken($gray, 10%);
+	display: block;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.1em;
+	line-height: 1.1em;
+	margin-bottom: 0.6em;
+}
+
+.article__pagination-item-link {
+	color: #ffffff;
+	font-size: 1.3em;
+	line-height: 1.4em;
+}
