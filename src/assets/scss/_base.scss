@@ -36,3 +36,20 @@ a {
 		text-decoration: underline;
 	}
 }
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+ul {
+	padding-left: 1em;
+}
+
+li {
+	font-family: 'Roboto', sans-serif;
+	margin-top: 0.5em;
+	&:first-child {
+		margin-top: 0;
+	}
+}
