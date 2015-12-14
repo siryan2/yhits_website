@@ -140,6 +140,11 @@ module.exports = function (grunt) {
 				files: {
 					'<%=config.dist_assets%>/css/normalize.css':'<%=config.assets%>/scss/normalize.scss'
 				}
+			},
+			owl: {
+				files: {
+					'<%=config.dist_assets%>/css/owl.theme.yh.css':'<%=config.assets%>/scss/owl.theme.yh.scss'
+				}
 			}
 		},
 
