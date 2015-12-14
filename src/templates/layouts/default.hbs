@@ -12,5 +12,9 @@
 		{{> ruf_mich_an }}
 		{{!-- Footer --}}
 		{{> footer }}
+		{{!-- Scripts: Lade Skripte nicht für Startseite --}}
+		{{#isnt theme ""}}
+		{{> scripts }}
+		{{/isnt}}
 	</body>
 </html>
