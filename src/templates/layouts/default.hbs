@@ -9,7 +9,9 @@
 		{{!-- Site Content --}}
 		{{> body }}
 		{{!-- Hilfe? --}}
+		{{#isnt name "kontakt"}}
 		{{> ruf_mich_an }}
+		{{/isnt}}
 		{{!-- Footer --}}
 		{{> footer }}
 		{{!-- Scripts: Lade Skripte nicht für Startseite --}}
