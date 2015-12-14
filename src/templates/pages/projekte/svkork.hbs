@@ -1,0 +1,12 @@
+---
+layout: default.hbs
+title: SV Kork e.V.
+name: projekte
+---
+
+<section class="section">
+	<div class="grid-container">
+		{{> project__desc projects.[4] }}
+	</div>
+</section>
+{{> pagination__article prev=projects.[5] next=projects.[3] isProject=true}}

@@ -1,0 +1,12 @@
+---
+layout: default.hbs
+title: Fahrschule Hohenbaden GmbH
+name: projekte
+---
+
+<section class="section">
+	<div class="grid-container">
+		{{> project__desc projects.[0] }}
+	</div>
+</section>
+{{> pagination__article prev=projects.[1] isProject=true}}

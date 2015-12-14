@@ -1,0 +1,12 @@
+---
+layout: default.hbs
+title: Campus App Landingpage
+name: projekte
+---
+
+<section class="section">
+	<div class="grid-container">
+		{{> project__desc projects.[2] }}
+	</div>
+</section>
+{{> pagination__article prev=projects.[3] next=projects.[1] isProject=true}}

@@ -1,0 +1,12 @@
+---
+layout: default.hbs
+title: Createyoursign
+name: projekte
+---
+
+<section class="section">
+	<div class="grid-container">
+		{{> project__desc projects.[1] }}
+	</div>
+</section>
+{{> pagination__article prev=projects.[2] next=projects.[0] isProject=true}}

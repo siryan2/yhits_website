@@ -1,0 +1,12 @@
+---
+layout: default.hbs
+title: Docady
+name: projekte
+---
+
+<section class="section">
+	<div class="grid-container">
+		{{> project__desc projects.[7] }}
+	</div>
+</section>
+{{> pagination__article next=projects.[6] isProject=true}}
