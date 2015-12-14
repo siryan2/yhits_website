@@ -1,49 +1,58 @@
 [
 	{
-		"name":"vallee-verte",
-		"title":"Vallée Verte Handelsgesellschaft für Naturprodukte mbH",
+		"name":"docady",
+		"projectTitle":"Web-Anwendung zum Erlernen der MongoDB-Syntax",
 		"detailUrl":"",
+		"url":"",
+		"imageName":"docady.jpg"
+	},
+	{
+		"name":"vallee-verte",
+		"projectTitle":"Vallée Verte Handelsgesellschaft für Naturprodukte mbH",
+		"detailUrl":"/projekte/valleeverte.html",
 		"url":"http://www.vallee-verte.de",
-		"imageName":"vallee-verte.jpg"
+		"imageName":"vallee-verte.jpg",
+		"description":"Loremus ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.",
+		"tags":["Contao CMS", "HTML/CSS", "JavaScript", "PHP", "Webdesign", "Kunde seit 2008"]
 	},
 	{
 		"name":"baas-dulsan",
-		"title":"Baas & Dulsan OHG",
+		"projectTitle":"Baas & Dulsan OHG",
 		"detailUrl":"",
 		"url":"http://www.baas-dulsan.de",
 		"imageName":"baas-dulsan.jpg"
 	},
 	{
 		"name":"sv-kork",
-		"title":"SV Kork e.V.",
+		"projectTitle":"SV Kork e.V.",
 		"detailUrl":"",
 		"url":"http://www.sv-kork.de",
 		"imageName":"sv-kork.jpg"
 	},
 	{
 		"name":"campusapp-landingpage",
-		"title":"Landingpage zur Campus-App der Hochschule Offenburg",
+		"projectTitle":"Landingpage zur Campus-App der Hochschule Offenburg",
 		"detailUrl":"",
 		"url":"http://campusapp.hs-offenburg.de",
 		"imageName":"campusapp-landingpage.jpg"
 	},
 	{
 		"name":"campusapp",
-		"title":"Campus-App der Hochschule Offenburg",
+		"projectTitle":"Campus-App der Hochschule Offenburg",
 		"detailUrl":"",
 		"url":"https://play.google.com/store/apps/details?id=de.hs_offenburg.app",
 		"imageName":"campusapp.jpg"
 	},
 	{
 		"name":"createyoursign",
-		"title":"Cdesign",
+		"projectTitle":"Cdesign",
 		"detailUrl":"",
 		"url":"http://www.createyoursign.de",
 		"imageName":"createyoursign.jpg"
 	},
 	{
 		"name":"fahrschule-hohenbaden",
-		"title":"Fahrschule Hohenbaden GmbH",
+		"projectTitle":"Fahrschule Hohenbaden GmbH",
 		"detailUrl":"",
 		"url":"http://www.fahrschule-hohenbaden.de/",
 		"imageName":"fahrschule-hohenbaden.jpg"
