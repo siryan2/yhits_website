@@ -45,8 +45,8 @@
 		position: relative;
 		transition: color .3s ease-in-out;
 		
-		&:hover,
-		&:focus {
+		&:hover:not(.active),
+		&:focus:not(.active) {
 			color: lighten($baseColor, 10%);
 		}
 
