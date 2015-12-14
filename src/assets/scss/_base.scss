@@ -1,10 +1,38 @@
+@import '_variables';
+
 /**
  * @module: Base
  * @desc: allgemeiner Styles
  * @author: Yannick Herzog
- * @last-modified: 2015-12-10
+ * @last-modified: 2015-12-14
  **/
 
 * {
 	box-sizing: border-box;
+}
+
+p {
+	font-family: $baseFont;
+	font-size: 1em;
+	line-height: 1.4em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Roboto', sans-serif;
+	line-height: 1.4em;
+}
+
+a {
+	color: lighten($baseColor, 15%);
+	text-decoration: none;
+
+	&:hover,
+	&:focus {
+		text-decoration: underline;
+	}
 }
