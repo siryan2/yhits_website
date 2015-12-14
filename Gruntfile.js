@@ -95,7 +95,8 @@ module.exports = function (grunt) {
 			},
 			projekte: {
 				options: {
-					theme: 'projekte'
+					theme: 'projekte',
+					slider: true
 				},
 				plugins: [],
 				files: [
