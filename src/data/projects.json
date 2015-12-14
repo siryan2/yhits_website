@@ -1,60 +1,90 @@
 [
 	{
-		"name":"docady",
-		"projectTitle":"Web-Anwendung zum Erlernen der MongoDB-Syntax",
-		"detailUrl":"",
-		"url":"",
-		"imageName":"docady.jpg"
+		"name":"fahrschule-hohenbaden",
+		"projectTitle":"Fahrschule Hohenbaden GmbH",
+		"detailUrl":"/projekte/fahrschule-hohenbaden.html",
+		"url":"http://www.fahrschule-hohenbaden.de/",
+		"image":"/assets/img/projekte/fahrschulehohenbaden/fahrschule-hohenbaden.jpg",
+		"description":"Loremus ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.",
+		"projectTags":["Contao CMS", "HTML/CSS", "JavaScript", "PHP", "Webdesign", "Kunde seit 2008"],
+		"images":["/assets/img/projekte/fahrschulehohenbaden/fahrschule-hohenbaden.jpg", "/assets/img/projekte/fahrschulehohenbaden/fahrschule-hohenbaden.jpg", "/assets/img/projekte/fahrschulehohenbaden/fahrschule-hohenbaden.jpg"],
+		"order":8
+	},
+	{
+		"name":"createyoursign",
+		"projectTitle":"Cdesign",
+		"detailUrl":"/projekte/createyoursign.html",
+		"url":"http://www.createyoursign.de",
+		"image":"/assets/img/projekte/cdesign/createyoursign.jpg",
+		"description":"Loremus ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.",
+		"projectTags":["Contao CMS", "HTML/CSS", "JavaScript", "PHP", "Webdesign", "Kunde seit 2008"],
+		"images":["/assets/img/projekte/cdesign/createyoursign.jpg", "/assets/img/projekte/cdesign/createyoursign.jpg", "/assets/img/projekte/cdesign/createyoursign.jpg"],
+		"order":7
+	},
+	{
+		"name":"campusapp-landingpage",
+		"projectTitle":"Landingpage zur Campus-App der Hochschule Offenburg",
+		"detailUrl":"/projekte/campusapp-landingpage.html",
+		"url":"http://campusapp.hs-offenburg.de",
+		"image":"/assets/img/projekte/hochschuleoffenburg/campusapp-landingpage.jpg",
+		"description":"Loremus ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.",
+		"projectTags":["Contao CMS", "HTML/CSS", "JavaScript", "PHP", "Webdesign", "Kunde seit 2008"],
+		"images":["/assets/img/projekte/hochschuleoffenburg/campusapp-landingpage.jpg", "/assets/img/projekte/hochschuleoffenburg/campusapp-landingpage.jpg", "/assets/img/projekte/hochschuleoffenburg/campusapp-landingpage.jpg"],
+		"order":6
+	},
+	{
+		"name":"campusapp",
+		"projectTitle":"Campus-App der Hochschule Offenburg",
+		"detailUrl":"/projekte/campusapp.html",
+		"url":"https://play.google.com/store/apps/details?id=de.hs_offenburg.app",
+		"image":"/assets/img/projekte/hochschuleoffenburg/campusapp.jpg",
+		"description":"Loremus ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.",
+		"projectTags":["Contao CMS", "HTML/CSS", "JavaScript", "PHP", "Webdesign", "Kunde seit 2008"],
+		"images":["/assets/img/projekte/hochschuleoffenburg/campusapp.jpg", "/assets/img/projekte/hochschuleoffenburg/campusapp.jpg", "/assets/img/projekte/hochschuleoffenburg/campusapp.jpg"],
+		"order":5
+	},
+	{
+		"name":"sv-kork",
+		"projectTitle":"SV Kork e.V.",
+		"detailUrl":"/projekte/svkork.html",
+		"url":"http://www.sv-kork.de",
+		"image":"/assets/img/projekte/svkork/sv-kork.jpg",
+		"description":"Loremus ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.",
+		"projectTags":["Contao CMS", "HTML/CSS", "JavaScript", "PHP", "Webdesign", "Kunde seit 2013"],
+		"images":["/assets/img/projekte/svkork/sv-kork.jpg", "/assets/img/projekte/svkork/sv-kork.jpg", "/assets/img/projekte/svkork/sv-kork.jpg"],
+		"order":4
+	},
+	{
+		"name":"baas-dulsan",
+		"projectTitle":"Baas & Dulsan OHG",
+		"detailUrl":"/projekte/baasdulsan.html",
+		"url":"http://www.baas-dulsan.de",
+		"image":"/assets/img/projekte/baasdulsan/baas-dulsan.jpg",
+		"description":"Loremus ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.",
+		"projectTags":["Contao CMS", "HTML/CSS", "JavaScript", "PHP", "Webdesign", "Kunde seit 2013"],
+		"images":["/assets/img/projekte/baasdulsan/baas-dulsan.jpg", "/assets/img/projekte/baasdulsan/baas-dulsan_produkte.jpg", "/assets/img/projekte/baasdulsan/baas-dulsan_produkt-galerie.jpg", "/assets/img/projekte/baasdulsan/baas-dulsan_artikel.jpg"],
+		"order":3
 	},
 	{
 		"name":"vallee-verte",
 		"projectTitle":"Vallée Verte Handelsgesellschaft für Naturprodukte mbH",
 		"detailUrl":"/projekte/valleeverte.html",
 		"url":"http://www.vallee-verte.de",
-		"imageName":"vallee-verte.jpg",
+		"image":"/assets/img/projekte/valleeverte/vallee-verte.jpg",
 		"description":"Loremus ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.",
-		"tags":["Contao CMS", "HTML/CSS", "JavaScript", "PHP", "Webdesign", "Kunde seit 2008"]
+		"projectTags":["Contao CMS", "HTML/CSS", "JavaScript", "PHP", "Webdesign", "Kunde seit 2008"],
+		"images":["/assets/img/projekte/valleeverte/vallee-verte.jpg", "/assets/img/projekte/valleeverte/vallee-verte_kaesewelten_start.jpg", "/assets/img/projekte/valleeverte/vallee-verte_kaesewelten_artikel.jpg"],
+		"order":2
 	},
 	{
-		"name":"baas-dulsan",
-		"projectTitle":"Baas & Dulsan OHG",
-		"detailUrl":"",
-		"url":"http://www.baas-dulsan.de",
-		"imageName":"baas-dulsan.jpg"
-	},
-	{
-		"name":"sv-kork",
-		"projectTitle":"SV Kork e.V.",
-		"detailUrl":"",
-		"url":"http://www.sv-kork.de",
-		"imageName":"sv-kork.jpg"
-	},
-	{
-		"name":"campusapp-landingpage",
-		"projectTitle":"Landingpage zur Campus-App der Hochschule Offenburg",
-		"detailUrl":"",
-		"url":"http://campusapp.hs-offenburg.de",
-		"imageName":"campusapp-landingpage.jpg"
-	},
-	{
-		"name":"campusapp",
-		"projectTitle":"Campus-App der Hochschule Offenburg",
-		"detailUrl":"",
-		"url":"https://play.google.com/store/apps/details?id=de.hs_offenburg.app",
-		"imageName":"campusapp.jpg"
-	},
-	{
-		"name":"createyoursign",
-		"projectTitle":"Cdesign",
-		"detailUrl":"",
-		"url":"http://www.createyoursign.de",
-		"imageName":"createyoursign.jpg"
-	},
-	{
-		"name":"fahrschule-hohenbaden",
-		"projectTitle":"Fahrschule Hohenbaden GmbH",
-		"detailUrl":"",
-		"url":"http://www.fahrschule-hohenbaden.de/",
-		"imageName":"fahrschule-hohenbaden.jpg"
+		"name":"docady",
+		"projectTitle":"Docady: Web-Anwendung zum Erlernen der MongoDB-Syntax",
+		"detailUrl":"/projekte/docady.html",
+		"url":"",
+		"image":"/assets/img/projekte/docady/docady.jpg",
+		"description":"Loremus ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.",
+		"projectTags":["Contao CMS", "HTML/CSS", "JavaScript", "PHP", "Webdesign"],
+		"images":["/assets/img/projekte/docady/docady.jpg", "/assets/img/projekte/docady/docady_start.jpg", "/assets/img/projekte/docady/docady_edit.jpg", "/assets/img/projekte/docady/docady_upload.jpg"],
+		"order":1
 	}
 ]

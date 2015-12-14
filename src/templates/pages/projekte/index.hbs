@@ -10,11 +10,10 @@ name: projekte
 		<div class="grid-100">
 			{{> page__headline}}
 		</div>
-		{{#each projects}}
-		<div class="grid-33 tablet-grid-50">
+		{{#withSort projects "order"}}
+			<div class="grid-33 tablet-grid-50">
 			{{> project__card }}
-		</div>
-		{{/each}}
+			</div>
+		{{/withSort}}
 	</div>
-
 </section>
