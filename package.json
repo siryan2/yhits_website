@@ -29,6 +29,8 @@
     "grunt-sass": "^1.1.0",
     "grunt-scss-lint": "^0.3.8",
     "handlebars-helpers": "^0.5.8",
+    "jquery": "^2.1.4",
+    "owl.carousel": "git+https://github.com/smashingboxes/OwlCarousel2.git",
     "unsemantic": "^1.0.1"
   },
   "dependencies": {

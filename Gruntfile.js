@@ -27,6 +27,10 @@ module.exports = function (grunt) {
 			images: {
 				files: ['<%=config.assets%>/img/**/*.{jpg,png,gif}'],
 				tasks: ['copy:images']
+			},
+			js: {
+				files: ['<%=config.assets%>/js/**/*.js'],
+				tasks: ['copy:js']
 			}
 		},
 
@@ -168,6 +172,17 @@ module.exports = function (grunt) {
 					}
 				]
 			},
+			js: {
+				files: [
+					{
+						expand: true,
+						flatte: true,
+						cwd: '<%=config.assets%>/js/',
+						src: '**',
+						dest: '<%=config.dist_assets%>/js/'
+					}
+				]
+			},
 			fonts: {
 				files: [
 					{
@@ -187,6 +202,24 @@ module.exports = function (grunt) {
 						cwd: '<%=config.assets%>/vendor/',
 						src: '**',
 						dest: '<%=config.dist_assets%>/vendor/'
+					},
+					{
+						expand: true,
+						flatten: true,
+						cwd: 'node_modules/jquery/dist/',
+						src: 'jquery.min.js',
+						dest: '<%=config.dist_assets%>/vendor/'
+					}
+				]
+			},
+			owlCarousel: {
+				files: [
+					{
+						expand: true,
+						flatten: false,
+						cwd: 'node_modules/owl.carousel/dist/',
+						src: '**/*',
+						dest: '<%=config.dist_assets%>/plugins/owl-carousel/'
 					}
 				]
 			}
