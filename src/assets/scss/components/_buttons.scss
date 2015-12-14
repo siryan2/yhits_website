@@ -18,6 +18,11 @@ $btn-radius: 40px;
 	text-decoration: none;
 	white-space: nowrap;
 	transition: background .3s ease-in-out, color .3s ease-in-out;
+
+	&:hover,
+	&:focus {
+		text-decoration: none;
+	}
 }
 
 .btn__primary {
