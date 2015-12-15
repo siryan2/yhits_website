@@ -1,0 +1,36 @@
+@import '../_variables';
+
+/**
+ * @module: Forms
+ * @desc: Forms
+ * @author: Yannick Herzog
+ * @last-modified: 2015-12-15
+ **/
+
+.form-group {
+	margin-bottom: 1.5em;
+}
+
+.form__label {
+	color: $baseColor;
+	display: block;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1em;
+	font-weight: 700;
+	margin-bottom: 0.3em;
+}
+
+.form__field {
+	border: 1px solid $gray;
+	color: $darkGray;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.1em;
+	padding: 0.7em;
+	width: 100%;
+	transition: border-color .2s ease-in-out, box-shadow .2s ease-in-out;
+
+	&:focus {
+		border-color: lighten($baseColor, 30%);
+		box-shadow: 0 0 8px transparentize(lighten($baseColor, 20%), 0.6);
+	}
+}
