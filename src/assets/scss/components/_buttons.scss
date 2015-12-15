@@ -51,6 +51,21 @@ $btn-radius: 40px;
 	}
 }
 
+.btn__secondary {
+	background: $gray;
+	color: $baseColor;
+	font-family: 'Roboto', sans-serif;
+	font-size: 0.8em;
+	line-height: 0.8em;
+	padding: 0.8em 0.9em;
+
+	&:hover,
+	&:focus {
+		background: darken($gray, 10%);
+		color: #ffffff;
+	}
+}
+
 .btn__ghost--dark {
 	background: transparent;
 	border: 2px solid $baseColor;
