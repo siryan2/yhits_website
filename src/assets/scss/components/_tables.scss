@@ -1,0 +1,36 @@
+@import '../_variables';
+
+/**
+ * @module: tables
+ * @desc: Tables
+ * @author: Yannick Herzog
+ * @last-modified: 2015-12-15
+ **/
+
+.table {
+	width: 100%;
+
+	td {
+		color: $darkGray;
+		font-family: 'Roboto', sans-serif;
+		font-size: 1em;
+		line-height: 1.4em;
+		padding-bottom: 0.6em;
+	}	
+}
+
+.table__contact {
+	thead {
+		td {
+			font-weight: 700;
+			padding-bottom: 0.8em;
+		}
+	}
+	tr {
+		td:first-child {
+			color: $baseColor;
+			width: 10%;
+		}
+	}
+}
+
