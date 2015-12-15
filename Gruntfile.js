@@ -80,9 +80,16 @@ module.exports = function (grunt) {
 			},
 			blog: {
 				options: {
-					theme: 'blog'
+					theme: 'blog',
+					collections: [
+						{
+							name: 'posts',
+							inflection: 'post',
+							sortorder: 'desc',
+							sortby: 'date'
+						}
+					]
 				},
-				plugins: [],
 				files: [
 					{
 						expand: true,
