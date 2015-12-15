@@ -4,7 +4,7 @@
  * @component: Buttons
  * @desc: Buttons
  * @author: Yannick Herzog
- * @last-modified: 2015-12-10
+ * @last-modified: 2015-12-15
  **/
 
 $btn-radius: 40px;
@@ -26,7 +26,18 @@ $btn-radius: 40px;
 }
 
 .btn__primary {
+	background: $baseColor;
+	color: #ffffff;
+	border: 2px solid transparent;
+	border-radius: $btn-radius;
+	transition: all .3s ease-in-out;
 
+	&:hover,
+	&:focus {
+		background: #ffffff;
+		color: $baseColor;
+		border-color: $baseColor;
+	}
 }
 
 .btn__primary--rounded {
@@ -41,6 +52,7 @@ $btn-radius: 40px;
 }
 
 .btn__ghost--dark {
+	background: transparent;
 	border: 2px solid $baseColor;
 	border-radius: $btn-radius;
 	color: $baseColor;
