@@ -1,0 +1,46 @@
+---
+layout: default.hbs
+title: Contao - Colorbox mit Inline-HTML
+published: true
+tags:
+- Contao
+- Colorbox
+categories:
+- Contao
+date: 2013/12/03
+teaser: Kürzlich hatte ich nach dem Contao-Update auf Version 3.1.5 ein Problem mit der Colorbox bzw. deaktivierte ich die Mediabox von MooTools und stieg auf das jQuery-Plugin Colorbox um. Hierbei wurde das Inline-HTML nicht mehr korrekt angezeigt.
+posts: true
+name: blog
+---
+<section class="grid-container">
+	<article class="grid-60 prefix-20 article__item">
+		<h2 class="article__headline">{{title}}</h2>
+		<div class="article__toolbar">
+			<time datetime="{{formatDate date "%Y-%m-%d"}}T00:00" class="article__publishedDate">{{formatDate date "%d. %b %Y"}}</time>
+		</div>
+		<p>Kürzlich hatte ich nach dem Contao-Update auf Version 3.1.5 ein Problem mit der Colorbox bzw. deaktivierte ich die Mediabox von MooTools und stieg auf das jQuery-Plugin Colorbox um. Hierbei wurde das Inline-HTML nicht mehr korrekt angezeigt. Beide Plugins arbeiten unterschiedlich. Bei der Mediabox konnte ich mein Inline-HTML mit display:none verstecken und per Klick auf ein Element in die Box laden. Dies funktioniert mit der Colorbox etwas anders.</p>
+		<p>Vor dem aktivieren der Colorbox muss die Klasse, welche das Element unsichtbar erscheinen lässt, entfernt werden. Und wenn die Box geschlossen wird muss die Klasse, um das Element unsichtbar zu machen, gesetzt werden.</p>
+		<p>Hierzu gibt es die Callbacks <em>onOpen</em> und <em>onCleanup</em> sowie weitere Funktionen, welche auf der <a title="Projektseite zu Colorbox" href="http://www.jacklmoore.com/colorbox/">Projektseite von Jack Moore</a> eingesehen werden konnen.</p>
+		<p>Ich habe Colorbox für Inline-HTML wie folgt eingebunden:</p>
+		<pre><code>
+			$('a[data-lightbox]').map(function() {
+    $(this).colorbox({
+        inline:true,
+        href:$(this).attr('href'),
+        onOpen: function() {
+            var id = $(this).attr('href');
+            $(id).toggleClass('hidden');
+        },
+        onCleanup: function () {
+            var id = $(this).attr('href');
+            $(id).toggleClass('hidden');
+        }
+    });
+});
+		</code></pre>
+
+	</article>
+</section>
+{{#withSort posts }}
+	{{> pagination__article next=this.pages.[3] prev=this.pages.[1] isProject=false}}
+{{/withSort}}
