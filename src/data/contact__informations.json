@@ -1,0 +1,18 @@
+[
+	{
+		"name":"Yannick Herzog",
+		"companyname":"IT Services",
+		"adress": [
+			{
+				"street":"Zum Hühnerbünd",
+				"number":"2",
+				"zip":"77694",
+				"city":"Kehl"
+			}
+		],
+		"email":"info@hit-services.net",
+		"email_text":"info[ät]hit-services.net",
+		"mobile":"+49 171 2 33 44 94",
+		"phone":"+49 7851 88 65 926"
+	}
+]
