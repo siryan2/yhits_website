@@ -1,0 +1,100 @@
+@import '../_variables';
+@import 'node_modules/font-awesome/scss/_variables';
+
+/**
+ * @module: Article
+ * @desc: Artikel
+ * @author: Yannick Herzog
+ * @last-modified: 2015-12-15
+ **/
+
+.article__items {
+
+}
+
+.article__item {
+	margin-top: 3em;
+	padding-bottom: 2em;
+	border-bottom: 1px solid $gray;
+	&:first-child {
+		margin-top: 0;
+	}
+	&:last-child {
+		border-bottom: none;
+	}
+	
+	h2,
+	h3,
+	h4 {
+		font-family: 'Roboto', sans-serif;
+	}
+	
+	h3 {
+		font-size: 1.5em;
+		line-height: 1.3em;
+	}
+
+	h4 {
+		font-size: 1.2em;
+		line-height: 1.2em;
+	}
+
+	p {
+		font-size: 1.2em;
+		line-height: 1.5em;
+	}
+
+	figure {
+		margin: 2em 0;
+	}
+
+	img {
+
+	}
+
+	figcaption {
+		color: lighten($darkGray, 20%);
+		font-size: 1em;
+		font-family: $baseFont;
+		font-style: italic;
+		margin-top: 0.3em;
+	}
+
+	blockquote {
+		color: lighten($darkGray, 15%);
+		font-style: italic;
+		margin: 2em 3em;
+		position: relative;
+		&:before {
+			content:$fa-var-quote-right;
+			font-family: 'FontAwesome';
+			font-size: 3em;
+			display: inline;
+			position: absolute;
+			top: -0.2em;
+			left: -0.5em;
+			color: lighten($gray, 5%);
+			z-index: -1;
+		}
+	}
+
+}
+
+.article__headline {
+	color: $baseColor;
+	font-size: 1.8em;
+	line-height: 1.2em;
+	margin-bottom: 0.5em;
+}
+
+.article__toolbar {
+	margin-bottom: 1.3em;
+}
+
+.article__publishedDate {
+	color: lighten($darkGray, 20%);
+	font-family: $baseFont;
+	font-style: italic;
+}
+
+
