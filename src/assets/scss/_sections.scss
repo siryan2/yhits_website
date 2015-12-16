@@ -4,7 +4,7 @@
  * @module: Section
  * @desc: Section
  * @author: Yannick Herzog
- * @last-modified: 2015-12-11
+ * @last-modified: 2015-12-16
  **/
 
 .section {
@@ -35,8 +35,9 @@
 
 		&:after {
 			content:'';
-			position: absolute;
-			bottom: -0.5em;
+			display: block;
+			position: relative;
+			bottom: -0.1em;
 			width: 50px;
 			height: 5px;
 			background: $baseColor;
