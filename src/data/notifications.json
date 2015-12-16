@@ -1,0 +1,10 @@
+[
+	{
+		"text":"Sie benutzen einen <strong>veralteten</strong> Browser. Bitte aktualisieren Sie <a href=\"http://browsehappy.com/\">Ihren Browser</a> für die optimale Darstellung der Seite und sicheres Surfen im Web.",
+		"class":"notification--oldBrowser"
+	},
+	{
+		"text":"JavaScript ist in ihrem Browser deaktiviert. <strong>Bitte aktivieren Sie JavaScript</strong> um alle Funktionen der Website nutzen zu können!",
+		"class":"notification--noJS"
+	}
+]

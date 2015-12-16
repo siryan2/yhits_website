@@ -1,0 +1,22 @@
+@import '../_variables';
+
+/**
+ * @module: Notifications
+ * @desc: Benachrichtigungen
+ * @author: Yannick Herzog
+ * @last-modified: 2015-12-16
+ **/
+
+.notification {
+	background: $baseColor;
+	color: #ffffff;
+	overflow: hidden;
+}
+
+.notification--oldBrowser {
+	background: #F22613;
+}
+
+.notification--noJS {
+	background-color: #F89406;
+}
