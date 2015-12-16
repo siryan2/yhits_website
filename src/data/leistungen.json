@@ -2,29 +2,25 @@
 	{
 		"name":"Webdesign",
 		"iconClass":"fa fa-desktop fa-3x",
-		"teaser":"Überall dieselbe alte Leier. Das Layout ist fertig, der Text lässt auf sich warten. Damit das Layout nun nicht nackt im Raume steht und sich klein und leer vorkommt, springe ich ein: der Blindtext.",
-		"text":"Überall dieselbe alte Leier. Das Layout ist fertig, der Text lässt auf sich warten. Damit das Layout nun nicht nackt im Raume steht und sich klein und leer vorkommt, springe ich ein: der Blindtext.Überall dieselbe alte Leier. Das Layout ist fertig, der Text lässt auf sich warten. Damit das Layout nun nicht nackt im Raume steht und sich klein und leer vorkommt, springe ich ein: der Blindtext.",
+		"teaser":"Vom ersten handgezeichneten Strich auf Papier bis hin zum fertigen Layout erstelle ich nutzergerechte Interfaces mit Fokus auf zielgerichteter Ausführung.",
 		"link":""
 	},
 	{
 		"name":"Webentwicklung",
 		"iconClass":"fa fa-code fa-3x",
-		"teaser":"Überall dieselbe alte Leier. Das Layout ist fertig, der Text lässt auf sich warten. Damit das Layout nun nicht nackt im Raume steht und sich klein und leer vorkommt, springe ich ein: der Blindtext.",
-		"text":"Überall dieselbe alte Leier. Das Layout ist fertig, der Text lässt auf sich warten. Damit das Layout nun nicht nackt im Raume steht und sich klein und leer vorkommt, springe ich ein: der Blindtext.Überall dieselbe alte Leier. Das Layout ist fertig, der Text lässt auf sich warten. Damit das Layout nun nicht nackt im Raume steht und sich klein und leer vorkommt, springe ich ein: der Blindtext.",
+		"teaser":"Mit modernen und zukunftssicheren Webtechnologien realisiere ich Ihr Projekt. Dabei achte ich auf die Semantik und gute Wartbarkeit durch Modularisierung.",
 		"link":""
 	},
 	{
 		"name":"(Web)-Apps",
 		"iconClass":"fa fa-mobile fa-3x",
-		"teaser":"Überall dieselbe alte Leier. Das Layout ist fertig, der Text lässt auf sich warten. Damit das Layout nun nicht nackt im Raume steht und sich klein und leer vorkommt, springe ich ein: der Blindtext.",
-		"text":"Überall dieselbe alte Leier. Das Layout ist fertig, der Text lässt auf sich warten. Damit das Layout nun nicht nackt im Raume steht und sich klein und leer vorkommt, springe ich ein: der Blindtext.Überall dieselbe alte Leier. Das Layout ist fertig, der Text lässt auf sich warten. Damit das Layout nun nicht nackt im Raume steht und sich klein und leer vorkommt, springe ich ein: der Blindtext.",
+		"teaser":"Mit Anfragen zur Entwicklung einer individuellen Webapplikation oder einer hybriden App für iOS, Android und Windows Phone bin ich schnell Feuer und Flamme.",
 		"link":""
 	},
 	{
 		"name":"Wartung & Support",
 		"iconClass":"fa fa-dashboard fa-3x",
-		"teaser":"Überall dieselbe alte Leier. Das Layout ist fertig, der Text lässt auf sich warten. Damit das Layout nun nicht nackt im Raume steht und sich klein und leer vorkommt, springe ich ein: der Blindtext.",
-		"text":"Überall dieselbe alte Leier. Das Layout ist fertig, der Text lässt auf sich warten. Damit das Layout nun nicht nackt im Raume steht und sich klein und leer vorkommt, springe ich ein: der Blindtext.Überall dieselbe alte Leier. Das Layout ist fertig, der Text lässt auf sich warten. Damit das Layout nun nicht nackt im Raume steht und sich klein und leer vorkommt, springe ich ein: der Blindtext.",
+		"teaser":"Meine Aufgabe ist nach Fertigstellung des Projektes nicht erfüllt. Ich übernehme die Pflege und aktualisiere Ihre Website mit den gewünschten Informationen.",
 		"link":""
 	}
 ]

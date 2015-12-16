@@ -4,7 +4,7 @@
  * @module: Cards
  * @desc: Cards
  * @author: Yannick Herzog
- * @last-modified: 2015-12-11
+ * @last-modified: 2015-12-16
  **/
 
 .card {
@@ -12,9 +12,21 @@
 	padding: 1em;
 }
 
+.no-csshyphens {
+	.card {
+		text-align: center;
+	}
+}
+
 @media screen and (max-width: $media-tablet-max) {
 	.card {
 		margin-bottom: $gutter-half * 2;
+	}
+}
+
+@media screen and (min-width: $media-desktop-min) {
+	.card {
+		min-height: 23em;
 	}
 }
 
@@ -38,6 +50,7 @@
 	font-size: 1em;
 	font-weight: 300;
 	line-height: 1.4em;
+	hyphens: auto;
 }
 
 .card__footer {
