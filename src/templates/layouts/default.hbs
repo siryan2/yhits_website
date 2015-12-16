@@ -4,6 +4,12 @@
 		{{> head }}
 	</head>
 	<body class="{{theme}}">
+		<!--[if lte IE 9]>
+		{{> notification notifications.[0]}}
+		<![endif]-->
+		<noscript>
+		{{> notification notifications.[1]}}
+		</noscript>
 		{{!-- Header --}}
 		{{> header }}
 		{{!-- Site Content --}}
