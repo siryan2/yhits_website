@@ -124,6 +124,9 @@ $btn-radius: 40px;
 			display: block;
 			margin-top: 0.85em;
 			margin-left: 0;
+			&:not(:last-child) {
+				margin-bottom: 0.7em;
+			}
 			&:first-child {
 				margin-top: 0;
 			}

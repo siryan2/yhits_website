@@ -68,10 +68,26 @@
 @media screen and (max-width: $media-tablet-max) {
 	.nav__main {
 		ul {
+			padding-top: 0em;
+			padding-bottom: 0em;
 			text-align: center;
 		}
 		li {
+			margin-top: 0;
 			margin-left: 1.5em;
+		}
+		a {
+			padding-top: 0.9em;
+		}
+	}
+}
+
+@media screen and (max-width: $media-mobile-max) {
+	.nav__main {
+		li {
+			&:not(:first-child) {
+				margin-left: 0.8em;
+			}
 		}
 	}
 }

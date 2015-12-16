@@ -6,13 +6,20 @@
  * @module: Header
  * @desc: allgemeiner Header
  * @author: Yannick Herzog
- * @last-modified: 2015-12-10
+ * @last-modified: 2015-12-16
  **/
 
 .page__header {
 	border-top: 8px solid $baseColor;
 	padding-top: 2em;
 	padding-bottom: 2em;
+}
+
+@media screen and (max-width: $media-mobile-max) {
+	.page__header {
+		padding-top: 1.6em;
+		padding-bottom: 1.6em;
+	}
 }
 
 .logo-container {
@@ -27,6 +34,14 @@
 
 @media screen and (max-width: $media-tablet-max) {
 	.logo-container {
+		line-height: 0;
 		text-align: center;
+		a {
+			line-height: 0;
+		}
+
+		.logo {
+			width: 80px;
+		}
 	}	
 }
