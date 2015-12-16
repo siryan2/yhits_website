@@ -1,4 +1,5 @@
 @import '../_variables';
+@import '_loading';
 
 /**
  * @module: Project Cards
@@ -32,11 +33,8 @@
 	top: 0;
 	width: 100%;
 	height: 100%;
-
 	transition: transform .3s ease-in-out;
 	transform: translateY(100%);
-	// transform: translateY(0%);
-	
 }
 
 .project__card-caption-item-wrapper {

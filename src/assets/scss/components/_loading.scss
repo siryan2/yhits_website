@@ -1,0 +1,38 @@
+@import '../_variables';
+
+/**
+ * @module: Loading Indicator
+ * @desc: Ladeanimationen
+ * @author: Yannick Herzog
+ * @last-modified: 2015-12-16
+ **/
+
+@keyframes rotate {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.loading__indicator {
+	position: relative;
+	height: 100%;
+	width: 100%;
+
+	&:before {
+		content:$fa-var-refresh;
+		color: $baseColor;
+		font-size: 2em;
+		font-family: 'FontAwesome';
+		position: absolute;
+		display: block;
+		top: 50%;
+		left: 50%;
+		margin-left: -0.5em;
+		margin-top: -0.5em;
+		animation: rotate 1s infinite linear;
+		z-index: -1;
+	}
+}
