@@ -66,7 +66,7 @@ module.exports = function (grunt) {
 				layoutdir: 	'src/templates/layouts',
 				partials: 	['src/templates/partials/**/*.hbs'],
 				helpers: ['node_modules/handlebars-helpers/lib/helpers/*.js'],
-				production: false,
+				production: true,
 				pkg: '<%= pkg %>'
 			},
 			home: {
@@ -250,41 +250,31 @@ module.exports = function (grunt) {
 					}
 				]
 			},
-			htaccess: {
-				files: [
-					{
-						expand: true,
-						flatten: false,
-						dot: true,
-						cwd: 'node_modules/html5-boilerplate/dist',
-						src: ['.htaccess', 'robots.txt'],
-						dest: '<%=config.dist%>/'
-					},
+			// htaccess: {
+			// 	files: [
 			// 		{
 			// 			expand: true,
 			// 			flatten: false,
 			// 			dot: true,
 			// 			cwd: 'node_modules/html5-boilerplate/dist',
-			// 			src:'.htaccess',
-			// 			dest: '<%=config.dist%>/blog'
-			// 		},
-			// 		{
-			// 			expand: true,
-			// 			flatten: false,
-			// 			dot: true,
-			// 			cwd: 'node_modules/html5-boilerplate/dist',
-			// 			src:'.htaccess',
-			// 			dest: '<%=config.dist%>/projekte'
-			// 		},
-			// 		{
-			// 			expand: true,
-			// 			flatten: false,
-			// 			dot: true,
-			// 			cwd: 'node_modules/html5-boilerplate/dist',
-			// 			src:'.htaccess',
-			// 			dest: '<%=config.dist%>/ueber'
+			// 			src: ['.htaccess', 'robots.txt'],
+			// 			dest: '<%=config.dist%>/'
 			// 		}
-				]
+			// 	]
+			// }
+		},
+
+		/*
+		 * CSSmin
+		 */
+		cssmin: {
+			options: {
+
+			},
+			dist: {
+				files: {
+					'<%=config.dist_assets%>/css/main.min.css': ['<%=config.dist_assets%>/css/normalize.css', '<%=config.dist_assets%>/css/main.css']
+				}
 			}
 		}
 
@@ -298,6 +288,7 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-contrib-csslint');
 	grunt.loadNpmTasks('grunt-contrib-jshint');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
+	grunt.loadNpmTasks('grunt-contrib-cssmin');
 	grunt.loadNpmTasks('grunt-sass');
 	grunt.loadNpmTasks('grunt-scss-lint');
 	grunt.loadNpmTasks('grunt-assemble');
@@ -315,6 +306,7 @@ module.exports = function (grunt) {
 		'clean:dist',
 		'sass',
 		'autoprefixer',
+		'cssmin',
 		'copy',
 		'assemble'
 	]);
