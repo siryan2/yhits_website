@@ -1,0 +1,39 @@
+---
+layout: default.hbs
+title: 404
+subtitle: Sorry, diese Seite gibt es nicht
+name: 404
+---
+<section class="section">
+	<div class="grid-container">
+		<div class="grid-100">
+			{{> page__headline}}
+		</div>
+	</div>
+</section>
+{{!-- Projekte --}}
+<section class="section section--dark">
+	<div class="grid-container">
+		<div class="grid-100">
+		{{#parseJSON '{"headline":"Aber hier sind noch ein paar Arbeiten von mir zum anschauen"}' }}
+			{{> section__headline }}
+		{{/parseJSON}}
+		</div>
+		
+		<div class="grid-33">
+			{{> project__card projects.[7]}}
+		</div>
+		<div class="grid-33">
+			{{> project__card projects.[6]}}
+		</div>
+		<div class="grid-33">
+			{{> project__card projects.[5]}}
+		</div>
+		<div class="grid-100">
+			<div class="button-bar button-bar--center">
+				<a href="/projekte" class="btn btn__ghost--dark">mehr Projekte anzeigen</a>
+			</div>
+		</div>
+	</div>
+</section>
+
