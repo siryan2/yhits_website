@@ -34,6 +34,7 @@
     "unsemantic": "^1.0.1"
   },
   "dependencies": {
+    "html5-boilerplate": "git+https://github.com/h5bp/html5-boilerplate.git",
     "node.normalize.scss": "^3.0.3"
   }
 }

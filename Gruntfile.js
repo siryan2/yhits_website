@@ -11,7 +11,9 @@ module.exports = function (grunt) {
 			dist: 'dist'
 		},
 
-		// Watch
+		/*
+		 * Watch
+		 */
 		watch: {
 			options: {
 				livereload: true
@@ -34,7 +36,9 @@ module.exports = function (grunt) {
 			}
 		},
 
-		// Connect
+		/*
+		 * Connect
+		 */
 		connect: {
 			options: {
 				port: 8000,
@@ -49,7 +53,9 @@ module.exports = function (grunt) {
 			}
 		},
 
-		// Assemble.io
+		/*
+		 * Assemble.io
+		 */
 		assemble: {
 			options: {
 				flatten: true,
@@ -133,7 +139,9 @@ module.exports = function (grunt) {
 			}
 		},
 
-		// Sass
+		/*
+		 * Sass
+		 */
 		sass: {
 			dist: {
 				options: {
@@ -155,7 +163,9 @@ module.exports = function (grunt) {
 			}
 		},
 
-		// autoprefixer
+		/*
+		 * autoprefixer
+		 */
 		autoprefixer: {
 			options: {
 
@@ -165,14 +175,18 @@ module.exports = function (grunt) {
 			}
 		},
 
-		// Clean
+		/*
+		 * Clean
+		 */
 		clean: {
 			dist: {
 				src: ['<%=config.dist%>']
 			}
 		},
 
-		// Copy
+		/*
+		 * Copy
+		 */
 		copy: {
 			images: {
 				files: [
@@ -234,6 +248,42 @@ module.exports = function (grunt) {
 						src: '**/*',
 						dest: '<%=config.dist_assets%>/plugins/owl-carousel/'
 					}
+				]
+			},
+			htaccess: {
+				files: [
+					{
+						expand: true,
+						flatten: false,
+						dot: true,
+						cwd: 'node_modules/html5-boilerplate/dist',
+						src: ['.htaccess', 'robots.txt'],
+						dest: '<%=config.dist%>/'
+					},
+			// 		{
+			// 			expand: true,
+			// 			flatten: false,
+			// 			dot: true,
+			// 			cwd: 'node_modules/html5-boilerplate/dist',
+			// 			src:'.htaccess',
+			// 			dest: '<%=config.dist%>/blog'
+			// 		},
+			// 		{
+			// 			expand: true,
+			// 			flatten: false,
+			// 			dot: true,
+			// 			cwd: 'node_modules/html5-boilerplate/dist',
+			// 			src:'.htaccess',
+			// 			dest: '<%=config.dist%>/projekte'
+			// 		},
+			// 		{
+			// 			expand: true,
+			// 			flatten: false,
+			// 			dot: true,
+			// 			cwd: 'node_modules/html5-boilerplate/dist',
+			// 			src:'.htaccess',
+			// 			dest: '<%=config.dist%>/ueber'
+			// 		}
 				]
 			}
 		}
