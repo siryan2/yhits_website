@@ -24,5 +24,8 @@
 		{{#isnt theme ""}}
 		{{> scripts }}
 		{{/isnt}}
+		{{#if production}}
+		{{> piwik }}
+		{{/if}}
 	</body>
 </html>
