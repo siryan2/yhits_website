@@ -10,46 +10,36 @@
 $int: 18%;
 
 .section__process-timeline {
-	padding-bottom: 9em !important;
+	// padding-bottom: 9em !important;
 }
 
 .process {
 	&:nth-child(1n) {
 		background: lighten($baseColor, $int * 3.4);
-		.process__text {
-			color: $darkGray;
-		}
 	}
 	&:nth-child(2n) {
 		background: lighten($baseColor, $int * 2.6);
-		.process__text {
-			color: $darkGray;
-		}
 	}
 	&:nth-child(3n) {
 		background: lighten($baseColor, $int * 1.9);
-		.process__text {
-			color: lighten($darkGray, 80%);
-		}
 	}
 	&:nth-child(4n) {
 		background: lighten($baseColor, $int * 1.2);
-		.process__text {
-			color: lighten($darkGray, 90%);
-		}
 	}
 	&:nth-child(5n) {
 		background: lighten($baseColor, $int);
-
-		.process__text {
-			color: lighten($darkGray, 100%);
-		}
 	}
 }
 
 @media screen and (max-width: $media-tablet-max) {
 	.process {
 		padding-bottom: $gutter-half * 3;
+	}
+}
+
+@media screen and (min-width: $media-desktop-min) {
+	.process {
+		min-height: 37em;
 	}
 }
 
@@ -138,7 +128,8 @@ $int: 18%;
 
 // Text
 .process__text {
-	color: $darkGray;
+	color: darken($baseColor, 5%);
+	text-shadow: 0 0 12px rgba(255,255,255,0.8);
 	font-family: $baseFont;
 	font-size: 1em;
 	line-height: 1.4em;

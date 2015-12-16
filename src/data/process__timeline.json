@@ -2,26 +2,26 @@
 	{
 		"name": "Persönliches Gespräch",
 		"iconClass": "fa fa-comments fa-lg",
-		"text": "Überall dieselbe alte Leier. Das Layout ist fertig, der Text lässt auf sich warten. Damit das Layout nun nicht nackt im Raume steht und sich klein und leer vorkommt, springe ich ein: der Blindtext."
+		"text": "Beim ersten Treffen sprechen wir gemeinsam über Ihre Ideen und gehen diese an Ihrer Anforderungsliste durch. Nennen Sie mir andere Webseiten, welche Ihnen persönlich gefallen und ich erläutere Ihnen die Funktionen und transportiere diese auf Ihr neues Projekt. Auf dieser Basis erstelle ich ein passendes Angebot."
 	},
 	{
 		"name": "Konzeption",
 		"iconClass": "fa fa-gears fa-lg",
-		"text": "Überall dieselbe alte Leier. Das Layout ist fertig, der Text lässt auf sich warten. Damit das Layout nun nicht nackt im Raume steht und sich klein und leer vorkommt, springe ich ein: der Blindtext."
+		"text": "Nach Ihrer Auftragserteilung konzipiere ich die Struktur und kreiere das Design anhand eines Scribbles. Anschließend erstelle ich ein Mockup, welches skizzenhaft die Anordnung der einzelnen Webseiten-Elemente zeigt. Dieses besprechen wir gemeinsam und erweitern es gegebenenfalls weiter, bis es passt."
 	},
 	{
 		"name": "Design",
 		"iconClass": "fa fa-heart fa-lg",
-		"text": "Überall dieselbe alte Leier. Das Layout ist fertig, der Text lässt auf sich warten. Damit das Layout nun nicht nackt im Raume steht und sich klein und leer vorkommt, springe ich ein: der Blindtext."
+		"text": "Im Anschluss erstelle ich einen grafischen Entwurf. Sie erhalten einen Vorschlag, wie Ihre Webseite aussehen könnte. Diesen besprechen wir gemeinsam und erweitern Ihn gegebenenfalls weiter, bis er Ihnen gefällt."
 	},
 	{
 		"name": "Programmierung",
 		"iconClass": "fa fa-code fa-lg",
-		"text": "Überall dieselbe alte Leier. Das Layout ist fertig, der Text lässt auf sich warten. Damit das Layout nun nicht nackt im Raume steht und sich klein und leer vorkommt, springe ich ein: der Blindtext."
+		"text": "Sie erhalten ein Content-Management System (CMS), um Inhalte wie Bilder und Texte selbst pflegen zu können. Aktuelle Standards in HTML5, CSS3 und JavaScript sind dabei die Werkzeuge zur Entwicklung eines schönen und modernen Templates für das CMS."
 	},
 	{
 		"name": "Launch",
 		"iconClass": "fa fa-diamond fa-lg",
-		"text": "Überall dieselbe alte Leier. Das Layout ist fertig, der Text lässt auf sich warten. Damit das Layout nun nicht nackt im Raume steht und sich klein und leer vorkommt, springe ich ein: der Blindtext."
+		"text": "Jetzt kommt der aufregende Moment. Nach ausgiebigen Testläufen und der Einbindung eines Analysesystems zur Auswertung der Zugriffe auf der Webseite, wird diese veröffentlicht und bei Suchmaschinen eingetragen."
 	}
 ]
