@@ -4,10 +4,14 @@
  * @module: Process Timeline
  * @desc: Von heute bis zum Ziel
  * @author: Yannick Herzog
- * @last-modified: 2015-12-13
+ * @last-modified: 2015-12-16
  **/
 
 $int: 18%;
+
+.section__process-timeline {
+	padding-bottom: 9em !important;
+}
 
 .process {
 	&:nth-child(1n) {
