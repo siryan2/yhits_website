@@ -254,18 +254,18 @@ module.exports = function (grunt) {
 					}
 				]
 			},
-			// htaccess: {
-			// 	files: [
-			// 		{
-			// 			expand: true,
-			// 			flatten: false,
-			// 			dot: true,
-			// 			cwd: 'node_modules/html5-boilerplate/dist',
-			// 			src: ['.htaccess', 'robots.txt'],
-			// 			dest: '<%=config.dist%>/'
-			// 		}
-			// 	]
-			// }
+			htaccess: {
+				files: [
+					{
+						expand: true,
+						flatten: false,
+						dot: true,
+						cwd: '<%=config.src%>',
+						src: ['.htaccess', 'robots.txt'],
+						dest: '<%=config.dist%>/'
+					}
+				]
+			}
 		},
 
 		/*
