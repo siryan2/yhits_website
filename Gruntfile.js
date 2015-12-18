@@ -115,7 +115,6 @@ module.exports = function (grunt) {
 					theme: 'projekte',
 					slider: true
 				},
-				plugins: [],
 				files: [
 					{
 						expand: true,
@@ -130,7 +129,6 @@ module.exports = function (grunt) {
 				options: {
 					theme: 'ueber'
 				},
-				plugins: [],
 				files: [
 					{
 						expand: true,
