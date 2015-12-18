@@ -11,11 +11,39 @@ name: 404
 		</div>
 	</div>
 </section>
-{{!-- Projekte --}}
 <section class="section section--dark">
 	<div class="grid-container">
 		<div class="grid-100">
-		{{#parseJSON '{"headline":"Aber hier sind noch ein paar Arbeiten von mir zum anschauen"}' }}
+		{{#parseJSON '{"headline":"Aber hier sind noch ein paar interessante Artikel"}' }}
+			{{> section__headline }}
+		{{/parseJSON}}
+		<div class="grid-33">
+			{{#blog.pages.[5]}}
+				{{> blog__teaser }}
+			{{/blog.pages.[5]}}
+		</div>
+		<div class="grid-33">
+			{{#blog.pages.[4]}}
+				{{> blog__teaser }}
+			{{/blog.pages.[4]}}
+		</div>
+		<div class="grid-33">
+			{{#blog.pages.[7]}}
+				{{> blog__teaser }}
+			{{/blog.pages.[7]}}
+		</div>
+		<div class="grid-100">
+			<div class="button-bar button-bar--center">
+				<a href="/blog" class="btn btn__ghost--dark">alle Artikel anzeigen</a>
+			</div>
+		</div>
+	</div>
+</section>
+{{!-- Projekte --}}
+<section class="section section--light">
+	<div class="grid-container">
+		<div class="grid-100">
+		{{#parseJSON '{"headline":"... und hier noch ein paar Arbeiten von mir"}' }}
 			{{> section__headline }}
 		{{/parseJSON}}
 		</div>
