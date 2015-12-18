@@ -66,14 +66,18 @@ module.exports = function (grunt) {
 				layoutdir: 	'src/templates/layouts',
 				partials: 	['src/templates/partials/**/*.hbs'],
 				helpers: ['node_modules/handlebars-helpers/lib/helpers/*.js'],
-				production: true,
+				production: false,
+				plugins: ['assemble-collection-context'],
+				context: {
+					dest: '<%=config.src%>/.tmp/'
+				},
 				pkg: '<%= pkg %>'
 			},
 			home: {
 				options: {
-					theme: ''
+					theme: '',
+					data: '<%=config.src%>/.tmp/*.json'
 				},
-				plugins: [],
 				files: [
 					{
 						expand: true,
