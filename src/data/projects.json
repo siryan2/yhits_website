@@ -8,7 +8,7 @@
 		"description":"<p>Schon etwas länger her, aber dennoch ein interessantes Projekt ist die Website der Fahrschule Hohenbaden, die ich entwickelte als das Grid-System von Bootstrap noch mit Pixeln um sich warf und responsive Design als neuer Trend ausgemacht wurde.</p><p>Zusätzlich zu den bekannten Features habe ich eine Mitgliederverwaltung gebaut, welche jedem einzelnen Schüler seine noch offenen Theoriethemen und praktischen Übungen anzeigt.</p>",
 		"projectTags":["Contao CMS", "HTML/CSS (LESS)", "JavaScript (jQuery)", "PHP", "Konzeption, Design"],
 		"images":["/assets/img/projekte/fahrschulehohenbaden/fahrschule-hohenbaden.jpg", "/assets/img/projekte/fahrschulehohenbaden/fahrschule-hohenbaden_artikel.jpg", "/assets/img/projekte/fahrschulehohenbaden/fahrschule-hohenbaden_kontakt.jpg"],
-		"order":8
+		"order":9
 	},
 	{
 		"name":"createyoursign",
@@ -19,7 +19,7 @@
 		"description":"<p>Für die Fotografin und Print-Designerin Carolin Sexauer setzte ich Ihr geliefertes Webesign um, welches Ihre vielfältigsten Werke präsentiert.</p><p>Mit ihrer \"Blackbox\" kam im Frühjahr 2015 ein weitere Dienst hinzu, welcher bei groß und klein für viel Spaß sorgt. Die Blackbox kann zu Hochzeiten, Firmenevents, Weihnachtsfeiern oder sonstigen Anlässen gebucht werden, und fotografiert die Besucher in den schönsten Posen.</p>",
 		"projectTags":["Contao CMS", "HTML/CSS (Sass)", "JavaScript (jQuery)"],
 		"images":["/assets/img/projekte/cdesign/createyoursign.jpg", "/assets/img/projekte/cdesign/createyoursign_galerie.jpg", "/assets/img/projekte/cdesign/createyoursign_start_mobile.jpg", "/assets/img/projekte/cdesign/createyoursign_galerie_mobile.jpg"],
-		"order":7
+		"order":8
 	},
 	{
 		"name":"campusapp-landingpage",
@@ -30,7 +30,7 @@
 		"description":"<p>Zum Start der Campus-App realisierte ich eine Landingpage, welche den Interessierten zusätzliche Informationen liefert und ihnen die App näher bringen soll.</p>",
 		"projectTags":["HTML/CSS (Sass)", "JavaScript (jQuery)", "Konzeption, Design"],
 		"images":["/assets/img/projekte/hochschuleoffenburg/campusapp-landingpage.jpg", "/assets/img/projekte/hochschuleoffenburg/campusapp-landingpage_features.jpg", "/assets/img/projekte/hochschuleoffenburg/campusapp-landingpage_try.jpg","/assets/img/projekte/hochschuleoffenburg/campusapp_landingpage_mobile.jpg"],
-		"order":6
+		"order":7
 	},
 	{
 		"name":"campusapp",
@@ -41,7 +41,7 @@
 		"description":"<p>Für die Hochschule Offenburg realisierte ich eine hypride Single-Page-Application, welche sämtliche Daten von einer RESTful API als JSON erhält und client-seitig rendert.</p><p>Die App ist modular aufgebaut und bietet Interessierten dadurch die Möglichkeit einzelne Module zu bauen ohne die gesamte Infrastruktur kennen zu müssen. Die App wird über das Framework Phonegap plattformübergreifend als Web-App und als Android-App im Play Store angeboten.</p>",
 		"projectTags":["Backbone.js, Underscore", "RequireJS", "Handlebars", "HTML/CSS (Sass)", "JavaScript (jQuery)", "Phonegap"],
 		"images":["/assets/img/projekte/hochschuleoffenburg/campusapp_start.jpg", "/assets/img/projekte/hochschuleoffenburg/campusapp_mensa.jpg", "/assets/img/projekte/hochschuleoffenburg/campusapp_news.jpg", "/assets/img/projekte/hochschuleoffenburg/campusapp_radio.jpg", "/assets/img/projekte/hochschuleoffenburg/campusapp_login.jpg"],
-		"order":5
+		"order":6
 	},
 	{
 		"name":"sv-kork",
@@ -52,6 +52,17 @@
 		"description":"<p>Die Website des Sportverein Kork war - wie viele Vereinswebsites auch - in die Jahre gekommen. Ich nahm mich dem Non-Profit-Projekt an und konzipierte die Website mobile First, um dem zunehmenden Trend der Internetnutzung auf mobilen Endgeräte gerecht zu werden.</p><p>Mit App-Icon, Off-Canvas-Menü, Touch-Slidern und vielen weiteren Details ähnelt die Website einer App.</p>",
 		"projectTags":["Contao CMS", "HTML/CSS (Sass)", "JavaScript (jQuery)", "PHP", "mobile First", "Konzeption, Design"],
 		"images":["/assets/img/projekte/svkork/sv-kork.jpg", "/assets/img/projekte/svkork/sv-kork_artikel.jpg", "/assets/img/projekte/svkork/svkork_start_mobile.jpg", "/assets/img/projekte/svkork/svkork_offcanvas.jpg", "/assets/img/projekte/svkork/svkork_artikel_mobile.jpg"],
+		"order":5
+	},
+	{
+		"name":"ernst-bm",
+		"projectTitle":"Besuchermanagement-System",
+		"detailUrl":"/projekte/ernst-bm.html",
+		"url":"",
+		"image":"/assets/img/projekte/ernst/ernst_bm_fe_start.jpg",
+		"description":"<p>Für die Firma Ernst Umformtechnik GmbH erstellte ich eine Webapplikation zur Verwaltung externer Besucher und zur Anzeige aktueller Termine auf einem großen Display im Empfangsbereich. Neben den Terminen lassen sich Firmen, Besucher und Räume anlegen und bearbeiten. Für jeden Besucher kann ein Besucherausweis gedruckt werden. Die Reporting-Funktion ermöglicht das Zusammenstellen frei definierbarer Besucher-Reporte zur weiteren Verarbeitung. <br>Die Aktualisierung der Termine auf dem Display erfolgt nahezu in Echtzeit</p><p>Die Anwendung ist multilingual aufgebaut und in den Sprachen deutsch, englisch und französisch an den jeweiligen Unternehmensstandorten verfügbar.</p>",
+		"projectTags":["PHP", "HTML/CSS", "JavaScript (jQuery), Backbone, Marionette", "Handlebars", "Bootstrap", "Mehrsprachig"],
+		"images":["/assets/img/projekte/ernst/ernst_bm_fe_start.jpg", "/assets/img/projekte/ernst/ernst_bm_be_start.jpg", "/assets/img/projekte/ernst/ernst_bm_be_termin_anlegen.jpg", "/assets/img/projekte/ernst/ernst_bm_be_termine_anzeigen.jpg", "/assets/img/projekte/ernst/ernst_bm_be_termin_aendern.jpg", "/assets/img/projekte/ernst/ernst_bm_be_report.jpg", "/assets/img/projekte/ernst/ernst_bm_be_besucherausweis.jpg"],
 		"order":4
 	},
 	{

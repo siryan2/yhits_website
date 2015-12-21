@@ -1,0 +1,12 @@
+---
+layout: default.hbs
+title: Ernst Umformtechnik GmbH - Besuchermanagement-System
+name: projekte
+---
+
+<section class="section">
+	<div class="grid-container">
+		{{> project__desc projects.[5] }}
+	</div>
+</section>
+{{> pagination__article prev=projects.[6] next=projects.[4] isProject=true}}
