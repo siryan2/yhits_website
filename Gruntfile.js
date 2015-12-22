@@ -261,6 +261,14 @@ module.exports = function (grunt) {
 						cwd: '<%=config.src%>',
 						src: ['.htaccess', 'robots.txt'],
 						dest: '<%=config.dist%>/'
+					},
+					{
+						expand: true,
+						flatten: false,
+						dot: true,
+						cwd: '<%=config.src%>/templates/pages/aktuelles',
+						src: ['.htaccess'],
+						dest: '<%=config.dist%>/aktuelles/'
 					}
 				]
 			}

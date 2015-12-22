@@ -1,0 +1,8 @@
+RewriteEngine On
+Redirect 301 /aktuelles/authentifizierung-gegenueber-phprojekt-per-ldap.html /blog/authentifizierung-gegenueber-phprojekt-per-ldap.html
+Redirect 301 /aktuelles/contao-colorbox-mit-inline-html.html /blog/contao-colorbox-mit-inline-html.html
+Redirect 301 /aktuelles/long-polling-mit-php-und-jquery.html /blog/long-polling-mit-php-und-jquery.html
+Redirect 301 /aktuelles/performance-der-backbonejs-modelset-methode.html /blog/performance-der-backbonejs-modelset-methode.html
+Redirect 301 /aktuelles/verlorenes-owncloud-admin-passwort-zuruecksetzen.html /blog/owncloud-admin-password-reset.html
+Redirect 301 /aktuelles/webdesign-ohne-photoshop-rapid-prototyping-als-alternative.html /blog/webdesign-ohne-photoshop-rapid-prototyping-als-alternative.html
+Redirect 301 /aktuelles/alternative-praesentationstool-zum-altbekannten-powerpoint-irrsinn.html /blog/alternative-praesentationstool-fuer-powerpoint.html
