@@ -21,14 +21,14 @@ name: blog
 		<p>Aktuell arbeite ich intensiv mit dem MV*-Framework <a title="Backbone.js" href="http://backbonejs.org/">Backbone.js</a>. Auf der Startseite meiner Web-Applikation habe ich verschiedene Module, welche die Unterseiten repräsentieren, als Kacheln angelegt. Diese sind alle in einer Module-Collection gespeichert. Die Anordnung der Kacheln ist noch fest vorgegeben.</p>
 		<p>Um die Benutzerfreundlichkeit zu erhöhen, sollen die Kacheln individuell per Drag&Drop anpassbar sein. Denn nicht jeder Nutzer ist mit der Anordnung zufrieden. In der Applikation sind die Termine beispielsweise ganz unten zu finden. Der Nutzer muss also scrollen, um dieses Modul zu erreichen.</p>
 		<p>Drag&Drop habe ich bereits implementiert. Bei dem "drop"-Event möchte ich die aktuelle Position des Moduls per model.set("posNr", newPos) überschrieben, jedoch erhalte ich bei ungefähr jedem zweiten "drop"-Event den Fehler: "TypeError: (intermediate value).callback.call is not a function". Dabei mache ich nichts ungewöhnliches.</p>
-		<pre><code>
-			this.$shapeshift.on('ss-rearranged', function (event, selected) {
-	    var $el = $(selected);
-	    var newPos = $el.index();
-	    var cid = $el.attr('data-cid');
-	    var module = modules.get(cid);
-	    module.set({posNr: newPos});
-	});
+		<pre><code class="language-js">
+this.$shapeshift.on('ss-rearranged', function (event, selected) {
+    var $el = $(selected);
+    var newPos = $el.index();
+    var cid = $el.attr('data-cid');
+    var module = modules.get(cid);
+    module.set({posNr: newPos});
+});
 		</code></pre>
 		<p>Zuerst ermittle ich die neue Position meines Elementes, sowie die cid, welche als data-Attribute dem Element angehängt ist. Danach hole ich mir das Model aus der Collection mit Hilfe der cid und überschreibe die "posNr" mit der aktuellen Position ("newPos").</p>
 		<p>Meine anfänglichen Überlegungen, es könnte an der Performance liegen, haben sich nach einer kurzen Internet-Recherche (herumgoogeln) bestätigt.</p>

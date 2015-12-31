@@ -22,20 +22,20 @@ name: blog
 		<p>Vor dem aktivieren der Colorbox muss die Klasse, welche das Element unsichtbar erscheinen lässt, entfernt werden. Und wenn die Box geschlossen wird muss die Klasse, um das Element unsichtbar zu machen, gesetzt werden.</p>
 		<p>Hierzu gibt es die Callbacks <em>onOpen</em> und <em>onCleanup</em> sowie weitere Funktionen, welche auf der <a title="Projektseite zu Colorbox" href="http://www.jacklmoore.com/colorbox/">Projektseite von Jack Moore</a> eingesehen werden konnen.</p>
 		<p>Ich habe Colorbox für Inline-HTML wie folgt eingebunden:</p>
-		<pre><code>
-			$('a[data-lightbox]').map(function() {
-    $(this).colorbox({
-        inline:true,
-        href:$(this).attr('href'),
-        onOpen: function() {
-            var id = $(this).attr('href');
-            $(id).toggleClass('hidden');
-        },
-        onCleanup: function () {
-            var id = $(this).attr('href');
-            $(id).toggleClass('hidden');
-        }
-    });
+		<pre><code class="language-js">
+$('a[data-lightbox]').map(function() {
+	$(this).colorbox({
+    	inline:true,
+    	href:$(this).attr('href'),
+    	onOpen: function() {
+        	var id = $(this).attr('href');
+        	$(id).toggleClass('hidden');
+    	},
+    	onCleanup: function () {
+        	var id = $(this).attr('href');
+        	$(id).toggleClass('hidden');
+    	}
+	});
 });
 		</code></pre>
 

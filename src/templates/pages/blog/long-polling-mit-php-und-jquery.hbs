@@ -36,8 +36,8 @@ name: blog
 		<p>Letztendlich traf ich die Entscheidung Long Polling einzusetzen. Nach einigen Überlegungen stand fest, was zu tun war: in der Datenbank muss geprüft werden, ob sich seit dem letzten Request Daten geändert haben. Falls ja, sollen diese abgeholt werden. Andernfalls soll die Abfrage in der Warteschleife bleiben, so lange bis es neue Daten gibt.</p>
 		<p>Für diese Aufgabe musste ich einiges zuerst vorbereiten. Denn es betraf sowohl PHP, MySQL und JavaScript.</p>
 		<h4>JavaScript</h4>
-		<pre><code>
-			refresh = function () {
+		<pre><code class="language-js">
+refresh = function () {
     var localtimestamp = parseInt($('#timestamp').attr('data-timestamp'));
      
     if (!localtimestamp) {
@@ -69,7 +69,7 @@ name: blog
 		<p>Anschließend wird per AJAX eine PHP-Datei per GET abgefragt und die Timestamp als Parameter übergeben. Wichtig ist hierbei, dass async auf true und cache auf false gesetzt wird. <br>Im Erfolgsfall wird der Inhalt von data in die ID #content geschrieben und der Zeitstempel von #timestamp ausgelesen und abgespeichert und die Funktion wieder ausgeführt.</p>
 		<p>Sollte es einen Fehler oder Timeout geben, so startet die Funktion einfach erneut und gibt in der Konsole  eine Fehlermeldung aus.</p>
 		<h4>PHP</h4>
-		<pre><code>
+		<pre><code class="language-php">
 if(isset($_GET['timestamp'])) {
     $lastTime = $_GET['timestamp'];
 }

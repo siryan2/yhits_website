@@ -162,6 +162,11 @@ module.exports = function (grunt) {
 				files: {
 					'<%=config.dist_assets%>/css/owl.theme.yh.css':'<%=config.assets%>/scss/owl.theme.yh.scss'
 				}
+			},
+			prism: {
+				files: {
+					'<%=config.dist_assets%>/css/prism.css':'<%=config.assets%>/scss/prism.scss'
+				}
 			}
 		},
 
@@ -283,7 +288,9 @@ module.exports = function (grunt) {
 			},
 			dist: {
 				files: {
-					'<%=config.dist_assets%>/css/main.min.css': ['<%=config.dist_assets%>/css/normalize.css', '<%=config.dist_assets%>/css/main.css']
+					'<%=config.dist_assets%>/css/main.min.css': ['<%=config.dist_assets%>/css/normalize.css', '<%=config.dist_assets%>/css/main.css'],
+					'<%=config.dist_assets%>/css/prism.min.css': ['<%=config.dist_assets%>/css/prism.css'],
+					'<%=config.dist_assets%>/css/owl.theme.yh.min.css': ['<%=config.dist_assets%>/css/owl.theme.yh.css']
 				}
 			}
 		}

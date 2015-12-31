@@ -23,7 +23,7 @@ name: blog
 		<h3>LDAP für PHProjekt einrichten</h3>
 		<p>Da PHProjekt zur Authentiefizierung das ZEND Framework einsetzt, kann man sich eine <a href="http://framework.zend.com/manual/1.12/en/zend.ldap.api.html">genaue Beschreibung</a> sowie weitere Einstellmöglichkeiten auf der ZEND-Webseite ansehen.</p>
 		<p>Zuerst muss die Datei "configuration.php" im Wurzelverzeichnis geöffnet und bearbeitet werden. Bei mir haben diese Parameter zum Erfolg geführt wobei die Werte der Umgebung angepasst werden müssen:</p>
-		<pre><code>
+		<pre><code class="language-markup">
 authentication.ldap.server1.host = "HOST-IP"
 authentication.ldap.server1.accountDomainName = "FQHN"
 authentication.ldap.server1.baseDn = "ou=people,dc=host,dc=domain,dc=tld"
@@ -40,7 +40,7 @@ authentication.ldap.server1.password = password
 		<p>Mit dem Freeware-Tool "LdapSearch" von SecurityXploded kann man den LDAP-Dienst abfragen. Hiermit stellte ich auch fest, dass kein "givenname" zurück kam.</p>
 		<p>Mir ist aber der Firstname gar nicht so wichtig und so beschloss ich, dieses Feld nicht mehr als Pflichtfeld zu definieren. Dies passiert in der Datei "Information.php" unter \library\Phprojekt\User\Information.php.</p>
 		<p>Diese Änderung muss wie folgt aussehen:
-			<pre><code>
+			<pre><code class="language-php">
 // firstname
 $this->fillField('firstname', 'First name', 'text', 2, 4, array('required' => false,'length'   => 255));
 			</code></pre>
