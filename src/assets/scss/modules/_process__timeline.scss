@@ -25,9 +25,15 @@ $int: 18%;
 	}
 	&:nth-child(4n) {
 		background: lighten($baseColor, $int * 1.2);
+		.process__text {
+			color: #f7f7f7;
+		}
 	}
 	&:nth-child(5n) {
 		background: lighten($baseColor, $int);
+		.process__text {
+			color: #f7f7f7;
+		}
 	}
 }
 
