@@ -5,7 +5,7 @@
 		"detailUrl":"/projekte/fahrschule-hohenbaden.html",
 		"url":"http://www.fahrschule-hohenbaden.de/",
 		"image":"/assets/img/projekte/fahrschulehohenbaden/fahrschule-hohenbaden.jpg",
-		"description":"<p>Schon etwas länger her, aber dennoch ein interessantes Projekt ist die Website der Fahrschule Hohenbaden, die ich entwickelte als das Grid-System von Bootstrap noch mit Pixeln um sich warf und responsive Design als neuer Trend ausgemacht wurde.</p><p>Zusätzlich zu den bekannten Features habe ich eine Mitgliederverwaltung gebaut, welche jedem einzelnen Schüler seine noch offenen Theoriethemen und praktischen Übungen anzeigt.</p>",
+		"description":"<p>Schon etwas länger her, aber dennoch ein interessantes Projekt ist die Website der Fahrschule Hohenbaden, die ich entwickelte als das Grid-System von Bootstrap noch mit Pixeln um sich warf und das Responsive Design als neuer Trend ausgemacht wurde.</p><p>Zusätzlich zu den bekannten Features habe ich eine Mitgliederverwaltung gebaut, welche jedem einzelnen Schüler seine noch offenen Theoriethemen und praktischen Übungen anzeigt.</p>",
 		"projectTags":["Contao CMS", "HTML/CSS (LESS)", "JavaScript (jQuery)", "PHP", "Konzeption, Design"],
 		"images":["/assets/img/projekte/fahrschulehohenbaden/fahrschule-hohenbaden.jpg", "/assets/img/projekte/fahrschulehohenbaden/fahrschule-hohenbaden_artikel.jpg", "/assets/img/projekte/fahrschulehohenbaden/fahrschule-hohenbaden_kontakt.jpg"],
 		"order":9
@@ -16,7 +16,7 @@
 		"detailUrl":"/projekte/createyoursign.html",
 		"url":"http://www.createyoursign.de",
 		"image":"/assets/img/projekte/cdesign/createyoursign.jpg",
-		"description":"<p>Für die Fotografin und Print-Designerin Carolin Sexauer setzte ich Ihr geliefertes Webesign um, welches Ihre vielfältigsten Werke präsentiert.</p><p>Mit ihrer \"Blackbox\" kam im Frühjahr 2015 ein weitere Dienst hinzu, welcher bei groß und klein für viel Spaß sorgt. Die Blackbox kann zu Hochzeiten, Firmenevents, Weihnachtsfeiern oder sonstigen Anlässen gebucht werden, und fotografiert die Besucher in den schönsten Posen.</p>",
+		"description":"<p>Für die Fotografin und Print-Designerin Carolin Sexauer setzte ich ihr geliefertes Webesign um, welches ihre vielfältigsten Werke präsentiert.</p><p>Mit der \"Blackbox\" kam im Frühjahr 2015 ein weitere Dienst hinzu, welcher bei groß und klein für viel Spaß sorgt. Die Blackbox kann zu Hochzeiten, Firmenevents, Weihnachtsfeiern oder sonstigen Anlässen gebucht werden, und fotografiert die Besucher in den schönsten Posen.</p>",
 		"projectTags":["Contao CMS", "HTML/CSS (Sass)", "JavaScript (jQuery)"],
 		"images":["/assets/img/projekte/cdesign/createyoursign.jpg", "/assets/img/projekte/cdesign/createyoursign_galerie.jpg", "/assets/img/projekte/cdesign/createyoursign_start_mobile.jpg", "/assets/img/projekte/cdesign/createyoursign_galerie_mobile.jpg"],
 		"order":8
@@ -38,7 +38,7 @@
 		"detailUrl":"/projekte/campusapp.html",
 		"url":"https://play.google.com/store/apps/details?id=de.hs_offenburg.app",
 		"image":"/assets/img/projekte/hochschuleoffenburg/campusapp_start.jpg",
-		"description":"<p>Für die Hochschule Offenburg realisierte ich eine hypride Single-Page-Application, welche sämtliche Daten von einer RESTful API als JSON erhält und client-seitig rendert.</p><p>Die App ist modular aufgebaut und bietet Interessierten dadurch die Möglichkeit einzelne Module zu bauen ohne die gesamte Infrastruktur kennen zu müssen. Die App wird über das Framework Phonegap plattformübergreifend als Web-App und als Android-App im Play Store angeboten.</p>",
+		"description":"<p>Für die Hochschule Offenburg realisierte ich eine hypride Single-Page-Application, welche sämtliche Daten von einer RESTful API als JSON erhält und client-seitig rendert.</p><p>Die App ist modular aufgebaut und bietet Interessierten dadurch die Möglichkeit, einzelne Module zu bauen, ohne die gesamte Infrastruktur kennen zu müssen. Die App wird über das Framework Phonegap plattformübergreifend als Web-App und als Android-App im Play Store angeboten.</p>",
 		"projectTags":["Backbone.js, Underscore", "RequireJS", "Handlebars", "HTML/CSS (Sass)", "JavaScript (jQuery)", "Phonegap"],
 		"images":["/assets/img/projekte/hochschuleoffenburg/campusapp_start.jpg", "/assets/img/projekte/hochschuleoffenburg/campusapp_mensa.jpg", "/assets/img/projekte/hochschuleoffenburg/campusapp_news.jpg", "/assets/img/projekte/hochschuleoffenburg/campusapp_radio.jpg", "/assets/img/projekte/hochschuleoffenburg/campusapp_login.jpg"],
 		"order":6
@@ -93,7 +93,7 @@
 		"detailUrl":"/projekte/docady.html",
 		"url":"",
 		"image":"/assets/img/projekte/docady/docady.jpg",
-		"description":"<p>Als Projektarbeit im Sommersemester 2015 an der Hochschule Offenburg entwickelte ich zusammen mit zwei Kommilitonen eine Webanwendung zum Erlernen der MongoDB-Syntax. Dieses Projekt realisierten wir mit dem MEAN-Stack (MongoDB, Express, AngularJS, Node.js), wobei meine Aufgabe die Konzeption, Kreation und Entwicklung des Frontend mit AngularJS war.</p><p>Die Anwendung ist in zwei Teile gegliedert. Der Theorie-Bereich führt die Studierenden in die Welt der NoSQL-Datenbanken ein und erläutert deren Konzepte. Im praktischen Bereich können die Studierenden selbst Datenbank-Abfragen schreiben und ausführen. Sie erhalten ein Echtzeit-Feedback in Form des zurückgegebenen Ergebnisses. Weiter wird jede Datenbankverarbeitung den Anwendern visualisiert. Dies erhöht die Transparenz auf ein Maximum und ermöglicht es den Studierenden alle Anfragen nachzustellen.</p><p>Die Webanwendung, welche seit dem Wintersemester 2015/16 in der Vorlesung \"Datenbanken\" als Lehrmedium verwendet wird, wurde vom betreuenden Professor mit der Note 1.0 bewertet.</p>",
+		"description":"<p>Als Projektarbeit im Sommersemester 2015 an der Hochschule Offenburg entwickelte ich zusammen mit zwei Kommilitonen eine Webanwendung zum Erlernen der MongoDB-Syntax. Dieses Projekt realisierten wir mit dem MEAN-Stack (MongoDB, Express, AngularJS, Node.js), wobei meine Aufgabe die Konzeption, Kreation und Entwicklung des Frontend mit AngularJS war.</p><p>Die Anwendung ist in zwei Teile gegliedert. Der Theorie-Bereich führt die Studierenden in die Welt der NoSQL-Datenbanken ein und erläutert deren Konzepte. Im praktischen Bereich können die Studierenden selbst Datenbank-Abfragen schreiben und ausführen. Sie erhalten ein Echtzeit-Feedback in Form des zurückgegebenen Ergebnisses. Weiter wird jede Datenbankverarbeitung den Anwendern visualisiert. Dies erhöht die Transparenz auf ein Maximum und ermöglicht es den Studierenden, alle Anfragen nachzustellen.</p><p>Die Webanwendung, welche seit dem Wintersemester 2015/16 in der Vorlesung \"Datenbanken\" als Lehrmedium verwendet wird, wurde vom betreuenden Professor mit der Note 1.0 bewertet.</p>",
 		"projectTags":["AngularJS", "HTML/CSS (Sass)", "RESTful API (JSON)", "Konzeption", "Design"],
 		"images":["/assets/img/projekte/docady/docady.jpg", "/assets/img/projekte/docady/docady_start.jpg", "/assets/img/projekte/docady/docady_edit.jpg", "/assets/img/projekte/docady/docady_upload.jpg"],
 		"order":1

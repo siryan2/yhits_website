@@ -79,7 +79,7 @@ else {
  
 $lastModified_timestamp = getLastModifiedTime(); // get the last modified date for the first call   
  
-if ($lastTime) {
+if (isset($lastTime)) {
     // do nothing until the lastModified_timestamp is greater than the last request time
     while ($lastModified_timestamp <= $lastTime) {
         usleep(2000000); // slow it down a bit and wait 2 seconds
