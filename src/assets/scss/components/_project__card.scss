@@ -11,6 +11,14 @@
 .project__card {
 	margin-top: $gutter-half * 2;
 	margin-bottom: $gutter-half * 2;
+
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f7f7f7+1,fefefe+14,f7f7f7+32,fefefe+88,fafafa+99 */
+background: #f7f7f7; /* Old browsers */
+background: -moz-linear-gradient(top,  #f7f7f7 1%, #fefefe 14%, #f7f7f7 32%, #fefefe 88%, #fafafa 99%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #f7f7f7 1%,#fefefe 14%,#f7f7f7 32%,#fefefe 88%,#fafafa 99%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #f7f7f7 1%,#fefefe 14%,#f7f7f7 32%,#fefefe 88%,#fafafa 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#fafafa',GradientType=0 ); /* IE6-9 */
+
 }
 
 .project__card-container {
