@@ -1,0 +1,12 @@
+---
+layout: default.hbs
+title: Labor Medienforschung - think new
+name: projekte
+---
+
+<section class="section">
+	<div class="grid-container">
+		{{> project__desc projects.[10] }}
+	</div>
+</section>
+{{> pagination__article next=projects.[9] isProject=true}}
