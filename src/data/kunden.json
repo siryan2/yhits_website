@@ -1,5 +1,30 @@
 [
 	{
+		"name":"Neumaier Brunnen",
+		"image":"/assets/img/kunden/neumaierbrunnen.png",
+		"url":"http://www.neumaier-brunnen.de"
+	},
+	{
+		"name":"Ernst Umformtechnik GmbH",
+		"image":"/assets/img/kunden/ernst.png",
+		"url":"http://www.ernst.de"
+	},
+	{
+		"name":"kurhaus production Film & Medien GmbH",
+		"image":"/assets/img/kunden/kurhausproduction.png",
+		"url":"http://www.kurhausproduction.de"
+	},
+	{
+		"name":"Labor Medienforschung",
+		"image":"/assets/img/kunden/labormedienforschung.png",
+		"url":"http://medienforschung.hs-offenburg.de"
+	},
+	{
+		"name":"Fahrschule Hohenbaden GmbH",
+		"image":"/assets/img/kunden/fahrschulehohenbaden.png",
+		"url":"http://www.fahrschule-hohenbaden.de"
+	},
+	{
 		"name":"Vallée Verte Handelsgesellschaft für Naturprodukte",
 		"image":"/assets/img/kunden/valleeverte.png",
 		"url":"http://www.vallee-verte.de"
@@ -8,11 +33,6 @@
 		"name":"Hochschule Offenburg",
 		"image":"/assets/img/kunden/hsoffenburg.png",
 		"url":"http://www.hs-offenburg.de"
-	},
-	{
-		"name":"Ernst Umformtechnik GmbH",
-		"image":"/assets/img/kunden/ernst.png",
-		"url":"http://www.ernst.de"
 	},
 	{
 		"name":"Raumgestaltung Baas & Dulsan",
@@ -25,23 +45,8 @@
 		"url":"http://www.nautic-club-kehl.de"
 	},
 	{
-		"name":"Neumaier Brunnen",
-		"image":"/assets/img/kunden/neumaierbrunnen.png",
-		"url":"http://www.neumaier-brunnen.de"
-	},
-	{
 		"name":"cdesign",
 		"image":"/assets/img/kunden/cdesign.png",
 		"url":"http://www.createyoursign.de"
-	},
-	{
-		"name":"Fahrschule Hohenbaden GmbH",
-		"image":"/assets/img/kunden/fahrschulehohenbaden.png",
-		"url":"http://www.fahrschule-hohenbaden.de"
-	},
-	{
-		"name":"kurhaus production Film & Medien GmbH",
-		"image":"/assets/img/kunden/kurhausproduction.png",
-		"url":"http://www.kurhausproduction.de"
 	}
 ]
