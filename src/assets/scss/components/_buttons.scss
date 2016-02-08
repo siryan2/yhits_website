@@ -4,7 +4,7 @@
  * @component: Buttons
  * @desc: Buttons
  * @author: Yannick Herzog
- * @last-modified: 2015-12-15
+ * @last-modified: 2016-02-08
  **/
 
 $btn-radius: 40px;
@@ -64,6 +64,11 @@ $btn-radius: 40px;
 		background: darken($gray, 10%);
 		color: #ffffff;
 	}
+}
+
+.btn__secondary--big {
+	@extend .btn__secondary;
+	padding: 1.1em 1.3em;
 }
 
 .btn__ghost--dark {
