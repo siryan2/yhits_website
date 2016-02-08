@@ -28,7 +28,7 @@ module.exports = function (grunt) {
 			},
 			images: {
 				files: ['<%=config.assets%>/img/**/*.{jpg,png,gif}'],
-				tasks: ['copy:images']
+				tasks: ['imagemin']
 			},
 			js: {
 				files: ['<%=config.assets%>/js/**/*.js'],
@@ -195,17 +195,17 @@ module.exports = function (grunt) {
 		 * Copy
 		 */
 		copy: {
-			images: {
-				files: [
-					{
-						expand: true,
-						flatte: true,
-						cwd: '<%=config.assets%>/img/',
-						src: '**',
-						dest: '<%=config.dist_assets%>/img/'
-					}
-				]
-			},
+			// images: {
+			// 	files: [
+			// 		{
+			// 			expand: true,
+			// 			flatte: true,
+			// 			cwd: '<%=config.assets%>/img/',
+			// 			src: '**',
+			// 			dest: '<%=config.dist_assets%>/img/'
+			// 		}
+			// 	]
+			// },
 			js: {
 				files: [
 					{
@@ -293,7 +293,44 @@ module.exports = function (grunt) {
 					'<%=config.dist_assets%>/css/owl.theme.yh.min.css': ['<%=config.dist_assets%>/css/owl.theme.yh.css']
 				}
 			}
-		}
+		},
+
+		/*
+		 * Imagemin
+		 */
+        imagemin: {
+            dynamic: {
+                options: {
+                    optimizationLevel: 3
+                },
+                files: [
+                    {
+                        expand: true,
+                        cwd: '<%= config.assets %>/img/artikel',
+                        src: ['**/*.{png,gif,jpg,svg}'],
+                        dest: '<%= config.dist_assets %>/img/artikel/'
+                    },
+                    {
+                        expand: true,
+                        cwd: '<%= config.assets %>/img/kunden',
+                        src: ['**/*.{png,gif,jpg,svg}'],
+                        dest: '<%= config.dist_assets %>/img/kunden/'
+                    },
+                    {
+                        expand: true,
+                        cwd: '<%= config.assets %>/img/projekte',
+                        src: ['**/*.{png,gif,jpg,svg}'],
+                        dest: '<%= config.dist_assets %>/img/projekte/'
+                    },
+                    {
+                        expand: true,
+                        cwd: '<%= config.assets %>/img',
+                        src: ['*.{png,gif,jpg,svg,ico}'],
+                        dest: '<%= config.dist_assets %>/img/'
+                    }
+                ]
+            }
+        },
 
 	});
 
@@ -311,6 +348,7 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-assemble');
 	grunt.loadNpmTasks('grunt-autoprefixer');
 	grunt.loadNpmTasks('grunt-newer');
+	grunt.loadNpmTasks('grunt-contrib-imagemin');
 
 	// Default task(s)
 	grunt.registerTask('server', [
@@ -325,6 +363,7 @@ module.exports = function (grunt) {
 		'autoprefixer',
 		'cssmin',
 		'copy',
+		'imagemin',
 		'assemble'
 	]);
 };
