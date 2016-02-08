@@ -48,6 +48,9 @@ $this->fillField('firstname', 'First name', 'text', 2, 4, array('required' => fa
 		<p>Das wars auch schon. Jetzt kann die Anmeldung mit den im LDAP-Dienst definierten Usern erfolgen.</p>
 
 	</article>
+	<div class="grid-60 prefix-20 tablet-grid-80 tablet-prefix-10">
+		{{> contact-bar }}
+	</div>
 </section>
 {{#withSort posts }}
 	{{> pagination__article next=this.pages.[5] prev=this.pages.[3] isProject=false}}

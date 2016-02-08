@@ -62,6 +62,9 @@ name: blog
 		<p>Den Präsentationsordner kopiert man einfach auf einen USB-Stick und kann seine Präsentation dann auf jedem Endgerät mit aktuellem Browser (Chrome wird empfohlen) präsentieren. Ich finde es zugleich sehr nett, seine "Folien" auf den eigenen Webspace zu übertragen, um nach dem Vortrag die Inhalte den Hörern anzubieten.</p>
 		<p>Natürlich gibt es eine Menge weiterer vergleichbarer Tools. Ich habe mir dieses zuerst angeschaut und eine Präsentation, welche ich mehrfach gehalten habe, damit erstellt.</p>
 	</article>
+	<div class="grid-60 prefix-20 tablet-grid-80 tablet-prefix-10">
+		{{> contact-bar }}
+	</div>
 </section>
 {{#withSort posts }}
 	{{> pagination__article prev=this.pages.[5] isProject=false}}

@@ -99,7 +99,9 @@ if (isset($lastTime)) {
 		<p>Das Entscheidende war an dieser Stelle die kleine While-Schleife in PHP. Diese wird ausgeführt, wenn keine neuen Daten vorliegen, um keine unnötigen Antworten zu senden. Erst wenn sich die Datenbank geändert hat, wird die Schleife nicht mehr ausgeführt und das restliche Skript abgeargeitet.</p>
 		<p>Durch Long Polling konnte ich für diesen kleinen Anwendungsfall schnell zu einem Ergebnis kommen, ohne mich in ein neues Framework einarbeiten zu müssen und zusätzliche Skripte auf dem Server auszuführen. <br>Dennoch sind Websockets bei größeren Anwendungsfällen die bessere Wahl, weil sie expliziet für diese Art der Kommunikation mit dem Server ausgelegt sind und weit aus mehr Möglichkeiten bieten als es Long Polling kann.</p>
 	</article>
-
+	<div class="grid-60 prefix-20 tablet-grid-80 tablet-prefix-10">
+		{{> contact-bar }}
+	</div>
 </section>
 {{#withSort posts }}
 	{{> pagination__article next=this.pages.[4] prev=this.pages.[2] isProject=false}}

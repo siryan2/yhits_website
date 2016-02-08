@@ -40,6 +40,9 @@ $('a[data-lightbox]').map(function() {
 		</code></pre>
 
 	</article>
+	<div class="grid-60 prefix-20 tablet-grid-80 tablet-prefix-10">
+		{{> contact-bar }}
+	</div>
 </section>
 {{#withSort posts }}
 	{{> pagination__article next=this.pages.[3] prev=this.pages.[1] isProject=false}}

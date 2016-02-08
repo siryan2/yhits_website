@@ -40,6 +40,9 @@ this.$shapeshift.on('ss-rearranged', function (event, selected) {
 		<p>Dem Screenshot ist zu entnehmen, dass model.set() 98% langsamer im Vergleich zu .attributes ist. Also probierte ich diese Variante aus. Und siehe da, es funktioniert sehr gut. Die Module können per Drag&Drop wie wild umher gezogen werden, ohne einen Fehler zu provozieren.</p>
 		<p>In der <a title="Backbone.js Dokumentation" href="http://documentcloud.github.io/backbone/#Model-attributes">Dokumentation</a> von Backbone.js steht, dass Attribute-Werte per model.set() gesetzt werden soll, jedoch habe ich noch keinen Nachteil entdecken können.</p>
 	</article>
+	<div class="grid-60 prefix-20 tablet-grid-80 tablet-prefix-10">
+		{{> contact-bar }}
+	</div>
 </section>
 
 {{#withSort posts }}
