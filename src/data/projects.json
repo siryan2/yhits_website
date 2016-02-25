@@ -1,9 +1,20 @@
 [
 	{
+		"name":"fvbodersweier",
+		"projectTitle":"FV Bodersweier 1922 e.V.",
+		"detailUrl":"/projekte/fv-bodersweier.html",
+		"url":"http://www.fv-bodersweier.de",
+		"image":"/assets/img/projekte/fvbodersweier/fvbodersweier_home.jpg",
+		"description":"<p>Seit nunmehr 8 Jahren betreue ich die Website des FV Bodersweier. In dieser Zeit fanden vier größere Relaunches statt. Letzerer im Februar 2016. </p><p>Dabei wurde die Website gestalterisch etwas aufgefrischt und auf ein neues CMS umgezogen, wodurch auch die Ladezeiten trastisch verkürzt werden konnten. Der Hauptfokus bestand in der Arbeit die Seiten responsiv zu entwickeln, um auch in Zukunft die Informationen Plattform- und Geräte-unabhängig anbieten zu können.</p><p>Weiter bieten Zusatzinformationen anderer Web-Dienste wie der aktuellen Tabelle oder den Spielplänen den Besuchern einen Mehrwert.</p>",
+		"projectTags":["Contao CMS", "HTML/CSS (Sass)", "JavaScript (jQuery)", "PHP", "Konzeption, Design", "Relaunch 2016"],
+		"images":["/assets/img/projekte/fvbodersweier/fvbodersweier_home.jpg", "/assets/img/projekte/fvbodersweier/fvbodersweier_vorstand.jpg", "/assets/img/projekte/fvbodersweier/fvbodersweier_galerie.jpg", "/assets/img/projekte/fvbodersweier/fvbodersweier_mobile_home.jpg", "/assets/img/projekte/fvbodersweier/fvbodersweier_mobile_menu.jpg", "/assets/img/projekte/fvbodersweier/fvbodersweier_mobile_galerie.jpg"],
+		"order":12
+	},
+	{
 		"name":"fahrschule-hohenbaden",
 		"projectTitle":"Fahrschule Hohenbaden GmbH",
 		"detailUrl":"/projekte/fahrschule-hohenbaden.html",
-		"url":"http://www.fahrschule-hohenbaden.de/",
+		"url":"http://www.fahrschule-hohenbaden.de",
 		"image":"/assets/img/projekte/fahrschulehohenbaden/fahrschule-hohenbaden.jpg",
 		"description":"<p>Schon etwas länger her, aber dennoch ein interessantes Projekt ist die Website der Fahrschule Hohenbaden, die ich entwickelte als das Grid-System von Bootstrap noch mit Pixeln um sich warf und das Responsive Design als neuer Trend ausgemacht wurde.</p><p>Zusätzlich zu den bekannten Features habe ich eine Mitgliederverwaltung gebaut, welche jedem einzelnen Schüler seine noch offenen Theoriethemen und praktischen Übungen anzeigt.</p>",
 		"projectTags":["Contao CMS", "HTML/CSS (LESS)", "JavaScript (jQuery)", "PHP", "Konzeption, Design"],
