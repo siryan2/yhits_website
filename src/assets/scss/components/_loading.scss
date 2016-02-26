@@ -5,7 +5,7 @@
  * @module: Loading Indicator
  * @desc: Ladeanimationen
  * @author: Yannick Herzog
- * @last-modified: 2015-12-16
+ * @last-modified: 2016-02-26
  **/
 
 @keyframes rotate {
@@ -34,6 +34,15 @@
 		margin-left: -0.5em;
 		margin-top: -0.5em;
 		animation: rotate 1s infinite linear;
-		z-index: -1;
+		z-index: 2;
+	}
+	&:after {
+		content:'';
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background: transparentize(#ffffff, 0.1);
 	}
 }

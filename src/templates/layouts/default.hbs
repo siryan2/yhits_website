@@ -21,9 +21,9 @@
 		{{!-- Footer --}}
 		{{> footer }}
 		{{!-- Scripts: Lade Skripte nicht für Startseite --}}
-		{{#isnt theme ""}}
+		{{!-- {{#isnt theme ""}} --}}
 		{{> scripts }}
-		{{/isnt}}
+		{{!-- {{/isnt}} --}}
 		{{#if production}}
 		{{> piwik }}
 		{{/if}}
