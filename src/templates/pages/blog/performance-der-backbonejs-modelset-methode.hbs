@@ -46,6 +46,6 @@ this.$shapeshift.on('ss-rearranged', function (event, selected) {
 </section>
 
 {{#withSort posts }}
-	{{> pagination__article next=this.pages.[1] isProject=false}}
+	{{> pagination__article next=this.pages.[2] prev=this.pages.[0] isProject=false}}
 {{/withSort}}
 
