@@ -1,0 +1,44 @@
+---
+layout: default.hbs
+title: Zertifikat von Let´s Encrypt erneuern
+published: true
+tags:
+- letsencrypt
+- zertifikate
+categories:
+- Sicherheit
+date: 2015/02/29
+teaser: Heute musste ich zum ersten Mal das Zertifikat von Let´s Encrypt erneuern, wobei es bei diesem Prozess zu Fehlern kam. Ich möchte kurz erklären, wie diese zu lösen waren.
+posts: true
+name: blog
+---
+<section class="grid-container">
+	<article class="grid-60 prefix-20 tablet-grid-80 tablet-prefix-10 article__item">
+		<h2 class="article__headline">{{title}}</h2>
+		<div class="article__toolbar">
+			<time datetime="{{formatDate date "%Y-%m-%d"}}T00:00" class="article__publishedDate">{{formatDate date "%d. %b %Y"}}</time>
+		</div>
+		<p>{{teaser}}</p>
+		<h3>Löschen von Domains</h3>
+		<p>Nach dem erstmaligen Erstellen des Zertifikats habe ich eine Domain in meinem Uberspace gelöscht, welche ich nicht mehr benötigte. Dies hatte zur Folge, dass die Erneuerung fehlschlug. Das Zertifikat umfasste unter anderem noch die von mir bereits gelöschte Domain.</p>
+		<p>Die Liste der einzelnen Domains kann innerhalb der Datei <code class="language-markup">cli.ini</code> des Attributes <code class="language-markup">domains</code> bearbeitet werden. <br>Ein Fehler war damit behoben, allerdings konnte ich das Zertifikat dennoch nicht erneuern.</p>
+		<h3>TypeError: coercing to Unicode: need string or buffer, NoneType found</h3>
+		<p>Nachdem ich den Befehl <code class="language-markup">letsencrypt certonly</code> ausführte kam die Rückmeldung <code class="language-markup">coercing to Unicode: need string or buffer, NoneType found</code> mit dem Hinweis auf das Log in /home/$user/.local/share/letsencrypt/logs, wodurch ich allerdings auch nicht mehr entnehmen konnte.</p>
+		<p>Nach einer Recherche stellte sich heraus, dass es sich um einen Bug handelte, welcher in <a href="https://github.com/letsencrypt/letsencrypt/issues/1195">https://github.com/letsencrypt/letsencrypt/issues/1195</a> beschrieben wird.</p>
+		<p>Ein Workaround ist es, folgende Ordner in (.config/letsencrypt/) zu löschen:</p>
+		<ul>
+			<li>archive</li>
+			<li>csr</li>
+			<li>live</li>
+			<li>keys</li>
+			<li>renewal</li>
+		</ul>
+		<p>Anschließend konnte ich mit <code class="language-markup">letsencrypt certonly</code> das Zertifikat erneuern und nach dem Importieren des Zertifikats, den Prozess erfolgreich abschließen.</p>
+	</article>
+	<div class="grid-60 prefix-20 tablet-grid-80 tablet-prefix-10">
+		{{> contact-bar }}
+	</div>
+</section>
+{{#withSort posts }}
+	{{> pagination__article next=this.pages.[1] isProject=false}}
+{{/withSort}}
