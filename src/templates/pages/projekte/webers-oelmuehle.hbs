@@ -1,0 +1,12 @@
+---
+layout: default.hbs
+title: Webers Ölmühle GmbH
+name: projekte
+---
+
+<section class="section">
+	<div class="grid-container">
+		{{> project__desc projects.[13] }}
+	</div>
+</section>
+{{> pagination__article next=projects.[12] isProject=true}}
