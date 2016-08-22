@@ -8,12 +8,12 @@
 			margin: 10
 		});
 	}
-	if ( $('.project__card-img').length > 0 ) {
-		$('.project__card-img').one('load', function (e) {
-			var that = this;
-			setTimeout(function(){
-				$(that).parent('.loading__indicator').removeClass('loading__indicator');
-			}, 300);
-		});
-	}
+	// if ( $('.project__card-img').length > 0 ) {
+	// 	$('.project__card-img').one('load', function (e) {
+	// 		var that = this;
+	// 		setTimeout(function(){
+	// 			$(that).parent('.loading__indicator').removeClass('loading__indicator');
+	// 		}, 300);
+	// 	});
+	// }
 })(jQuery)
