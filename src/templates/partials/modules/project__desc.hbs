@@ -15,16 +15,16 @@
 	<p class="page__headline--sub">{{#if url}}<a href="{{url}}">{{url}}</a>{{/if}}</p>
 </div>
 <div class="grid-80 prefix-10 grid-parent">
-	<div class="grid-60">
-		<h4>Beschreibung</h4>
-		<p>{{{description}}}</p>
-	</div>
-	<div class="grid-40">
-		<h4>Kurz und knapp</h4>
+	<div class="grid-40 push-60">
+		<h4 class="project-description__headline">Kurz und knapp</h4>
 		<ul>
 			{{#each this.projectTags}}
 				<li>{{this}}</li>
 			{{/each}}
 		</ul>
+	</div>
+	<div class="grid-60 project-description pull-40">
+		<h4 class="project-description__headline">Beschreibung</h4>
+		<p class="">{{{description}}}</p>
 	</div>
 </div>
