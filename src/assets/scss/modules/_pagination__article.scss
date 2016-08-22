@@ -4,7 +4,7 @@
  * @module: Article Paginierung
  * @desc: Paginierung für die einzelnen Artikel 
  * @author: Yannick Herzog
- * @last-modified: 2015-12-14
+ * @last-modified: 2016-08-17
  **/
 
 
@@ -16,10 +16,11 @@
 .article__pagination-item {
 	padding-top: 2em;
 	padding-bottom: 2em;
+	min-height: 130px;
 }
 
 .article__pagination-item--prev {
-	background: lighten($baseColor, 20%);
+	background: lighten($baseColor, 25%);
 	padding-left: 1em;
 }
 
@@ -43,4 +44,24 @@
 	font-family: 'Roboto', sans-serif;
 	font-size: 1.3em;
 	line-height: 1.4em;
+	height: 4rem;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.article__pagination-item--overview {
+	background: lighten($baseColor, 20%);
+}
+
+.article__pagination-item-icon {
+	color: #ffffff;
+	display: block;
+	font-size: 1.3rem;
+	text-align: center;
+}
+
+.article__pagination-item-link--overview {
+	@extend .article__pagination-item-link;
+	display: block;
+	text-align: center;
 }
