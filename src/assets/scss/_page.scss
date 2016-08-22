@@ -4,13 +4,14 @@
  * @module: Page
  * @desc: Page specific styles
  * @author: Yannick Herzog
- * @last-modified: 2015-12-16
+ * @last-modified: 2016-08-22
  **/
 
 .page__headline {
 	color: $baseColor;
 	font-size: 3em;
 	font-family: $baseFont;
+	line-height: 2.2rem;
 	hyphens: auto;
 	text-align: center;
 	margin-bottom: 0;
