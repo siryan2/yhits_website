@@ -4,7 +4,7 @@
  * @module: Base
  * @desc: allgemeiner Styles
  * @author: Yannick Herzog
- * @last-modified: 2015-12-14
+ * @last-modified: 2015-08-12
  **/
 
 * {
@@ -13,8 +13,8 @@
 
 p {
 	font-family: $baseFont;
-	font-size: 1em;
-	line-height: 1.4em;
+	font-size: 1rem;
+	line-height: 1.4rem;
 }
 
 h1,
@@ -24,7 +24,7 @@ h4,
 h5,
 h6 {
 	font-family: 'Roboto', sans-serif;
-	line-height: 1.4em;
+	line-height: 1.4rem;
 }
 
 a {
@@ -43,12 +43,12 @@ img {
 }
 
 ul {
-	padding-left: 1em;
+	padding-left: 1rem;
 }
 
 li {
 	font-family: 'Roboto', sans-serif;
-	margin-top: 0.5em;
+	margin-top: 0.5rem;
 	&:first-child {
 		margin-top: 0;
 	}
