@@ -1,5 +1,15 @@
 [
 	{
+		"name":"webtofly",
+		"image":"/assets/img/kunden/webtofly.png",
+		"url":"http://www.webtofly.de"
+	},
+	{
+		"name":"Turnverein Lahr e.v.",
+		"image":"/assets/img/kunden/tv-lahr.png",
+		"url":"http://www.turnverein-lahr.de"
+	},
+	{
 		"name":"Neumaier Brunnen",
 		"image":"/assets/img/kunden/neumaierbrunnen.png",
 		"url":"http://www.neumaier-brunnen.de"
