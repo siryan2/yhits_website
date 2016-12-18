@@ -1,0 +1,12 @@
+---
+layout: default.hbs
+title: DOB-Aktiv
+name: projekte
+---
+
+<section class="section">
+	<div class="grid-container">
+		{{> project__desc projects.[15] }}
+	</div>
+</section>
+{{> pagination__article next=projects.[14] isProject=true}}
