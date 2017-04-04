@@ -2,6 +2,7 @@ const gulp = require('gulp'),
 	autoprefixer = require('gulp-autoprefixer'),
 	browserSync = require('browser-sync').create(),
 	reload = browserSync.reload,
+	clean = require('gulp-clean'),
 	sass = require('gulp-sass'),
 	uglifycss = require('gulp-uglifycss'),
 	rename = require('gulp-rename'),
@@ -25,7 +26,8 @@ const Metalsmith = require('metalsmith'),
 	registerHelpers = require('metalsmith-register-helpers'),
 	paths = require('metalsmith-paths'),
 	rootPath = require('metalsmith-rootpath'),
-	permalinks = require('metalsmith-permalinks')
+	permalinks = require('metalsmith-permalinks'),
+	drafts = require('metalsmith-drafts')
 ;
 
 /**
@@ -85,11 +87,12 @@ gulp.task('html', () => {
 		.use(registerHelpers({
 			directory: dir.source + 'helpers'
 		}))
+		.use(drafts())
 		.use(collections({
 			projekte: {
 				pattern: dir.source + 'pages/projekte/*.hbs',
 				sortBy: 'date',
-				reverse: false
+				reverse: true
 			},
 			blog: {
 				pattern: dir.source + 'pages/blog/*.hbs',
@@ -265,6 +268,11 @@ gulp.task('imagemin', () => {
 		.pipe(gulp.dest(dir.dest + 'assets/img'))
 });
 
+gulp.task('clean', () => {
+	return gulp.src(dir.dest + '*')
+		.pipe(clean());
+});
+
 /**
  * WATCHER
  **/
@@ -279,11 +287,11 @@ gulp.task('default', () => {
 	runSequence(['watch'], 'serve');
 });
 
-gulp.task('build', () => {
+gulp.task('build', ['clean'], () => {
 	console.log('Start building website...');
 
 	metadata.production = true;
-	runSequence(['html', 'build:css', 'compress:js', 'copy:assets']);
+	runSequence(['html', 'build:css', 'compress:js', 'copy:assets', 'copy:plugins', 'imagemin']);
 	
 	console.log('Finish building website...');
 });
