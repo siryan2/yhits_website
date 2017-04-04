@@ -4,14 +4,14 @@
  * @module: Page
  * @desc: Page specific styles
  * @author: Yannick Herzog
- * @last-modified: 2016-08-22
+ * @last-modified: 2017-04-04
  **/
 
 .page__headline {
 	color: $baseColor;
-	font-size: 3em;
+	font-size: 3rem;
 	font-family: $baseFont;
-	line-height: 2.2rem;
+	line-height: 3.2rem;
 	hyphens: auto;
 	text-align: center;
 	margin-bottom: 0;
@@ -20,10 +20,10 @@
 .page__headline--sub {
 	color: lighten($darkGray, 30%);
 	font-family: $baseFont;
-	font-size: 1.4em;
-	line-height: 1.5em;
+	font-size: 1.4rem;
+	line-height: 1.5rem;
 	text-align: center;
-	margin-top: 0.5em;
+	margin-top: 0.5rem;
 }
 
 /*
@@ -31,7 +31,7 @@
  */
 .projekte {
 	.page__headline {
-		font-size: 2em;
+		font-size: 2rem;
 	}
 	.page__headline--sub {
 		
