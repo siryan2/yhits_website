@@ -1,0 +1,18 @@
+<div class="grid-100">
+{{#parseJSON '{"headline":"Unser gemeinsamer Weg zu Ihrem Ziel"}' }}
+	{{> section__headline }}
+{{/parseJSON}}
+</div>
+<div class="grid-100">
+{{#each data.process}}
+	<section class="process grid-20 tablet-grid-50 grid-parent">
+		<div class="process__icon-wrapper">
+			<div class="process__icon"><i class="{{iconClass}}"></i></div>
+		</div>
+		<div class="grid-100">
+			<h3 class="process__headline">{{name}}</h3>
+			<p class="process__text">{{{text}}}</p>
+		</div>
+	</section>
+{{/each}}
+</div>

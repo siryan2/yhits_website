@@ -1,0 +1,16 @@
+---
+layout: default.hbs
+title: Webers Ölmühle GmbH
+date: 2016-09-20
+name: projekte
+collection: projekte
+data:
+ projects: ../../models/projects.json
+---
+
+<section class="section">
+	<div class="grid-container">
+		{{> modules/project__desc data.projects.[13] }}
+	</div>
+</section>
+{{> modules/pagination__article prev=data.projects.[14] next=data.projects.[12] isProject=true}}

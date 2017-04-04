@@ -1,0 +1,16 @@
+---
+layout: default.hbs
+title: FV Bodersweier 1922 e.V.
+date: 2016-03-02
+name: projekte
+collection: projekte
+data:
+ projects: ../../models/projects.json
+---
+
+<section class="section">
+	<div class="grid-container">
+		{{> modules/project__desc data.projects.[0] }}
+	</div>
+</section>
+{{> modules/pagination__article prev=data.projects.[1] isProject=true}}

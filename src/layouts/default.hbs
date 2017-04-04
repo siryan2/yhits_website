@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html class="no-js" lang="de">
+	<head>
+		{{> head }}
+	</head>
+	<body class="">
+		<!--[if lte IE 9]>
+		{{> modules/notification site.notifications.[0]}}
+		<![endif]-->
+		<noscript>
+		{{> modules/notification site.notifications.[1]}}
+		</noscript>
+
+		{{!-- Header --}}
+		{{> header }}
+		
+		{{!-- Site Content --}}
+		{{{ contents }}}
+		
+		{{!-- Hilfe? --}}
+		{{#isnt name "kontakt"}}
+		{{> modules/ruf_mich_an }}
+		{{/isnt}}
+		
+		{{!-- Footer --}}
+		{{> footer }}
+		
+		{{!-- Scripts --}}
+		{{> scripts }}
+
+		{{#if production}}
+		{{> modules/piwik }}
+		{{/if}}
+	</body>
+</html>

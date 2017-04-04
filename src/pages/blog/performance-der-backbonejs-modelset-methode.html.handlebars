@@ -1,0 +1,51 @@
+---
+layout: default.hbs
+title: Performance-Problem der Backbone.js model.set()-Methode
+published: true
+tags:
+- JavaScript
+- backbone.js
+categories:
+- JavaScript
+date: 2014-06-14
+teaser: Aktuell arbeite ich intensiv mit dem MV*-Framework Backbone.js. Auf der Startseite meiner Web-Applikation habe ich verschiedene Module, welche die Unterseiten repräsentieren, als Kacheln angelegt. Diese sind alle in einer Module-Collection gespeichert. Die Anordnung der Kacheln ist noch fest vorgegeben.
+posts: true
+collection: blog
+---
+<section class="grid-container">
+	<article class="grid-60 prefix-20 tablet-grid-80 tablet-prefix-10 article__item">
+		<h2 class="article__headline">{{title}}</h2>
+		<div class="article__toolbar">
+			<time datetime="{{formatDate date "YYYY-MM-DD"}}T00:00" class="article__publishedDate">{{formatDate date "LL"}}</time>
+		</div>
+		<p>Aktuell arbeite ich intensiv mit dem MV*-Framework <a title="Backbone.js" href="http://backbonejs.org/">Backbone.js</a>. Auf der Startseite meiner Web-Applikation habe ich verschiedene Module, welche die Unterseiten repräsentieren, als Kacheln angelegt. Diese sind alle in einer Module-Collection gespeichert. Die Anordnung der Kacheln ist noch fest vorgegeben.</p>
+		<p>Um die Benutzerfreundlichkeit zu erhöhen, sollen die Kacheln individuell per Drag&Drop anpassbar sein. Denn nicht jeder Nutzer ist mit der Anordnung zufrieden. In der Applikation sind die Termine beispielsweise ganz unten zu finden. Der Nutzer muss also scrollen, um dieses Modul zu erreichen.</p>
+		<p>Drag&Drop habe ich bereits implementiert. Bei dem "drop"-Event möchte ich die aktuelle Position des Moduls per model.set("posNr", newPos) überschrieben, jedoch erhalte ich bei ungefähr jedem zweiten "drop"-Event den Fehler: "TypeError: (intermediate value).callback.call is not a function". Dabei mache ich nichts ungewöhnliches.</p>
+		<pre><code class="language-js">
+this.$shapeshift.on('ss-rearranged', function (event, selected) {
+    var $el = $(selected);
+    var newPos = $el.index();
+    var cid = $el.attr('data-cid');
+    var module = modules.get(cid);
+    module.set({posNr: newPos});
+});
+		</code></pre>
+		<p>Zuerst ermittle ich die neue Position meines Elementes, sowie die cid, welche als data-Attribute dem Element angehängt ist. Danach hole ich mir das Model aus der Collection mit Hilfe der cid und überschreibe die "posNr" mit der aktuellen Position ("newPos").</p>
+		<p>Meine anfänglichen Überlegungen, es könnte an der Performance liegen, haben sich nach einer kurzen Internet-Recherche (herumgoogeln) bestätigt.</p>
+		<p>Auf der Seite <a title="jsperf.com" href="http://jsperf.com/backbone-model-set-performance/2">jsperf.com</a> wird ein Benchmark der set-Methode im Vergleich zum Setzen eines Wertes über .attributes dargestellt:</p>
+		<figure>
+			<img src="{{rootPath}}/assets/img/artikel/jsperf-backbone-model.png" alt="Backbone.js Performance-Vergleich">
+			<figcaption>Quelle: www.jsperf.com</figcaption>
+		</figure>
+		<p>Dem Screenshot ist zu entnehmen, dass model.set() 98% langsamer im Vergleich zu .attributes ist. Also probierte ich diese Variante aus. Und siehe da, es funktioniert sehr gut. Die Module können per Drag&Drop wie wild umher gezogen werden, ohne einen Fehler zu provozieren.</p>
+		<p>In der <a title="Backbone.js Dokumentation" href="http://documentcloud.github.io/backbone/#Model-attributes">Dokumentation</a> von Backbone.js steht, dass Attribute-Werte per model.set() gesetzt werden soll, jedoch habe ich noch keinen Nachteil entdecken können.</p>
+	</article>
+	<div class="grid-60 prefix-20 tablet-grid-80 tablet-prefix-10">
+		{{> modules/contact-bar }}
+	</div>
+</section>
+
+{{!-- {{#withSort posts }}
+	{{> pagination__article next=this.pages.[2] prev=this.pages.[0] isProject=false}}
+{{/withSort}} --}}
+

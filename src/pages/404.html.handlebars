@@ -1,0 +1,69 @@
+---
+layout: default.hbs
+title: 404
+subtitle: Sorry, diese Seite gibt es nicht
+name: 404
+data:
+ projects: ../models/projects.json
+---
+<section class="section">
+	<div class="grid-container">
+		<div class="grid-100">
+			{{> page__headline}}
+		</div>
+	</div>
+</section>
+<section class="section section--dark">
+	<div class="grid-container">
+		<div class="grid-100">
+		{{#parseJSON '{"headline":"Aber hier sind noch ein paar interessante Artikel"}' }}
+			{{> section__headline }}
+		{{/parseJSON}}
+		<div class="grid-33">
+			{{#blog.[1]}}
+				{{> modules/blog__teaser }}
+			{{/blog.[1]}}
+		</div>
+		<div class="grid-33">
+			{{#blog.[6]}}
+				{{> modules/blog__teaser }}
+			{{/blog.[6]}}
+		</div>
+		<div class="grid-33">
+			{{#blog.[0]}}
+				{{> modules/blog__teaser }}
+			{{/blog.[0]}}
+		</div>
+		<div class="grid-100">
+			<div class="button-bar button-bar--center">
+				<a href="/blog" class="btn btn__ghost--dark">alle Artikel anzeigen</a>
+			</div>
+		</div>
+	</div>
+</section>
+{{!-- Projekte --}}
+<section class="section section--light">
+	<div class="grid-container">
+		<div class="grid-100">
+		{{#parseJSON '{"headline":"... und hier sind noch ein paar Arbeiten von mir"}' }}
+			{{> section__headline }}
+		{{/parseJSON}}
+		</div>
+		
+		<div class="grid-33">
+			{{> modules/project__card data.projects.[7]}}
+		</div>
+		<div class="grid-33">
+			{{> modules/project__card data.projects.[6]}}
+		</div>
+		<div class="grid-33">
+			{{> modules/project__card data.projects.[5]}}
+		</div>
+		<div class="grid-100">
+			<div class="button-bar button-bar--center">
+				<a href="/projekte" class="btn btn__ghost--dark">mehr Projekte anzeigen</a>
+			</div>
+		</div>
+	</div>
+</section>
+

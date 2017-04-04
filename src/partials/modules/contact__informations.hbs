@@ -1,0 +1,25 @@
+{{#data.contact}}
+<table class="table table__contact">
+	<thead>
+		<tr>
+			<td colspan="2">Anschrift</td>
+		</tr>
+	</thead>
+	<tr>
+		<td><i class="fa fa-map-signs"></i></td>
+		<td>{{name}}</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>{{companyname}} <br> {{adress.[0].street}} {{adress.[0].number}} <br> {{adress.[0].zip}} {{adress.[0].city}}</td>
+	</tr>
+	<tr>
+		<td><i class="fa fa-envelope"></i></td>
+		<td><a href="mailto:{{email}}">{{email}}</a></td>
+	</tr>
+	<tr>
+		<td><i class="fa fa-mobile fa-2x"></i></td>
+		<td><a href="tel:{{mobile}}">{{mobile}}</a></td>
+	</tr>
+</table>
+{{/data.contact}}

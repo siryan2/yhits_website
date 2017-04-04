@@ -1,0 +1,31 @@
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>{{title}} | {{site.name}}</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="{{site.description}}">
+<meta name="robots" content="index,follow">
+<meta name="author" content="{{site.author}}">
+<meta name="generator" content="{{generatorname}}">
+{{!-- <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml"> --}}
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,700|Roboto+Slab:300,400|Changa+One:400,400italic|Noto+Sans:400,700|Droid+Serif' rel='stylesheet' type='text/css'>
+
+{{#if slider}}
+<link rel="dns-prefetch" href="//code.jquery.com">
+<link rel="stylesheet" href="{{rootPath}}/assets/plugins/owl-carousel/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="{{rootPath}}/assets/css/owl.theme.yh.min.css">
+{{/if}}
+
+{{#is collection 'blog'}}
+<link rel="stylesheet" href="{{rootPath}}/assets/css/prism.min.css">
+{{/is}}
+
+<link rel="stylesheet" href="{{rootPath}}/assets/css/main.min.css">
+
+<script src="{{rootPath}}/assets/vendor/modernizr-custom.js"></script>
+
+<link rel="icon" type="image/png" href="{{rootPath}}/assets/img/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="{{rootPath}}/assets/img/favicon-194x194.png" sizes="194x194">
+<link rel="icon" type="image/png" href="{{rootPath}}/assets/img/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="{{rootPath}}/assets/img/favicon-16x16.png" sizes="16x16">
+<link rel="shortcut icon" href="{{rootPath}}/assets/img/favicon.ico">

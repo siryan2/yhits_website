@@ -1,0 +1,16 @@
+---
+layout: default.hbs
+title: Ernst Umformtechnik GmbH - Besuchermanagement-System
+date: 2013-09-24
+name: projekte
+collection: projekte
+data:
+ projects: ../../models/projects.json
+---
+
+<section class="section">
+	<div class="grid-container">
+		{{> modules/project__desc data.projects.[6] }}
+	</div>
+</section>
+{{> modules/pagination__article prev=data.projects.[7] next=data.projects.[5] isProject=true}}

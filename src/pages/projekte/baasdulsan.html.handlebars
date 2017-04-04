@@ -1,0 +1,16 @@
+---
+layout: default.hbs
+title: Baas & Dulsan OHG
+date: 2013-05-02
+name: projekte
+collection: projekte
+data:
+ projects: ../../models/projects.json
+---
+
+<section class="section">
+	<div class="grid-container">
+		{{> modules/project__desc data.projects.[7] }}
+	</div>
+</section>
+{{> modules/pagination__article prev=data.projects.[8] next=data.projects.[6] isProject=true}}

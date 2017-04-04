@@ -1,0 +1,57 @@
+---
+layout: default.hbs
+title: Authentifizierung gegenüber PHProjekt per LDAP
+published: true
+tags:
+- PHProjekt
+- LDAP
+categories:
+- PHProjekt
+date: 2013-03-26
+teaser: Für mein Projektmanagement nutze ich schon seit geraumer Zeit PHProjekt. Angefangen mit der Version 5 habe ich dieses Jahr den Sprung auf Version 6 vollzogen und bin mit dem neuen Design und den geänderten Worklflows sehr zufrieden.
+posts: true
+collection: blog
+---
+<section class="grid-container">
+	<article class="grid-60 prefix-20 tablet-grid-80 tablet-prefix-10 article__item">
+		<h2 class="article__headline">{{title}}</h2>
+		<div class="article__toolbar">
+			<time datetime="{{formatDate date "YYYY-MM-DD"}}T00:00" class="article__publishedDate">{{formatDate date "LL"}}</time>
+		</div>
+		<p>Für mein Projektmanagement nutze ich schon seit geraumer Zeit PHProjekt. Angefangen mit der Version 5 habe ich dieses Jahr den Sprung auf Version 6 vollzogen und bin mit dem neuen Design und den geänderten Worklflows sehr zufrieden. Eine gewisse Einarbeitungszeit bedarf es jedoch immer noch, aber davon sollte man sich nicht abschrecken lassen.</p>
+		<p>Wie im <a href="aktuelles/items/verlorenes-owncloud-admin-passwort-zuruecksetzen.html">vorangegangenen Blogbeitrag</a> habe ich erwähnt, dass ich einen LDAP-Dienst laufen lasse, um mich an den unterschiedlichsten Diensten anzumelden. Gestern wollte ich die LDAP-Authentifizierung auch für PHProjekt einrichten, stoß aber schnell auf Probleme. Es gibt im Backend von PHProjekt keine Einrichtungsmöglichkeit. Dies muss über die "configuration.php"-Datei erfolgen. Weiter hatte ich Probleme mit dem integrierten LDAP-Dienst meines QNAP NAS. Aber der Reihe nach.</p>
+		<h3>LDAP für PHProjekt einrichten</h3>
+		<p>Da PHProjekt zur Authentiefizierung das ZEND Framework einsetzt, kann man sich eine <a href="http://framework.zend.com/manual/1.12/en/zend.ldap.api.html">genaue Beschreibung</a> sowie weitere Einstellmöglichkeiten auf der ZEND-Webseite ansehen.</p>
+		<p>Zuerst muss die Datei "configuration.php" im Wurzelverzeichnis geöffnet und bearbeitet werden. Bei mir haben diese Parameter zum Erfolg geführt wobei die Werte der Umgebung angepasst werden müssen:</p>
+		<pre><code class="language-markup">
+authentication.ldap.server1.host = "HOST-IP"
+authentication.ldap.server1.accountDomainName = "FQHN"
+authentication.ldap.server1.baseDn = "ou=people,dc=host,dc=domain,dc=tld"
+authentication.ldap.server1.bindRequiresDn = true
+authentication.ldap.server1.accountCanonicalForm = 4
+authentication.ldap.server1.username = "cn=admin,dc=host,dc=domain,dc=tld"
+authentication.ldap.server1.password = password
+		</code></pre>
+		<p>Bei baseDn und username habe ich mich auf die Einstellung für den intergrierten LDAP-Dienst von QNAP bezogen.</p>
+		<h3>Ein Problem gibt es noch</h3>
+		<p>Wenn man sich versucht jetzt mit Benutzername/Passwort anzumelden, erscheint die Fehlermeldung "ERROR: array(2) { ["type"]=> string(5) "error" ["message"]=> string(31) "First name: Is a required field" }".</p>
+		<p>Gibt man an dieser Stelle beispielsweise ein falsches Passwort ein, so bekommt man lediglich "Invalid Username or Passwortd" zurück, was schonmal bedeutet, dass der LDAP-Dienst angefragt wird. Also liegt das Problem nicht daran, sondern an PHProjekt. Genau an dem Feld "firstname", welches ein Pflichtfeld ist.</p>
+		<p>Nach ein bisschen Suchen stieß ich in der "configuration.php" auf die Zeile "Please make sure that your ldap users have 'givenname', 'sn' and 'mail' properties when using ldap". Dies heisst also, dass der LDAP-Dienst das Attribute "givenname" haben muss bzw. der User.</p>
+		<p>Mit dem Freeware-Tool "LdapSearch" von SecurityXploded kann man den LDAP-Dienst abfragen. Hiermit stellte ich auch fest, dass kein "givenname" zurück kam.</p>
+		<p>Mir ist aber der Firstname gar nicht so wichtig und so beschloss ich, dieses Feld nicht mehr als Pflichtfeld zu definieren. Dies passiert in der Datei "Information.php" unter \library\Phprojekt\User\Information.php.</p>
+		<p>Diese Änderung muss wie folgt aussehen:
+			<pre><code class="language-php">
+// firstname
+$this->fillField('firstname', 'First name', 'text', 2, 4, array('required' => false,'length'   => 255));
+			</code></pre>
+		</p>
+		<p>Das wars auch schon. Jetzt kann die Anmeldung mit den im LDAP-Dienst definierten Usern erfolgen.</p>
+
+	</article>
+	<div class="grid-60 prefix-20 tablet-grid-80 tablet-prefix-10">
+		{{> modules/contact-bar }}
+	</div>
+</section>
+{{!-- {{#withSort posts }}
+	{{> pagination__article next=this.pages.[6] prev=this.pages.[4] isProject=false}}
+{{/withSort}} --}}

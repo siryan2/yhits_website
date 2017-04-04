@@ -1,0 +1,46 @@
+---
+layout: default.hbs
+title: Webdesign ohne Photoshop - Rapid Prototyping als Alternative
+published: true
+tags:
+- Photoshop
+- Prototyping
+categories:
+- Prototyping
+date: 2014-02-18
+teaser: Es ist bekanntlich nichts neues daran, dass Photoshop nicht zwingend für den ersten Entwurf eines Webdesigns genutzt werden muss. Auch ist es bekannt, dass sich der ein oder andere Webdesigner vehement gegen das Tool zur Gestaltung eines Layouts streubt und auf geeignetere Anwendungen setzt.
+posts: true
+collection: blog
+---
+<section class="grid-container">
+	<article class="grid-60 prefix-20 tablet-grid-80 tablet-prefix-10 article__item">
+		<h2 class="article__headline">{{title}}</h2>
+		<div class="article__toolbar">
+			<time datetime="{{formatDate date "YYYY-MM-DD"}}T00:00" class="article__publishedDate">{{formatDate date "LL"}}</time>
+		</div>
+		<p>Es ist bekanntlich nichts neues daran, dass Photoshop nicht zwingend für den ersten Entwurf eines Webdesigns genutzt werden muss. Auch ist es bekannt, dass sich der ein oder andere Webdesigner vehement gegen das Tool zur Gestaltung eines Layouts streubt und auf geeignetere Anwendungen setzt.</p>
+		<figure>
+			<img src="{{rootPath}}/assets/img/artikel/notebook-sketchbook.jpg" alt="Rapid Prototyping ohne Photoshop">
+			<figcaption>Quelle: Galymzhan Abdugalimov - unsplash.com</figcaption>
+		</figure>
+		<p>Ich handhabe es immer so, dass ich zu Beginn eines neuen Projektes ein Scribble erstelle, daraufhin ein Mockup, welches ich mit dem Kunden durchspreche und bei Gefallen, setze ich mit Photoshop das Layout um, welches dann wieder mit dem Kunden zusammen besprochen wird.</p>
+		<p>Dieser Workflow funktioniert für mich bis dato sehr gut. Jedoch habe ich in letzer Zeit häufiger an diesem Arbeitsprozess gezweifelt und mir die Frage gestellt, ob Photoshop überhaupt notwendig ist oder ob sich dieser Schritt nicht überspringen lässt. Das Prinzip des Rapid Prototyping gibt es zwar schon etwas länger, kam für mich noch nicht in Frage, da ich viele Elemente, wie beispielsweise Schatten, Verläufe abgerundete Ecken sowie so in einem Gestaltungstools entwerfen musste und ich dann gleich das gesamte Layout damit kreierte.</p>
+		<p>Mit CSS3 und dem Aussterben der älteren Internet Explorer-Versionen 7,8,9 kommen diese Elemente endlich ohne Grafiken aus und ebnen den Weg eines Photoshop-armen Gestaltungsprozesses.</p>
+		<h3>Die ersten Erfahrungen mit Rapid Prototyping</h3>
+		<p>Ich arbeite aktuell an einem "Non-Profit"-Projekt und ergriff die Gelegenheit, meinen Workflow umzugestalten und Photoshop für den Gestaltungsprozess zu übergehen.</p>
+		<p>Zuerst machte ich wie gewohnt Scribbles, um meine Ideen zu Papier zu bringen. Danach öffnete ich statt Photoshop mein Sublime Text und begann mit der Arbeit. Vorher legte ich natürlich noch einige grunt-Tasks an, um beim Speichern von scss-Dateien diese nach css zu transferieren, den Browser automatisch zu aktualisieren und Bilder zu komprimieren. Dies ist aber nicht notwendig, macht aber den Arbeitsalltag bedeutend komfortabler.</p>
+		<p>Dank der CSS-Preprozessoren wie beispielsweise SCSS oder LESS können für Farben, Rahmenstärken, Rahmenradius und Schriften Variablen angelegt und diese als Attributwerte verwendet werden, so dass Änderungen nur an einer Stelle gemacht werden müssen. Das ist für den Gestaltungsprozess sehr angenehm und erspart viel Arbeit beim Herumprobieren.</p>
+		<p>Während der Arbeit vermisste ich Photoshop absolut nicht. Auch kam mir die Arbeitsweise nicht ungewohnt vor. Es war vielmehr angenehmer, das Verhalten des gesamten Layouts direkt auf unterschiedlichen Displaygrößen sehen zu können. Hier konnte ich gleich Änderungen vornehmen, falls etwas aus konzeptioneller Sicht nicht durchdacht wurde.</p>
+		<p>Desweiteren kann ich mir bei Schriften und Farben sicher sein, dass diese im fertigen Projekt auch genau so gerendert werden, wie ich es wollte, anders wie es bei Grafikanwendungen der Fall ist.</p>
+		<p>Ein weiterer Vorteil ist der fast fertige Code, welcher direkt in das Template übernommen werden kann, vorrausgesetzt dieser wurde ordentlich geschrieben.</p>
+		<h3>Auch in der Zukunft?</h3>
+		<p>In Zukunft werde ich soweit es geht auf Photoshop zur Gestaltung verzichten und dies direkt im Browser umsetzen. Das hat für mich den Vorteil, dass ich anstelle der exportierten Grafiken nur einen Link versenden muss und der Kunde immer auf die aktuelleste Version zugreift ohne ein Dateichaos á la "home-v2.jpg", "home-v3.jpg" usw. zu erhalten. <br> Auch kann ich mir dabei sicher sein, dass das Layout exakt dem auf meinem Display entspricht und Farben sowie Schriften korrekt dargestellt werden, sofern ich dies natürlich ausgiebig getestet habe.</p>
+	</article>
+	<div class="grid-60 prefix-20 tablet-grid-80 tablet-prefix-10">
+		{{> modules/contact-bar }}
+	</div>
+</section>
+
+{{!-- {{#withSort posts }}
+	{{> pagination__article next=this.pages.[3] prev=this.pages.[1] isProject=false}}
+{{/withSort}} --}}

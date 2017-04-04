@@ -1,0 +1,22 @@
+---
+layout: default.hbs
+title: Kontakt
+subtitle: Jetzt ist der richtige Zeitpunkt für Ihre Kontaktaufnahme
+name: kontakt
+data:
+ contact: ../models/contact__informations.json
+---
+
+<section class="section">
+	<div class="grid-container">
+		<div class="grid-100">
+			{{> page__headline}}
+		</div>
+		<div class="grid-50 tablet-grid-60 tablet-prefix-20">
+			{{> modules/contact__form }}
+		</div>
+		<div class="grid-40 prefix-10 tablet-grid-60 tablet-prefix-20">
+			{{> modules/contact__informations }}
+		</div>
+	</div>
+</section>

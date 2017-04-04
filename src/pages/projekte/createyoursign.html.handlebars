@@ -1,0 +1,16 @@
+---
+layout: default.hbs
+title: Createyoursign
+date: 2012-12-31
+name: projekte
+collection: projekte
+data:
+ projects: ../../models/projects.json
+---
+
+<section class="section">
+	<div class="grid-container">
+		{{> modules/project__desc data.projects.[2] }}
+	</div>
+</section>
+{{> modules/pagination__article prev=data.projects.[3] next=data.projects.[1] isProject=true}}

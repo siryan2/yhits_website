@@ -1,0 +1,16 @@
+---
+layout: default.hbs
+title: Campus App Landingpage
+date: 2013-02-02
+name: projekte
+collection: projekte
+data:
+ projects: ../../models/projects.json
+---
+
+<section class="section">
+	<div class="grid-container">
+		{{> modules/project__desc data.projects.[3] }}
+	</div>
+</section>
+{{> modules/pagination__article prev=data.projects.[4] next=data.projects.[2] isProject=true}}

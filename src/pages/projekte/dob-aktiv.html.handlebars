@@ -1,0 +1,16 @@
+---
+layout: default.hbs
+title: DOB-Aktiv
+date: 2016-11-30
+name: projekte
+collection: projekte
+data:
+ projects: ../../models/projects.json
+---
+
+<section class="section">
+	<div class="grid-container">
+		{{> modules/project__desc data.projects.[15] }}
+	</div>
+</section>
+{{> modules/pagination__article next=data.projects.[14] isProject=true}}

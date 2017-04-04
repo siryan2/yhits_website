@@ -1,0 +1,59 @@
+---
+title: Home
+name: 
+data: 
+ projects: ../models/projects.json
+ leistungen: ../models/leistungen.json
+ process: ../models/process__timeline.json
+---
+
+{{> modules/hero }}
+
+{{!-- Leistungen --}}
+<section class="section">
+	<div class="grid-container">
+		<div class="grid-100">
+		{{#parseJSON '{"headline":"Ich biete Ihnen an"}' }}
+			{{> section__headline }}
+		{{/parseJSON}}
+		</div>
+		{{#each data.leistungen}}
+		<div class="grid-25 tablet-grid-50">
+			{{> modules/card }}
+		</div>
+		{{/each}}
+	</div>
+</section>
+
+{{!-- Projekte --}}
+<section class="section section--dark">
+	<div class="grid-container">
+		<div class="grid-100">
+		{{#parseJSON '{"headline":"Eine Auswahl meiner Arbeiten"}' }}
+			{{> section__headline }}
+		{{/parseJSON}}
+		</div>
+		
+		<div class="grid-33">
+			{{> modules/project__card data.projects.[13]}}
+		</div>
+		<div class="grid-33">
+			{{> modules/project__card data.projects.[12]}}
+		</div>
+		<div class="grid-33">
+			{{> modules/project__card data.projects.[8]}}
+		</div>
+		<div class="grid-100">
+			<div class="button-bar button-bar--center">
+				<a href="/projekte" class="btn btn__ghost--dark">mehr Projekte anzeigen</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+{{!-- Prozess Timeline --}}
+<section class="section section__process-timeline section--light">
+	<div class="grid-container">
+		{{> modules/process__timeline}}
+	</div>
+</section>

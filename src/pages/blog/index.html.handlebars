@@ -1,0 +1,20 @@
+---
+layout: default.hbs
+title: Blog
+subtitle: Notizen zu Aufgaben meiner täglichen Arbeit
+name: blog
+---
+<section class="section">
+	<div class="grid-container">
+		<div class="grid-100">
+			{{> page__headline}}
+		</div>
+		<div class="grid-60 prefix-20 tablet-grid-80 tablet-prefix-10">
+			<section class="article__items">
+				{{#each blog}}
+					{{> modules/blog__teaser}}
+				{{/each}}
+			</section>
+		</div>
+	</div>
+</section>

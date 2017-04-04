@@ -1,0 +1,16 @@
+---
+layout: default.hbs
+title: Labor Medienforschung - think new
+date: 2016-03-14
+name: projekte
+collection: projekte
+data:
+ projects: ../../models/projects.json
+---
+
+<section class="section">
+	<div class="grid-container">
+		{{> modules/project__desc data.projects.[11] }}
+	</div>
+</section>
+{{> modules/pagination__article prev=data.projects.[12] next=data.projects.[10] isProject=true}}

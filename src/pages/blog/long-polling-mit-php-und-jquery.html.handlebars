@@ -1,0 +1,108 @@
+---
+layout: default.hbs
+title: Long Polling mit PHP und jQuery
+published: true
+tags:
+- PHP
+- JavaScript
+- Ajax
+- Long Polling
+categories:
+- JavaScript
+- PHP
+date: 2013-11-21
+teaser: Für ein erst kürzlich abgeschlossenes Projekt, bei dem es darum ging eine Web-Applikation zu erstellen, welche unter anderem Informationen zeitnah anzeigen soll, kam ich in die Situation mich zwischen Websockets und Long Polling zu entscheiden.
+posts: true
+collection: blog
+---
+<section class="grid-container">
+	<article class="grid-60 prefix-20 tablet-grid-80 tablet-prefix-10 article__item">
+		<h2 class="article__headline">{{title}}</h2>
+		<div class="article__toolbar">
+			<time datetime="{{formatDate date "YYYY-MM-DD"}}T00:00" class="article__publishedDate">{{formatDate date "LL"}}</time>
+		</div>
+		<p>Für ein erst kürzlich abgeschlossenes Projekt, bei dem es darum ging eine Web-Applikation zu erstellen, welche unter anderem Informationen zeitnah anzeigen soll, kam ich in die Situation mich zwischen Websockets und Long Polling zu entscheiden. Ich entschied mich für Long Polling und erkläre hier nun, wie ich vorgegangen bin.</p>
+		<figure>
+			<img src="{{rootPath}}/assets/img/artikel/ajax-long-polling.png" alt="Long Polling">
+			<figcaption>Quelle: stackoverflow.com</figcaption>
+		</figure>
+		<h3>Zuerst aber Websockets</h3>
+		<p>Da Websockets hierfür gemacht sind, schaute ich mich zuerst nach einem PHP-Framework um und stieß recht schnell auf <a href="http://socketo.me/" target="_blank">socketo.me</a>.</p>
+		<blockquote>
+			<p>Ratchet is a loosely coupled PHP library providing developers with tools to create real time, bi-directional applications between clients and servers over WebSockets. This is not your Grandfather's&nbsp;Internet.</p>
+		</blockquote>
+		<p>Nachdem ich hierfür einen Chat nach einem Tutorial erstellt hatte, bekam ich ein gefühl dafür, jedoch empfand ich es für meinen Anwendungsfall etwas zu überdimensioniert, da ich im Frontend lediglich zwei Informationen abrufen musste und nicht einen zusätzlichen Task auf dem Server laufen lassen wollte.</p>
+		<h3>Also doch Long Polling</h3>
+		<p>Letztendlich traf ich die Entscheidung Long Polling einzusetzen. Nach einigen Überlegungen stand fest, was zu tun war: in der Datenbank muss geprüft werden, ob sich seit dem letzten Request Daten geändert haben. Falls ja, sollen diese abgeholt werden. Andernfalls soll die Abfrage in der Warteschleife bleiben, so lange bis es neue Daten gibt.</p>
+		<p>Für diese Aufgabe musste ich einiges zuerst vorbereiten. Denn es betraf sowohl PHP, MySQL und JavaScript.</p>
+		<h4>JavaScript</h4>
+		<pre><code class="language-js">
+refresh = function () {
+    var localtimestamp = parseInt($('#timestamp').attr('data-timestamp'));
+     
+    if (!localtimestamp) {
+        localtimestamp = null;
+    }
+     
+    $.ajax({
+        url: '_includes/view.meeting.data.php',
+        type: 'GET',
+        data: {timestamp:localtimestamp},
+        async: true,
+        cache: false,
+        success: function (data, textStatus) {
+            $("#content").html(data);
+            localtimestamp = $('#timestamp').attr('data-timestamp');
+            refresh();
+        },
+    })
+    .done(function() {
+        console.log("success");
+    })
+    .fail(function(error) {
+        refresh();
+        console.log('Error: ' + error.statusText);
+    });
+}
+		</code></pre>
+		<p>Es wird eine Variable definiert, welche den Zeitstempel der ID #timestamp ausliest. Ist dieser nicht vorhanden wird die Variable auf null gesetzt.</p>
+		<p>Anschließend wird per AJAX eine PHP-Datei per GET abgefragt und die Timestamp als Parameter übergeben. Wichtig ist hierbei, dass async auf true und cache auf false gesetzt wird. <br>Im Erfolgsfall wird der Inhalt von data in die ID #content geschrieben und der Zeitstempel von #timestamp ausgelesen und abgespeichert und die Funktion wieder ausgeführt.</p>
+		<p>Sollte es einen Fehler oder Timeout geben, so startet die Funktion einfach erneut und gibt in der Konsole  eine Fehlermeldung aus.</p>
+		<h4>PHP</h4>
+		<pre><code class="language-php">
+if(isset($_GET['timestamp'])) {
+    $lastTime = $_GET['timestamp'];
+}
+else {
+    $lastTime = '';
+}
+ 
+$lastModified_timestamp = getLastModifiedTime(); // get the last modified date for the first call   
+ 
+if (isset($lastTime)) {
+    // do nothing until the lastModified_timestamp is greater than the last request time
+    while ($lastModified_timestamp <= $lastTime) {
+        usleep(2000000); // slow it down a bit and wait 2 seconds
+        clearstatcache();
+        $lastModified_timestamp = getLastModifiedTime();
+        if(newMeetingItems()) {
+            break; // break out the loop if there are new items to display and continue
+        }
+    }
+}			
+		</code></pre>
+		<p>Der per AJAX übergebene Zeitstempel wird in der Variable $lastTime gespeichert. Danach erfolgt ein Aufruf der Funktion getLastModifiedTime(), welche das Datum der zuletzt modifizierten Datenbanktabelle in der Variablen $lastModified_timestamp speichert. <br>Um diesen Wert zu erhalten, habe ich bei den betroffenden Tabellen eine zusätzliche Spalte erstellt und standardmäßig auf CURRENT_TIMESTAMP gesetzt. Dadurch wird diese Spalte bei jeder Änderung automatisch aktualisiert.</p>
+		<p>Anschließend wird geprüft, ob $lastTime gesetzt ist und die darin enthaltene Schleife ausgeführt. Und das ist der wichtige Teil, denn diese wird ausgeführt, so lange $lastModified_timestamp kleiner gleich $lastTime ist. Dies ist der Fall, wenn die Zeit der letzten Datenbankaktualisierung kleiner oder gleich der Zeit der letzten AJAX-Abfrage ist.</p>
+		<p>Ist dies der Fall, liegen keine neuen Daten vor und das Ganze wird per usleep(2000000) für 2 Sekunden angehalten bevor dann wieder die Zeit der letzten Datenbankaktualisierung geholt wird und zusätzlich geprüft wird, ob es neue Einträge gibt.</p>
+		<p>Liegen neue Daten vor oder wurden geändert, wird die Schleife verlassen und die darunterliegenden Anweisungen ausgeführt und an den Client geschickt.</p>
+		<h3>Fazit</h3>
+		<p>Das Entscheidende war an dieser Stelle die kleine While-Schleife in PHP. Diese wird ausgeführt, wenn keine neuen Daten vorliegen, um keine unnötigen Antworten zu senden. Erst wenn sich die Datenbank geändert hat, wird die Schleife nicht mehr ausgeführt und das restliche Skript abgeargeitet.</p>
+		<p>Durch Long Polling konnte ich für diesen kleinen Anwendungsfall schnell zu einem Ergebnis kommen, ohne mich in ein neues Framework einarbeiten zu müssen und zusätzliche Skripte auf dem Server auszuführen. <br>Dennoch sind Websockets bei größeren Anwendungsfällen die bessere Wahl, weil sie expliziet für diese Art der Kommunikation mit dem Server ausgelegt sind und weit aus mehr Möglichkeiten bieten als es Long Polling kann.</p>
+	</article>
+	<div class="grid-60 prefix-20 tablet-grid-80 tablet-prefix-10">
+		{{> modules/contact-bar }}
+	</div>
+</section>
+{{!-- {{#withSort posts }}
+	{{> pagination__article next=this.pages.[5] prev=this.pages.[3] isProject=false}}
+{{/withSort}} --}}
