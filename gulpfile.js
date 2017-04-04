@@ -239,7 +239,11 @@ gulp.task('copy:plugins', () => {
 
 	gulp.src([dir.source + 'assets/js/prism.js'])
 		.pipe(gulp.dest(dir.dest + 'assets/js/'));
-		
+
+	gulp.src(['node_modules/owl.carousel/dist/**/*.*'])
+		.pipe(gulp.dest(dir.dest + 'assets/plugins/owl-carousel/'))
+	;
+	
 	// gulp.src(['node_modules/jquery-inview/jquery.inview.min.js'])
 	// 	.pipe(gulp.dest(app.templates + 'scripts/plugins/jquery-inview'))
 	// ;
