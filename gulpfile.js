@@ -50,7 +50,8 @@ const templateConfig = {
 	directory:  dir.source + 'layouts/',
 	default:    'default.hbs',
 	partials:   dir.source + 'partials',
-	partialExtension: ".hbs"
+	partialExtension: ".hbs",
+	pattern: '**/*.{handlebars,hbs,html,md}'
 };
 
 const metadata = {
