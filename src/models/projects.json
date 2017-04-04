@@ -8,7 +8,8 @@
 		"description":"<p>Seit nunmehr 8 Jahren betreue ich die Website des FV Bodersweier. In dieser Zeit fanden vier größere Relaunches statt. Letzerer im Februar 2016. </p><p>Dabei wurde die Website gestalterisch etwas aufgefrischt und auf ein neues CMS umgezogen, wodurch auch die Ladezeiten trastisch verkürzt werden konnten. Der Hauptfokus bestand in der Arbeit die Seiten responsiv zu entwickeln, um auch in Zukunft die Informationen Plattform- und Geräte-unabhängig anbieten zu können.</p><p>Weiter bieten Zusatzinformationen anderer Web-Dienste wie der aktuellen Tabelle oder den Spielplänen den Besuchern einen Mehrwert.</p>",
 		"projectTags":["Contao CMS", "HTML/CSS (Sass)", "JavaScript (jQuery)", "PHP", "Konzeption, Design", "Relaunch 2016"],
 		"images":["/assets/img/projekte/fvbodersweier/fvbodersweier_home.jpg", "/assets/img/projekte/fvbodersweier/fvbodersweier_vorstand.jpg", "/assets/img/projekte/fvbodersweier/fvbodersweier_galerie.jpg", "/assets/img/projekte/fvbodersweier/fvbodersweier_mobile_home.jpg", "/assets/img/projekte/fvbodersweier/fvbodersweier_mobile_menu.jpg", "/assets/img/projekte/fvbodersweier/fvbodersweier_mobile_galerie.jpg"],
-		"order":16
+		"order":1,
+		"draft":false
 	},
 	{
 		"name":"fahrschule-hohenbaden",
@@ -19,7 +20,8 @@
 		"description":"<p>Schon etwas länger her, aber dennoch ein interessantes Projekt ist die Website der Fahrschule Hohenbaden, die ich entwickelte als das Grid-System von Bootstrap noch mit Pixeln um sich warf und das Responsive Design als neuer Trend ausgemacht wurde.</p><p>Zusätzlich zu den bekannten Features habe ich eine Mitgliederverwaltung gebaut, welche jedem einzelnen Schüler seine noch offenen Theoriethemen und praktischen Übungen anzeigt.</p>",
 		"projectTags":["Contao CMS", "HTML/CSS (LESS)", "JavaScript (jQuery)", "PHP", "Konzeption, Design"],
 		"images":["/assets/img/projekte/fahrschulehohenbaden/fahrschule-hohenbaden.jpg", "/assets/img/projekte/fahrschulehohenbaden/fahrschule-hohenbaden_artikel.jpg", "/assets/img/projekte/fahrschulehohenbaden/fahrschule-hohenbaden_kontakt.jpg"],
-		"order":15
+		"order":2,
+		"draft":true
 	},
 	{
 		"name":"createyoursign",
@@ -30,7 +32,8 @@
 		"description":"<p>Für die Fotografin und Print-Designerin Carolin Sexauer setzte ich ihr geliefertes Webesign um, welches ihre vielfältigsten Werke präsentiert.</p><p>Mit der \"Blackbox\" kam im Frühjahr 2015 ein weitere Dienst hinzu, welcher bei groß und klein für viel Spaß sorgt. Die Blackbox kann zu Hochzeiten, Firmenevents, Weihnachtsfeiern oder sonstigen Anlässen gebucht werden, und fotografiert die Besucher in den schönsten Posen.</p>",
 		"projectTags":["Contao CMS", "HTML/CSS (Sass)", "JavaScript (jQuery)"],
 		"images":["/assets/img/projekte/cdesign/createyoursign.jpg", "/assets/img/projekte/cdesign/createyoursign_galerie.jpg", "/assets/img/projekte/cdesign/createyoursign_start_mobile.jpg", "/assets/img/projekte/cdesign/createyoursign_galerie_mobile.jpg"],
-		"order":14
+		"order":3,
+		"draft":true
 	},
 	{
 		"name":"campusapp-landingpage",
@@ -41,7 +44,8 @@
 		"description":"<p>Zum Start der Campus-App realisierte ich eine Landingpage, welche den Interessierten zusätzliche Informationen liefert und ihnen die App näher bringen soll.</p>",
 		"projectTags":["HTML/CSS (Sass)", "JavaScript (jQuery)", "Konzeption, Design"],
 		"images":["/assets/img/projekte/hochschuleoffenburg/campusapp-landingpage.jpg", "/assets/img/projekte/hochschuleoffenburg/campusapp-landingpage_features.jpg", "/assets/img/projekte/hochschuleoffenburg/campusapp-landingpage_try.jpg","/assets/img/projekte/hochschuleoffenburg/campusapp_landingpage_mobile.jpg"],
-		"order":13
+		"order":4,
+		"draft":false
 	},
 	{
 		"name":"campusapp",
@@ -52,7 +56,8 @@
 		"description":"<p>Für die Hochschule Offenburg realisierte ich eine hypride Single-Page-Application, welche sämtliche Daten von einer RESTful API als JSON erhält und client-seitig rendert.</p><p>Die App ist modular aufgebaut und bietet Interessierten dadurch die Möglichkeit, einzelne Module zu bauen, ohne die gesamte Infrastruktur kennen zu müssen. Die App wird über das Framework Phonegap plattformübergreifend als Web-App und als Android-App im Play Store angeboten.</p>",
 		"projectTags":["Backbone.js, Underscore", "RequireJS", "Handlebars", "HTML/CSS (Sass)", "JavaScript (jQuery)", "Phonegap"],
 		"images":["/assets/img/projekte/hochschuleoffenburg/campusapp_start.jpg", "/assets/img/projekte/hochschuleoffenburg/campusapp_mensa.jpg", "/assets/img/projekte/hochschuleoffenburg/campusapp_news.jpg", "/assets/img/projekte/hochschuleoffenburg/campusapp_radio.jpg", "/assets/img/projekte/hochschuleoffenburg/campusapp_login.jpg"],
-		"order":12
+		"order":5,
+		"draft":false
 	},
 	{
 		"name":"sv-kork",
@@ -63,7 +68,8 @@
 		"description":"<p>Die Website des Sportverein Kork war - wie viele Vereinswebsites auch - in die Jahre gekommen. Ich nahm mich dem Non-Profit-Projekt an und konzipierte die Website mobile First, um dem zunehmenden Trend der Internetnutzung auf mobilen Endgeräte gerecht zu werden.</p><p>Mit App-Icon, Off-Canvas-Menü, Touch-Slidern und vielen weiteren Details ähnelt die Website einer App.</p>",
 		"projectTags":["Contao CMS", "HTML/CSS (Sass)", "JavaScript (jQuery)", "PHP", "mobile First", "Konzeption, Design"],
 		"images":["/assets/img/projekte/svkork/sv-kork.jpg", "/assets/img/projekte/svkork/sv-kork_artikel.jpg", "/assets/img/projekte/svkork/svkork_start_mobile.jpg", "/assets/img/projekte/svkork/svkork_offcanvas.jpg", "/assets/img/projekte/svkork/svkork_artikel_mobile.jpg"],
-		"order":11
+		"order":6,
+		"draft":true
 	},
 	{
 		"name":"ernst-bm",
@@ -74,7 +80,8 @@
 		"description":"<p>Für die Firma Ernst Umformtechnik GmbH erstellte ich eine Webapplikation zur Verwaltung externer Besucher und zur Anzeige aktueller Termine auf einem großen Display im Empfangsbereich. Neben den Terminen lassen sich Firmen, Besucher und Räume anlegen und bearbeiten. Für jeden Besucher kann ein Besucherausweis gedruckt werden. Die Reporting-Funktion ermöglicht das Zusammenstellen frei definierbarer Besucher-Reporte zur weiteren Verarbeitung. <br>Die Aktualisierung der Termine auf dem Display erfolgt nahezu in Echtzeit</p><p>Die Anwendung ist multilingual aufgebaut und in den Sprachen deutsch, englisch und französisch an den jeweiligen Unternehmensstandorten verfügbar.</p>",
 		"projectTags":["PHP", "HTML/CSS", "JavaScript (jQuery), Backbone, Marionette", "Handlebars", "Bootstrap", "Mehrsprachig"],
 		"images":["/assets/img/projekte/ernst/ernst_bm_fe_start.jpg", "/assets/img/projekte/ernst/ernst_bm_be_start.jpg", "/assets/img/projekte/ernst/ernst_bm_be_termin_anlegen.jpg", "/assets/img/projekte/ernst/ernst_bm_be_termine_anzeigen.jpg", "/assets/img/projekte/ernst/ernst_bm_be_termin_aendern.jpg", "/assets/img/projekte/ernst/ernst_bm_be_report.jpg", "/assets/img/projekte/ernst/ernst_bm_be_besucherausweis.jpg"],
-		"order":10
+		"order":7,
+		"draft":false
 	},
 	{
 		"name":"baas-dulsan",
@@ -85,7 +92,8 @@
 		"description":"<p>Für die Experten im Bereich \"schöner Wohnen\" von Baas & Dulsan habe ich eine Corporate Website erstellt, welche viele Einrichtungsmöglichkeiten für die eigenen vier Wände liefern und bei den Besuchern die Lust am Umdekorieren wecken soll.</p>",
 		"projectTags":["Contao CMS", "HTML/CSS (Sass)", "JavaScript (jQuery)", "Konzeption, Design"],
 		"images":["/assets/img/projekte/baasdulsan/baas-dulsan.jpg", "/assets/img/projekte/baasdulsan/baas-dulsan_produkte.jpg", "/assets/img/projekte/baasdulsan/baas-dulsan_produkt-galerie.jpg", "/assets/img/projekte/baasdulsan/baas-dulsan_artikel.jpg", "/assets/img/projekte/baasdulsan/baas-dulsan_start_mobile.jpg", "/assets/img/projekte/baasdulsan/baas-dulsan_produkte_mobile.jpg", "/assets/img/projekte/baasdulsan/baas-dulsan_galerie_mobile.jpg"],
-		"order":9
+		"order":8,
+		"draft":false
 	},
 	{
 		"name":"vallee-verte",
@@ -96,7 +104,8 @@
 		"description":"<p>Anfänglich wurde die Website für den in 2013 stattgefundenen Relaunch von der damaligen Agentur als One-Page konzipiert. Dies stellte sich jedoch nach der Realisierung als unpraktisch heraus, da der Kunde eigentlich noch viel mehr benötigte, weshalb ich die fortführende Konzeption und Kreation übernommen habe und um viele Module erweitern konnte und in Zukunft auch weiterhin werde.</p><p>Ende 2015 wurden die Käsewelten mit vielen nützlichen Informationen rund um das Thema Käse geöffnet.</p>",
 		"projectTags":["Contao CMS", "HTML/CSS (LESS)", "JavaScript (jQuery)", "PHP", "Konzeption, Design"],
 		"images":["/assets/img/projekte/valleeverte/vallee-verte.jpg", "/assets/img/projekte/valleeverte/vallee-verte_highlights.jpg", "/assets/img/projekte/valleeverte/vallee-verte_neuprodukte.jpg", "/assets/img/projekte/valleeverte/vallee-verte_kontakt.jpg", "/assets/img/projekte/valleeverte/vallee-verte_kaesewelten_start.jpg", "/assets/img/projekte/valleeverte/vallee-verte_kaesewelten_artikel.jpg"],
-		"order":8
+		"order":9,
+		"draft":false
 	},
 	{
 		"name":"docady",
@@ -107,7 +116,8 @@
 		"description":"<p>Als Projektarbeit im Sommersemester 2015 an der Hochschule Offenburg entwickelte ich zusammen mit zwei Kommilitonen eine Webanwendung zum Erlernen der MongoDB-Syntax. Dieses Projekt realisierten wir mit dem MEAN-Stack (MongoDB, Express, AngularJS, Node.js), wobei meine Aufgabe die Konzeption, Kreation und Entwicklung des Frontend mit AngularJS war.</p><p>Die Anwendung ist in zwei Teile gegliedert. Der Theorie-Bereich führt die Studierenden in die Welt der NoSQL-Datenbanken ein und erläutert deren Konzepte. Im praktischen Bereich können die Studierenden selbst Datenbank-Abfragen schreiben und ausführen. Sie erhalten ein Echtzeit-Feedback in Form des zurückgegebenen Ergebnisses. Weiter wird jede Datenbankverarbeitung den Anwendern visualisiert. Dies erhöht die Transparenz auf ein Maximum und ermöglicht es den Studierenden, alle Anfragen nachzustellen.</p><p>Die Webanwendung, welche seit dem Wintersemester 2015/16 in der Vorlesung \"Datenbanken\" als Lehrmedium verwendet wird, wurde vom betreuenden Professor mit der Note 1.0 bewertet.</p>",
 		"projectTags":["AngularJS", "HTML/CSS (Sass)", "RESTful API (JSON)", "Konzeption", "Design"],
 		"images":["/assets/img/projekte/docady/docady.jpg", "/assets/img/projekte/docady/docady_start.jpg", "/assets/img/projekte/docady/docady_edit.jpg", "/assets/img/projekte/docady/docady_upload.jpg"],
-		"order":7
+		"order":10,
+		"draft":true
 	},
 	{
 		"name":"nautic-club-kehl",
@@ -118,7 +128,8 @@
 		"description":"<p>Der Nautic Club Kehl e.V. beauftragte mich für den Relaunch Ihrer Website. Der Fokus sollte auf einer übersichlichen Navigation und einem frischen, modernen Layout liegen, welches alle Altersgruppen anspricht. Durch einen gesonderten Mitgliederbereich werden weitere Informationen den Clubmitgliedern präsentiert, um diese über eine zentrale Plattform auf dem Laufenden zu halten.</p> <p>Ich realisierte das von Saubermann.Design gelieferte Layout und erweiterte es um verschiedene Elemente wie beispielsweise den News und kleineren Modulen für Galerie und Kalender.</p>",
 		"projectTags":["Contao CMS", "HTML/CSS (Sass)", "JavaScript (jQuery)"],
 		"images":["/assets/img/projekte/nauticclubkehl/nautic-club-kehl.jpg", "/assets/img/projekte/nauticclubkehl/nautic-club-kehl-clubhaus.jpg", "/assets/img/projekte/nauticclubkehl/nautic-club-kehl_mobile.jpg", "/assets/img/projekte/nauticclubkehl/nautic-club-kehl_menu_mobile.jpg"],
-		"order":6
+		"order":6,
+		"draft":false
 	},
 	{
 		"name":"thinknew",
@@ -129,7 +140,8 @@
 		"description":"<p>Das Innovationsnetzwerk an der Hochschule Offenburg verknüpft regionale Unternehmen und Organisationen mit Studierenden der Fakultät Medien und Informationswesen. Bei gemeinsamen Projekten werden in den dazugehörigen Lehrveranstaltungen kreative Lösungsvorschläge für unternehmerische Problemstellungen entwickelt. </p><p>Darüber hinaus findet im Zuge von think new ein jährlicher Wettbewerb statt, bei dem alle studentischen Teams ihre Ideen der Öffentlichkeit vorstellen können. Bei diesem Event werden die besten Ideen in unterschiedlichen Kategorien mit Preisen prämiert.</p> <p>Ich war verantworlich für die Konzeption, Kreation und Realisierung der dazugehörigen Website zur Vorstellung dieses Netzwerks.</p>",
 		"projectTags":["Contao CMS", "HTML/CSS (Sass)", "JavaScript (jQuery)", "Design", "Konzeption"],
 		"images":["/assets/img/projekte/thinknew/thinknew.jpg", "/assets/img/projekte/thinknew/thinknew_idee.jpg", "/assets/img/projekte/thinknew/thinknew_unternehmen.jpg", "/assets/img/projekte/thinknew/thinknew_studierende.jpg", "/assets/img/projekte/thinknew/thinknew_netzwerk.jpg", "/assets/img/projekte/thinknew/thinknew_mobile.jpg", "/assets/img/projekte/thinknew/thinknew_menu_mobile.jpg"],
-		"order":5
+		"order":11,
+		"draft":false
 	},
 	{
 		"name":"hso-website",
@@ -140,7 +152,8 @@
 		"description":"<p>Für die Hochschule Offenburg konzipierte und designte ich den Relaunch ihrer Website und setzte das Design als Template mit HTML/CSS und JavaScript um, welches anschließend mit TYPO3 verknüpft wurde. Dabei lag der Fokus auf dem responsive Design, um die Website auf möglichst vielen unterschiedlichen Bildschirmgrößen perfekt in Szene zu setzen und den Anwendenden ein gutes User Interface und eine aufregende User Experience zu bieten.</p><p>Mit Hilfe des statischen Seitengenerator <a href=\"http://assemble.io\" title=\"Zur Projektwebsite\">assemble.io</a> baute ich für das Projekt die Rahmenstruktur und viele unabhängige Komponenten. Durch die Kombination der gewünschten Komponenten entstehen individuelle Webseiten.  Der komponentenbasierte Aufbau hat den Vorteil, dass einzelne Teile leichter zu pflegen sind und im gesamten Projekt wiederverwendet werden können.</p><p>Sämtliche Definitionen und Richtlinen sind in einem Styleguide zusammengefasst. Darin werden die Komponenten beschrieben und durch Codebeispiele die Verwendung im Projekt erläutert.</p><p>Der Relaunch wurde im August 2016 veröffentlicht.</p>",
 		"projectTags":["HTML/CSS (Sass)", "JavaScript (jQuery)", "Assemble.io (Static Site Generator)", "Design", "Konzeption"],
 		"images":["/assets/img/projekte/hochschuleoffenburg/website/hso-website_home.jpg", "/assets/img/projekte/hochschuleoffenburg/website/hso-website_article.jpg", "/assets/img/projekte/hochschuleoffenburg/website/hso-website_auswahlseite.jpg", "/assets/img/projekte/hochschuleoffenburg/website/hso-website_studiengaenge.jpg", "/assets/img/projekte/hochschuleoffenburg/website/hso-website_fakultaet-mi.jpg", "/assets/img/projekte/hochschuleoffenburg/website/hso-website_home_mobile.jpg", "/assets/img/projekte/hochschuleoffenburg/website/hso-website_article_mobile.jpg", "/assets/img/projekte/hochschuleoffenburg/website/hso-website_nav-mobile.jpg", "/assets/img/projekte/hochschuleoffenburg/website/hso-website_nav-mobile_exp.jpg"],
-		"order":4
+		"order":12,
+		"draft":false
 	},
 	{
 		"name":"webers-oelmuehle",
@@ -151,7 +164,8 @@
 		"description":"<p>Für die Internetagentur <a href=\"http://www.webtofly.de\" title=\"zur Website\">webtofly UG</a> setzte ich das neue Design der Website von Webers Ölmühle um. Webers Ölmühle liefert just in time oder zu festen Tageszeiten Frische- und Tiefkühlprodukte sowie Convinience und Non-Food direkt nach Hause, ins Hotel oder Restaurant.</p>",
 		"projectTags":["Contao CMS", "HTML/CSS (Sass)", "JavaScript (jQuery)", "Konzeption & Design von webtofly"],
 		"images":["/assets/img/projekte//webers-oelmuehle/webers-oelmuehle_home.jpg", "/assets/img/projekte//webers-oelmuehle/webers-oelmuehle_home_mobile.jpg"],
-		"order":3
+		"order":13,
+		"draft":false
 	},
 	{
 		"name":"pikante",
@@ -162,7 +176,8 @@
 		"description":"<p>Barbara und Ihre Mitarbeiterinnen und Mitarbeiter von Pikante sind auf neun Wochenmärkten in der Region zwischen Freudenstadt und Staufen vertreten. In der Weihnachtszeit kommen nochmals über zehn Weihnachtsmärkte dazu auf denen Sie mit viel Freude und herausragendem Fachwissen feinste Spezialitäten von eingelegten Oliven, Schafskäse, Weinblätter über leckere Trockenfrüchte bis hin zu edlen Essigen, Ölen und Seifen.</p><p>Ein Teil dieser tollen Produkte wird nun auch über den Shop zum Bestellen angeboten.</p>",
 		"projectTags":["Contao CMS", "Isotope eCommerce for Contao", "HTML/CSS (Sass)", "JavaScript (jQuery)"],
 		"images":["/assets/img/projekte/pikante/pikante-home.jpg", "/assets/img/projekte/pikante/pikante-produkte.jpg", "/assets/img/projekte/pikante/pikante-produktdetails.jpg","/assets/img/projekte/pikante/pikante-markt.jpg", "/assets/img/projekte/pikante/pikante-home-mobile.jpg", "/assets/img/projekte/pikante/pikante-produktdetails-mobile.jpg"],
-		"order":2
+		"order":14,
+		"draft":false
 	},
 	{
 		"name":"dob-aktiv",
@@ -173,6 +188,7 @@
 		"description":"<p>Für die Diplom-Sozialarbeiterin Doris Oelhaf-Bollin konzipierte, kreierte und realisierte ich ihre neu Website, auf welcher Sie ihr Leistungsspektrum von der Moderation, Mediation über Coaching bis hin zur Fortbildung präsentiert.</p>",
 		"projectTags":["ProcessWire", "HTML/CSS (Sass)", "JavaScript (jQuery)", "Konzeption & Design"],
 		"images":["/assets/img/projekte/dob-aktiv/dob-aktiv-home.jpg", "/assets/img/projekte/dob-aktiv/dob-aktiv-moderation.jpg", "/assets/img/projekte/dob-aktiv/dob-aktiv-home-mobile.jpg"],
-		"order":1
+		"order":15,
+		"draft":false
 	}
 ]

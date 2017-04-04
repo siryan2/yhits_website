@@ -44,8 +44,5 @@ this.$shapeshift.on('ss-rearranged', function (event, selected) {
 		{{> modules/contact-bar }}
 	</div>
 </section>
-
-{{!-- {{#withSort posts }}
-	{{> pagination__article next=this.pages.[2] prev=this.pages.[0] isProject=false}}
-{{/withSort}} --}}
+{{> modules/pagination__article prev=previous next=next isProject=false}}
 

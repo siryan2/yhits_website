@@ -13,10 +13,12 @@ data:
 		<div class="grid-100">
 			{{> page__headline}}
 		</div>
-		{{#withSort data.projects "order"}}
-			<div class="grid-33 tablet-grid-50">
-			{{> modules/project__card }}
-			</div>
+		{{#withSort data.projects "order" reverse="true"}}
+			{{#unless draft}}
+				<div class="grid-33 tablet-grid-50">
+				{{> modules/project__card }}
+				</div>
+			{{/unless}}
 		{{/withSort}}
 	</div>
 </section>

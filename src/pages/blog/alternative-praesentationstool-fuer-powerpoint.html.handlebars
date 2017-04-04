@@ -66,6 +66,4 @@ collection: blog
 		{{> modules/contact-bar }}
 	</div>
 </section>
-{{!-- {{#withSort posts }}
-	{{> modules/pagination__article prev=this.pages.[6] isProject=false}}
-{{/withSort}} --}}
+{{> modules/pagination__article prev=previous next=next isProject=false}}

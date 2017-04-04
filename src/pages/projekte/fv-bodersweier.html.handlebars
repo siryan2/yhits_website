@@ -14,4 +14,5 @@ data:
 		{{> modules/project__desc data.projects.[0] }}
 	</div>
 </section>
-{{> modules/pagination__article prev=data.projects.[1] isProject=true}}
+
+{{> modules/pagination__article prev=previous next=next isProject=true}}

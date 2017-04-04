@@ -3,6 +3,7 @@ layout: default.hbs
 title: Docady
 date: 2015-03-14
 name: projekte
+draft: true
 slider: true
 collection: projekte
 data:
@@ -14,4 +15,5 @@ data:
 		{{> modules/project__desc data.projects.[9] }}
 	</div>
 </section>
-{{> modules/pagination__article prev=data.projects.[10] next=data.projects.[8] isProject=true}}
+
+{{> modules/pagination__article prev=previous next=next isProject=true}}

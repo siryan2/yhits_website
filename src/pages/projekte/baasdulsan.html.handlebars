@@ -1,7 +1,7 @@
 ---
 layout: default.hbs
 title: Baas & Dulsan OHG
-date: 2013-05-02
+date: 2013-05-15
 name: projekte
 slider: true
 collection: projekte
@@ -14,4 +14,5 @@ data:
 		{{> modules/project__desc data.projects.[7] }}
 	</div>
 </section>
-{{> modules/pagination__article prev=data.projects.[8] next=data.projects.[6] isProject=true}}
+
+{{> modules/pagination__article prev=previous next=next isProject=true}}

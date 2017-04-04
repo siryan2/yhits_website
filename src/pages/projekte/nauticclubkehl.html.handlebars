@@ -1,7 +1,7 @@
 ---
 layout: default.hbs
 title: Nautic Club Kehl e.V.
-date: 2016-03-15
+date: 2016-03-01
 name: projekte
 slider: true
 collection: projekte
@@ -14,4 +14,5 @@ data:
 		{{> modules/project__desc data.projects.[10] }}
 	</div>
 </section>
-{{> modules/pagination__article prev=data.projects.[11] next=data.projects.[9] isProject=true}}
+
+{{> modules/pagination__article prev=previous next=next isProject=true}}

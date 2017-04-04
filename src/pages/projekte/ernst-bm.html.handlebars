@@ -1,7 +1,7 @@
 ---
 layout: default.hbs
 title: Ernst Umformtechnik GmbH - Besuchermanagement-System
-date: 2013-09-24
+date: 2012-09-15
 name: projekte
 slider: true
 collection: projekte
@@ -14,4 +14,5 @@ data:
 		{{> modules/project__desc data.projects.[6] }}
 	</div>
 </section>
-{{> modules/pagination__article prev=data.projects.[7] next=data.projects.[5] isProject=true}}
+
+{{> modules/pagination__article prev=previous next=next isProject=true}}

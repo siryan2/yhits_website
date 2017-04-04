@@ -103,6 +103,4 @@ if (isset($lastTime)) {
 		{{> modules/contact-bar }}
 	</div>
 </section>
-{{!-- {{#withSort posts }}
-	{{> pagination__article next=this.pages.[5] prev=this.pages.[3] isProject=false}}
-{{/withSort}} --}}
+{{> modules/pagination__article prev=previous next=next isProject=false}}

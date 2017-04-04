@@ -40,7 +40,4 @@ collection: blog
 		{{> modules/contact-bar }}
 	</div>
 </section>
-
-{{!-- {{#withSort posts }}
-	{{> pagination__article next=this.pages.[3] prev=this.pages.[1] isProject=false}}
-{{/withSort}} --}}
+{{> modules/pagination__article prev=previous next=next isProject=false}}

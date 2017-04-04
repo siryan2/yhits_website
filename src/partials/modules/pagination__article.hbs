@@ -2,11 +2,11 @@
 	{{#if prev}}
 	<div class="{{#if next}}grid-40{{else}}grid-50{{/if}} article__pagination-item article__pagination-item--prev">
 		<span class="article__pagination-item-text"><i class="fa fa-angle-double-left"></i> {{#if isProject}}vorheriges Projekt{{else}}vorheriger Artikel{{/if}}</span>
-		<a href="{{#if prev.detailUrl}}{{prev.detailUrl}}{{else}}{{prev.filename}}{{/if}}" class="article__pagination-item-link">{{#if prev.detailUrl}}{{prev.projectTitle}}{{else}}{{prev.data.title}}{{/if}}</a>
+		<a href="{{prev.paths.dhref}}{{#stem prev.paths.href}}{{/stem}}" class="article__pagination-item-link">{{prev.title}}</a>
 	</div>
 	{{/if}}
 	<div class="{{#and prev next}}grid-20{{else}}grid-50{{/and}} article__pagination-item article__pagination-item--overview">
-		<a href="/{{page.name}}" class="article__pagination-item-link--overview">
+		<a href="/{{#if name}}{{name}}{{else}}blog{{/if}}" class="article__pagination-item-link--overview">
 			<span class="article__pagination-item-icon">
 				<i class="fa fa-th-large"></i>
 			</span>
@@ -16,7 +16,7 @@
 	{{#if next}}
 	<div class="{{#if prev}}grid-40{{else}}grid-50{{/if}} article__pagination-item article__pagination-item--next">
 		<span class="article__pagination-item-text">{{#if isProject}}nächstes Projekt{{else}}nächster Artikel{{/if}} <i class="fa fa-angle-double-right"></i></span>
-		<a href="{{#if next.detailUrl}}{{next.detailUrl}}{{else}}{{next.filename}}{{/if}}" class="article__pagination-item-link">{{#if next.detailUrl}}{{next.projectTitle}}{{else}}{{next.data.title}}{{/if}}</a>
+		<a href="{{next.paths.dhref}}{{#stem next.paths.href}}{{/stem}}" class="article__pagination-item-link">{{next.title}}</a>
 	</div>
 	{{/if}}
 </section>

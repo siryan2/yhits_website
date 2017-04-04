@@ -1,7 +1,7 @@
 ---
 layout: default.hbs
 title: Labor Medienforschung - think new
-date: 2016-03-14
+date: 2016-03-15
 name: projekte
 slider: true
 collection: projekte
@@ -14,4 +14,5 @@ data:
 		{{> modules/project__desc data.projects.[11] }}
 	</div>
 </section>
-{{> modules/pagination__article prev=data.projects.[12] next=data.projects.[10] isProject=true}}
+
+{{> modules/pagination__article prev=previous next=next isProject=true}}

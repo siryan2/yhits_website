@@ -3,6 +3,7 @@ layout: default.hbs
 title: Fahrschule Hohenbaden GmbH
 date: 2012-10-15
 name: projekte
+draft: true
 slider: true
 collection: projekte
 data:
@@ -14,4 +15,5 @@ data:
 		{{> modules/project__desc data.projects.[1] }}
 	</div>
 </section>
-{{> modules/pagination__article prev=data.projects.[2] next=data.projects.[0] isProject=true}}
+
+{{> modules/pagination__article prev=previous next=next isProject=true}}

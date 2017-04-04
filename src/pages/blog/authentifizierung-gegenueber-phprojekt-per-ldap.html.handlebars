@@ -52,6 +52,4 @@ $this->fillField('firstname', 'First name', 'text', 2, 4, array('required' => fa
 		{{> modules/contact-bar }}
 	</div>
 </section>
-{{!-- {{#withSort posts }}
-	{{> pagination__article next=this.pages.[6] prev=this.pages.[4] isProject=false}}
-{{/withSort}} --}}
+{{> modules/pagination__article prev=previous next=next isProject=false}}

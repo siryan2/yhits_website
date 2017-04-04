@@ -44,6 +44,4 @@ $('a[data-lightbox]').map(function() {
 		{{> modules/contact-bar }}
 	</div>
 </section>
-{{!-- {{#withSort posts }}
-	{{> pagination__article next=this.pages.[4] prev=this.pages.[2] isProject=false}}
-{{/withSort}} --}}
+{{> modules/pagination__article prev=previous next=next isProject=false}}
