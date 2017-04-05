@@ -9,7 +9,8 @@
 		"projectTags":["Contao CMS", "HTML/CSS (Sass)", "JavaScript (jQuery)", "PHP", "Konzeption, Design", "Relaunch 2016"],
 		"images":["/assets/img/projekte/fvbodersweier/fvbodersweier_home.jpg", "/assets/img/projekte/fvbodersweier/fvbodersweier_vorstand.jpg", "/assets/img/projekte/fvbodersweier/fvbodersweier_galerie.jpg", "/assets/img/projekte/fvbodersweier/fvbodersweier_mobile_home.jpg", "/assets/img/projekte/fvbodersweier/fvbodersweier_mobile_menu.jpg", "/assets/img/projekte/fvbodersweier/fvbodersweier_mobile_galerie.jpg"],
 		"order":1,
-		"draft":false
+		"draft":false,
+		"online":"März 2016"
 	},
 	{
 		"name":"fahrschule-hohenbaden",
@@ -21,7 +22,8 @@
 		"projectTags":["Contao CMS", "HTML/CSS (LESS)", "JavaScript (jQuery)", "PHP", "Konzeption, Design"],
 		"images":["/assets/img/projekte/fahrschulehohenbaden/fahrschule-hohenbaden.jpg", "/assets/img/projekte/fahrschulehohenbaden/fahrschule-hohenbaden_artikel.jpg", "/assets/img/projekte/fahrschulehohenbaden/fahrschule-hohenbaden_kontakt.jpg"],
 		"order":2,
-		"draft":true
+		"draft":true,
+		"online":"November 2012"
 	},
 	{
 		"name":"createyoursign",
@@ -33,7 +35,8 @@
 		"projectTags":["Contao CMS", "HTML/CSS (Sass)", "JavaScript (jQuery)"],
 		"images":["/assets/img/projekte/cdesign/createyoursign.jpg", "/assets/img/projekte/cdesign/createyoursign_galerie.jpg", "/assets/img/projekte/cdesign/createyoursign_start_mobile.jpg", "/assets/img/projekte/cdesign/createyoursign_galerie_mobile.jpg"],
 		"order":3,
-		"draft":true
+		"draft":true,
+		"online":""
 	},
 	{
 		"name":"campusapp-landingpage",
@@ -45,7 +48,8 @@
 		"projectTags":["HTML/CSS (Sass)", "JavaScript (jQuery)", "Konzeption, Design"],
 		"images":["/assets/img/projekte/hochschuleoffenburg/campusapp-landingpage.jpg", "/assets/img/projekte/hochschuleoffenburg/campusapp-landingpage_features.jpg", "/assets/img/projekte/hochschuleoffenburg/campusapp-landingpage_try.jpg","/assets/img/projekte/hochschuleoffenburg/campusapp_landingpage_mobile.jpg"],
 		"order":4,
-		"draft":false
+		"draft":false,
+		"online":"März 2013"
 	},
 	{
 		"name":"campusapp",
@@ -57,7 +61,8 @@
 		"projectTags":["Backbone.js, Underscore", "RequireJS", "Handlebars", "HTML/CSS (Sass)", "JavaScript (jQuery)", "Phonegap"],
 		"images":["/assets/img/projekte/hochschuleoffenburg/campusapp_start.jpg", "/assets/img/projekte/hochschuleoffenburg/campusapp_mensa.jpg", "/assets/img/projekte/hochschuleoffenburg/campusapp_news.jpg", "/assets/img/projekte/hochschuleoffenburg/campusapp_radio.jpg", "/assets/img/projekte/hochschuleoffenburg/campusapp_login.jpg"],
 		"order":5,
-		"draft":false
+		"draft":false,
+		"online":"März 2013"
 	},
 	{
 		"name":"sv-kork",
@@ -69,7 +74,8 @@
 		"projectTags":["Contao CMS", "HTML/CSS (Sass)", "JavaScript (jQuery)", "PHP", "mobile First", "Konzeption, Design"],
 		"images":["/assets/img/projekte/svkork/sv-kork.jpg", "/assets/img/projekte/svkork/sv-kork_artikel.jpg", "/assets/img/projekte/svkork/svkork_start_mobile.jpg", "/assets/img/projekte/svkork/svkork_offcanvas.jpg", "/assets/img/projekte/svkork/svkork_artikel_mobile.jpg"],
 		"order":6,
-		"draft":true
+		"draft":true,
+		"online":"März 2014"
 	},
 	{
 		"name":"ernst-bm",
@@ -81,7 +87,8 @@
 		"projectTags":["PHP", "HTML/CSS", "JavaScript (jQuery), Backbone, Marionette", "Handlebars", "Bootstrap", "Mehrsprachig"],
 		"images":["/assets/img/projekte/ernst/ernst_bm_fe_start.jpg", "/assets/img/projekte/ernst/ernst_bm_be_start.jpg", "/assets/img/projekte/ernst/ernst_bm_be_termin_anlegen.jpg", "/assets/img/projekte/ernst/ernst_bm_be_termine_anzeigen.jpg", "/assets/img/projekte/ernst/ernst_bm_be_termin_aendern.jpg", "/assets/img/projekte/ernst/ernst_bm_be_report.jpg", "/assets/img/projekte/ernst/ernst_bm_be_besucherausweis.jpg"],
 		"order":7,
-		"draft":false
+		"draft":false,
+		"online":""
 	},
 	{
 		"name":"baas-dulsan",
@@ -93,7 +100,8 @@
 		"projectTags":["Contao CMS", "HTML/CSS (Sass)", "JavaScript (jQuery)", "Konzeption, Design"],
 		"images":["/assets/img/projekte/baasdulsan/baas-dulsan.jpg", "/assets/img/projekte/baasdulsan/baas-dulsan_produkte.jpg", "/assets/img/projekte/baasdulsan/baas-dulsan_produkt-galerie.jpg", "/assets/img/projekte/baasdulsan/baas-dulsan_artikel.jpg", "/assets/img/projekte/baasdulsan/baas-dulsan_start_mobile.jpg", "/assets/img/projekte/baasdulsan/baas-dulsan_produkte_mobile.jpg", "/assets/img/projekte/baasdulsan/baas-dulsan_galerie_mobile.jpg"],
 		"order":8,
-		"draft":false
+		"draft":false,
+		"online":"Mai 2013"
 	},
 	{
 		"name":"vallee-verte",
@@ -105,7 +113,8 @@
 		"projectTags":["Contao CMS", "HTML/CSS (LESS)", "JavaScript (jQuery)", "PHP", "Konzeption, Design"],
 		"images":["/assets/img/projekte/valleeverte/vallee-verte.jpg", "/assets/img/projekte/valleeverte/vallee-verte_highlights.jpg", "/assets/img/projekte/valleeverte/vallee-verte_neuprodukte.jpg", "/assets/img/projekte/valleeverte/vallee-verte_kontakt.jpg", "/assets/img/projekte/valleeverte/vallee-verte_kaesewelten_start.jpg", "/assets/img/projekte/valleeverte/vallee-verte_kaesewelten_artikel.jpg"],
 		"order":9,
-		"draft":false
+		"draft":false,
+		"online":"Relaunch Juni 2015"
 	},
 	{
 		"name":"docady",
@@ -117,7 +126,8 @@
 		"projectTags":["AngularJS", "HTML/CSS (Sass)", "RESTful API (JSON)", "Konzeption", "Design"],
 		"images":["/assets/img/projekte/docady/docady.jpg", "/assets/img/projekte/docady/docady_start.jpg", "/assets/img/projekte/docady/docady_edit.jpg", "/assets/img/projekte/docady/docady_upload.jpg"],
 		"order":10,
-		"draft":true
+		"draft":true,
+		"online":""
 	},
 	{
 		"name":"nautic-club-kehl",
@@ -128,8 +138,9 @@
 		"description":"<p>Der Nautic Club Kehl e.V. beauftragte mich für den Relaunch Ihrer Website. Der Fokus sollte auf einer übersichlichen Navigation und einem frischen, modernen Layout liegen, welches alle Altersgruppen anspricht. Durch einen gesonderten Mitgliederbereich werden weitere Informationen den Clubmitgliedern präsentiert, um diese über eine zentrale Plattform auf dem Laufenden zu halten.</p> <p>Ich realisierte das von Saubermann.Design gelieferte Layout und erweiterte es um verschiedene Elemente wie beispielsweise den News und kleineren Modulen für Galerie und Kalender.</p>",
 		"projectTags":["Contao CMS", "HTML/CSS (Sass)", "JavaScript (jQuery)"],
 		"images":["/assets/img/projekte/nauticclubkehl/nautic-club-kehl.jpg", "/assets/img/projekte/nauticclubkehl/nautic-club-kehl-clubhaus.jpg", "/assets/img/projekte/nauticclubkehl/nautic-club-kehl_mobile.jpg", "/assets/img/projekte/nauticclubkehl/nautic-club-kehl_menu_mobile.jpg"],
-		"order":6,
-		"draft":false
+		"order":11,
+		"draft":false,
+		"online":"März 2016"
 	},
 	{
 		"name":"thinknew",
@@ -140,8 +151,9 @@
 		"description":"<p>Das Innovationsnetzwerk an der Hochschule Offenburg verknüpft regionale Unternehmen und Organisationen mit Studierenden der Fakultät Medien und Informationswesen. Bei gemeinsamen Projekten werden in den dazugehörigen Lehrveranstaltungen kreative Lösungsvorschläge für unternehmerische Problemstellungen entwickelt. </p><p>Darüber hinaus findet im Zuge von think new ein jährlicher Wettbewerb statt, bei dem alle studentischen Teams ihre Ideen der Öffentlichkeit vorstellen können. Bei diesem Event werden die besten Ideen in unterschiedlichen Kategorien mit Preisen prämiert.</p> <p>Ich war verantworlich für die Konzeption, Kreation und Realisierung der dazugehörigen Website zur Vorstellung dieses Netzwerks.</p>",
 		"projectTags":["Contao CMS", "HTML/CSS (Sass)", "JavaScript (jQuery)", "Design", "Konzeption"],
 		"images":["/assets/img/projekte/thinknew/thinknew.jpg", "/assets/img/projekte/thinknew/thinknew_idee.jpg", "/assets/img/projekte/thinknew/thinknew_unternehmen.jpg", "/assets/img/projekte/thinknew/thinknew_studierende.jpg", "/assets/img/projekte/thinknew/thinknew_netzwerk.jpg", "/assets/img/projekte/thinknew/thinknew_mobile.jpg", "/assets/img/projekte/thinknew/thinknew_menu_mobile.jpg"],
-		"order":11,
-		"draft":false
+		"order":12,
+		"draft":false,
+		"online":"März 2016"
 	},
 	{
 		"name":"hso-website",
@@ -152,8 +164,9 @@
 		"description":"<p>Für die Hochschule Offenburg konzipierte und designte ich den Relaunch ihrer Website und setzte das Design als Template mit HTML/CSS und JavaScript um, welches anschließend mit TYPO3 verknüpft wurde. Dabei lag der Fokus auf dem responsive Design, um die Website auf möglichst vielen unterschiedlichen Bildschirmgrößen perfekt in Szene zu setzen und den Anwendenden ein gutes User Interface und eine aufregende User Experience zu bieten.</p><p>Mit Hilfe des statischen Seitengenerator <a href=\"http://assemble.io\" title=\"Zur Projektwebsite\">assemble.io</a> baute ich für das Projekt die Rahmenstruktur und viele unabhängige Komponenten. Durch die Kombination der gewünschten Komponenten entstehen individuelle Webseiten.  Der komponentenbasierte Aufbau hat den Vorteil, dass einzelne Teile leichter zu pflegen sind und im gesamten Projekt wiederverwendet werden können.</p><p>Sämtliche Definitionen und Richtlinen sind in einem Styleguide zusammengefasst. Darin werden die Komponenten beschrieben und durch Codebeispiele die Verwendung im Projekt erläutert.</p><p>Der Relaunch wurde im August 2016 veröffentlicht.</p>",
 		"projectTags":["HTML/CSS (Sass)", "JavaScript (jQuery)", "Assemble.io (Static Site Generator)", "Design", "Konzeption"],
 		"images":["/assets/img/projekte/hochschuleoffenburg/website/hso-website_home.jpg", "/assets/img/projekte/hochschuleoffenburg/website/hso-website_article.jpg", "/assets/img/projekte/hochschuleoffenburg/website/hso-website_auswahlseite.jpg", "/assets/img/projekte/hochschuleoffenburg/website/hso-website_studiengaenge.jpg", "/assets/img/projekte/hochschuleoffenburg/website/hso-website_fakultaet-mi.jpg", "/assets/img/projekte/hochschuleoffenburg/website/hso-website_home_mobile.jpg", "/assets/img/projekte/hochschuleoffenburg/website/hso-website_article_mobile.jpg", "/assets/img/projekte/hochschuleoffenburg/website/hso-website_nav-mobile.jpg", "/assets/img/projekte/hochschuleoffenburg/website/hso-website_nav-mobile_exp.jpg"],
-		"order":12,
-		"draft":false
+		"order":13,
+		"draft":false,
+		"online":"August 2016"
 	},
 	{
 		"name":"webers-oelmuehle",
@@ -164,8 +177,9 @@
 		"description":"<p>Für die Internetagentur <a href=\"http://www.webtofly.de\" title=\"zur Website\">webtofly UG</a> setzte ich das neue Design der Website von Webers Ölmühle um. Webers Ölmühle liefert just in time oder zu festen Tageszeiten Frische- und Tiefkühlprodukte sowie Convinience und Non-Food direkt nach Hause, ins Hotel oder Restaurant.</p>",
 		"projectTags":["Contao CMS", "HTML/CSS (Sass)", "JavaScript (jQuery)", "Konzeption & Design von webtofly"],
 		"images":["/assets/img/projekte//webers-oelmuehle/webers-oelmuehle_home.jpg", "/assets/img/projekte//webers-oelmuehle/webers-oelmuehle_home_mobile.jpg"],
-		"order":13,
-		"draft":false
+		"order":14,
+		"draft":false,
+		"online":"September 2016"
 	},
 	{
 		"name":"pikante",
@@ -177,7 +191,8 @@
 		"projectTags":["Contao CMS", "Isotope eCommerce for Contao", "HTML/CSS (Sass)", "JavaScript (jQuery)"],
 		"images":["/assets/img/projekte/pikante/pikante-home.jpg", "/assets/img/projekte/pikante/pikante-produkte.jpg", "/assets/img/projekte/pikante/pikante-produktdetails.jpg","/assets/img/projekte/pikante/pikante-markt.jpg", "/assets/img/projekte/pikante/pikante-home-mobile.jpg", "/assets/img/projekte/pikante/pikante-produktdetails-mobile.jpg"],
 		"order":14,
-		"draft":false
+		"draft":false,
+		"online":"Oktober 2016"
 	},
 	{
 		"name":"dob-aktiv",
@@ -189,6 +204,20 @@
 		"projectTags":["ProcessWire", "HTML/CSS (Sass)", "JavaScript (jQuery)", "Konzeption & Design"],
 		"images":["/assets/img/projekte/dob-aktiv/dob-aktiv-home.jpg", "/assets/img/projekte/dob-aktiv/dob-aktiv-moderation.jpg", "/assets/img/projekte/dob-aktiv/dob-aktiv-home-mobile.jpg"],
 		"order":15,
-		"draft":false
+		"draft":false,
+		"online":"November 2016"
+	},
+	{
+		"name":"vida-logistik",
+		"projectTitle":"ViDa Logistik GmbH",
+		"detailUrl":"/projekte/vida-logistik.html",
+		"url":"http://www.vida-logistik.de",
+		"image":"/assets/img/projekte/vida-logistik/vida-logistik_home.jpg",
+		"description":"<p>Das Logistikunternehmen ViDa Logistik GmbH hat sich auf den Transport von Lebensmitteln spezialisiert und punktet hier vor Allem durch Pünktlichkeit und Zuverlässigkeit.</p><p>Meine Aufgabe bestand darin, die Website technisch sowie gestalterisch zu modernisieren und für künftige Projekte (Sendungsverfolgung) vorzubereiten.</p>",
+		"projectTags":["ProcessWire", "HTML/CSS (Sass)", "JavaScript (jQuery)", "Konzeption & Design"],
+		"images":["/assets/img/projekte/vida-logistik/vida-logistik_home.jpg", "/assets/img/projekte/vida-logistik/vida-logistik_unternehmen.jpg", "/assets/img/projekte/vida-logistik/vida-logistik_home-mobile.jpg"],
+		"order":16,
+		"draft":false,
+		"online":"März 2017"
 	}
 ]
