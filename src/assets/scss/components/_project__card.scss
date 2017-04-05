@@ -5,7 +5,7 @@
  * @module: Project Cards
  * @desc: Cards
  * @author: Yannick Herzog
- * @last-modified: 2015-12-11
+ * @last-modified: 2017-04-05
  **/
 
 .project__card {
@@ -62,7 +62,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', end
 .project__card-caption-item-link {
 	color: $lighterGray;
 	display: inline-block;
-	font-family: $baseFont;
+	font-family: $secondaryFont;
 	font-size: 1.2em;
 	text-decoration: none;
 

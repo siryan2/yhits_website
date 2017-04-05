@@ -4,14 +4,14 @@
  * @component: Buttons
  * @desc: Buttons
  * @author: Yannick Herzog
- * @last-modified: 2016-02-08
+ * @last-modified: 2017-04-05
  **/
 
 $btn-radius: 40px;
 
 .btn {
 	display: inline-block;
-	font-family: $baseFont;
+	font-family: $secondaryFont;
 	font-size: 1em;
 	line-height: 1em;
 	padding: 1em 1.6em 1.2em;

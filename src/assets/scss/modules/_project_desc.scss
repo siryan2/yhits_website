@@ -4,13 +4,14 @@
  * @module: Project Description
  * @desc: Einzelne Projekte
  * @author: Yannick Herzog
- * @last-modified: 2016-08-12
+ * @last-modified: 2017-04-05
  **/
 
 .project-description {
 	p {
-		font-size: 1.2rem;
-		line-height: 1.8rem;
+		color: $darkGray;
+		font-size: 1.1rem;
+		line-height: 1.6rem;
 	}
 }
 

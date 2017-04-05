@@ -1,11 +1,10 @@
 @import '../_variables';
-@import 'node_modules/font-awesome/scss/_variables';
 
 /**
  * @module: Article
  * @desc: Artikel
  * @author: Yannick Herzog
- * @last-modified: 2015-12-15
+ * @last-modified: 2017-04-05
  **/
 
 .article__items {
@@ -16,6 +15,8 @@
 	margin-top: 3em;
 	padding-bottom: 2em;
 	border-bottom: 1px solid $gray;
+	color: $darkGray;
+
 	&:first-child {
 		margin-top: 0;
 	}
@@ -26,6 +27,7 @@
 	h2,
 	h3,
 	h4 {
+		color: $baseColor;
 		font-family: 'Roboto', sans-serif;
 	}
 	
@@ -76,6 +78,10 @@
 			color: lighten($gray, 5%);
 			z-index: -1;
 		}
+	}
+
+	li {
+		color: $darkGray;
 	}
 
 }
