@@ -18,15 +18,19 @@
 /**
  * Components
  */
+@import 'components/_lists';
 @import 'components/_tables';
 @import 'components/_forms';
 @import 'components/_buttons';
 @import 'components/_project__card';
 @import 'components/_cards';
+@import 'components/_claim';
 
 /**
  * Modules
  */
+@import 'modules/_hero';
+@import 'modules/_nav';
 @import 'modules/_project_desc';
 @import 'modules/_notifications';
 @import 'modules/_aboutme';
