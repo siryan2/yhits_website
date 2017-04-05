@@ -4,7 +4,7 @@
  * @module: Section
  * @desc: Section
  * @author: Yannick Herzog
- * @last-modified: 2015-12-16
+ * @last-modified: 2017-04-05
  **/
 
 .section {
@@ -17,6 +17,10 @@
 
 .section--darker {
 	background: $baseColor;
+}
+
+.section--underline {
+	border-bottom: 1px solid $mediumGray;
 }
 
 .section__headline {
