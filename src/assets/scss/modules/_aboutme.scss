@@ -4,7 +4,7 @@
  * @module: aboutm
  * @desc: About Me Section
  * @author: Yannick Herzog
- * @last-modified: 2015-12-15
+ * @last-modified: 2017-04-05
  **/
 
 
@@ -69,3 +69,54 @@
 		padding-top: 4em;
 	}
 }
+
+/**
+ * CV
+ */
+.cv__row {
+	color: $darkGray;
+	margin-top: 2rem;
+	font-family: $alternateBaseFont;
+
+	&:first-child {
+		margin-top: 0;
+	}
+
+	strong {
+		font-size: 1.1rem;
+		font-weight: 700;
+	}
+}
+
+.cv__period {
+	color: #afafaf;
+	display: inline-block;
+	font-size: 0.9rem;
+	font-weight: 400;
+	margin-top: 0.6rem;
+}
+
+.cv__period--half-margin {
+	margin-top: 0.3rem;
+}
+
+.cv__period-description {
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.4rem;
+}
+
+.cv__position {
+	display: inline-block;
+	color: darken(#afafaf, 10%);
+	font-size: 1rem;
+	margin-top: 0.3rem;
+}
+
+@media screen and (max-width: $media-tablet-max) {
+	.cv__period-description {
+		margin-top: 0.5rem;
+	}
+}
+
+

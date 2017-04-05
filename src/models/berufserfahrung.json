@@ -1,0 +1,38 @@
+[
+	{
+		"title": "Freelancer",
+		"period":"Januar 2007 - heute",
+		"description": "Für kleine und mittelständische Unternehmen sowie Agenturen konzipiere und realisiere ich Websites und Webapplikationen auf Basis moderner Webtechnologien in HTML/CSS und JavaScript im Frontend sowie PHP/MySQL oder Node.js im Backend.",
+		"position": "Webentwickler"
+	},
+	{
+		"title": "Konmedia GmbH",
+		"period":"November 2016 - März 2017",
+		"description": "Zu meinen Aufgaben gehörte die Umsetzung von anspruchsvollen Frontends für CMS- und Shopsysteme in HTML/CSS und JavaScript. Im Speziellen war ich beteilidgt an der Realisierung der im März 2017 neu gelaunchten Website www.brandbox.de sowie des neuen Brandbox Frameworks.",
+		"position": "Webentwickler"
+	},
+	{
+		"title": "Web Commerce GmbH",
+		"period":"März 2016 - August 2016",
+		"description": "Meine Masterthesis beschäftigte sich mit der Konzeption und Realisierung einer datengetriebenen und komponentenbasierten Web-Applikation zur ERP-System-Anbindung mit Echtzeitkommunikation.",
+		"position": "Masterand"
+	},
+	{
+		"title": "Hochschule Offenburg",
+		"period":"Oktober 2014 - Dezember 2015",
+		"description": "Ich war verantwortlich für die Neugestaltung (Konzeption, Kreation) der Hochschulwebsite im Responsive Design mit über 5.000 Seiten und erstellte die Frontend-Templates sowie Styleguides in HTML/CSS und JavaScript.",
+		"position": "Frontendentwickler, UI/UX"
+	},
+	{
+		"title": "Virtual Identity AG",
+		"period":"September 2012 - Februar 2013",
+		"description": "Während meines Praxissemesters setzte ich Frontends für namhafte Kunden aus untertschiedlichen Branchen in HTML/CSS und JavaScript um und war für Qualitäts- sicherung und Testing verantwortlich.",
+		"position": "Praktikum Frontendentwicklung"
+	},
+	{
+		"title": "Ernst Umformtechnik GmbH",
+		"period":"September 2006 - September 2010",
+		"description": "Webdesign/Webentwicklung (Intranet, Internet), Aufbau und Betreuung des DMS, Betreuung und administrieren der Infrastruktur, Server und der virtuellen Umgebungen, IT-Support",
+		"position": "Fachinformatiker"
+	}
+]

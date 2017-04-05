@@ -1,0 +1,12 @@
+<div class="cv__row grid-100">
+	<div class="grid-30 prefix-15">
+		<strong>{{title}}</strong><br>
+		{{#if position}}
+		<span class="cv__position">&mdash; {{position}}</span><br>
+		{{/if}}
+		<span class="cv__period {{#unless position}}cv__period--half-margin{{/unless}}">{{period}}</span>
+	</div>
+	<div class="cv__period-description grid-50">
+		{{{description}}}
+	</div>
+</div>

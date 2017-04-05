@@ -3,6 +3,10 @@ layout: default.hbs
 title: Über
 subtitle: Erfahren Sie mehr über mich
 name: ueber
+data:
+ ausbildung: ../../models/ausbildung.json
+ berufserfahrung: ../../models/berufserfahrung.json
+ skills: ../../models/skills.json
 ---
 
 <section class="aboutme__section">
@@ -11,12 +15,54 @@ name: ueber
 			<div class="aboutme__text-wrapper">
 				<h2 class="aboutme__headline"><span>Kurzportrait</span></h2>
 				<p>
-					Mein Name ist Yannick Herzog, ich bin Webdesigner und Webentwickler aus Leidenschaft.<br> Seit 2007 arbeite ich selbst&auml;ndig für kleine und mittelständische Unternehmen in ganz Deutschland.
+					Mein Name ist Yannick Herzog, ich bin Webentwickler aus Leidenschaft.<br> Seit 2007 arbeite ich selbst&auml;ndig für kleine und mittelständische Unternehmen in ganz Deutschland.
 				</p>
 				<p>
-					Für Sie erstelle ich schöne, flexible, einzigartige und selbst zu pflegende Internetauftritte auf Basis von HTML, CSS und JavaScript mit den modernsten Webtechnologien und Content-Management-Systemen.
+					Für Sie erstelle ich schöne, flexible, einzigartige und selbst zu pflegende Websites und Webapplikationen auf Basis von HTML, CSS und JavaScript mit den modernsten Webtechnologien und Content-Management-Systemen.
 				</p>
 			</div>
 		</div>
+	</div>
+</section>
+
+<section class="section section--underline">
+	<div class="grid-container">
+		<div>
+			{{#parseJSON '{"headline":"Ausbildung"}' }}
+				{{> section__headline }}
+			{{/parseJSON}}
+		</div>
+
+		{{#each data.ausbildung}}
+			{{> modules/cv__row }}
+		{{/each}}
+	</div>
+</section>
+
+<section class="section section--underline">
+	<div class="grid-container">
+		<div>
+			{{#parseJSON '{"headline":"Berufserfahrung"}' }}
+				{{> section__headline }}
+			{{/parseJSON}}
+		</div>
+
+		{{#each data.berufserfahrung}}
+			{{> modules/cv__row }}
+		{{/each}}
+	</div>
+</section>
+
+<section class="section">
+	<div class="grid-container">
+		<div>
+			{{#parseJSON '{"headline":"Skills"}' }}
+				{{> section__headline }}
+			{{/parseJSON}}
+		</div>
+
+		{{#each data.skills}}
+			{{> modules/cv__row }}
+		{{/each}}
 	</div>
 </section>

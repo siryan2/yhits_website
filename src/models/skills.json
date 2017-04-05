@@ -1,0 +1,38 @@
+[
+	{
+		"title": "Architektur",
+		"period":"",
+		"description": "Einhaltung von Codekonventionen und Richtlinen für HTML, CSS (BEM) und JavaScript, Komponentenbasierte Entwicklung",
+		"position": ""
+	},
+	{
+		"title": "Entwicklung (Frontend)",
+		"period":"",
+		"description": "HTML, CSS: Bootstrap, Material Design <br>JavaScript: jQuery, AngularJS, VueJS, Backbone, Marionette,<br> CommonJS, RequireJS, Handlebars <br> Preprozessoren: Sass, LESS <br><br>Mobile First, Responsive Design, Cross-Browser-funktionale Umsetzung",
+		"position": ""
+	},
+	{
+		"title": "Entwicklung (Backend)",
+		"period":"",
+		"description": "Node.js, Express, Passport, Socket.IO<br> PHP, MySQL, Smarty",
+		"position": ""
+	},
+	{
+		"title": "Tools",
+		"period":"",
+		"description": "Git, Git Flow, Grunt, Gulp, npm, Bower, Assemble.io, Metalsmith",
+		"position": ""
+	},
+	{
+		"title": "CMS/Shop",
+		"period":"",
+		"description": "Contao, Isotope for Contao, ProcessWire, CS.Cart",
+		"position": ""
+	},
+	{
+		"title": "Design",
+		"period":"",
+		"description": "Photoshop, UI/UX",
+		"position": ""
+	}
+]
