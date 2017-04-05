@@ -8,7 +8,6 @@ data:
  berufserfahrung: ../../models/berufserfahrung.json
  skills: ../../models/skills.json
 ---
-
 <section class="aboutme__section">
 	<div class="grid-container">
 		<div class="grid-50 tablet-grid-50 mobile-grid-60">
@@ -28,16 +27,17 @@ data:
 <section class="section section--underline">
 	<div class="grid-container">
 		<div>
-			{{#parseJSON '{"headline":"Ausbildung"}' }}
+			{{#parseJSON '{"headline":"Skills"}' }}
 				{{> section__headline }}
 			{{/parseJSON}}
 		</div>
 
-		{{#each data.ausbildung}}
+		{{#each data.skills}}
 			{{> modules/cv__row }}
 		{{/each}}
 	</div>
 </section>
+
 
 <section class="section section--underline">
 	<div class="grid-container">
@@ -56,13 +56,16 @@ data:
 <section class="section">
 	<div class="grid-container">
 		<div>
-			{{#parseJSON '{"headline":"Skills"}' }}
+			{{#parseJSON '{"headline":"Ausbildung"}' }}
 				{{> section__headline }}
 			{{/parseJSON}}
 		</div>
 
-		{{#each data.skills}}
+		{{#each data.ausbildung}}
 			{{> modules/cv__row }}
 		{{/each}}
 	</div>
 </section>
+
+
+
