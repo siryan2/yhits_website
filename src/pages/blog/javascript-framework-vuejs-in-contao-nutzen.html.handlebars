@@ -1,0 +1,85 @@
+---
+layout: default.hbs
+title: JavaScript-Framework VueJS in Contao CMS nutzen
+published: false
+tags:
+- JavaScript
+- Framework
+- VueJS
+- Contao
+- CMS
+categories:
+- Contao
+- VueJS
+date: 2017-06-26
+teaser: Für ein kürzlich zu realisierendes Projekt bestand eine Teilaufgabe darin, einen Produktkatalog zu realisieren, welcher später zu einem Online-Shop umgebaut werden kann. Die Herausforderung lag in der Tatsache, dass die einzelnen Produkte nicht in Contao CMS gepflegt werden sollen, sondern in einem zentralen Produktverzeichnis eines Fremdanbieters. Hierbei wurde ich mit ein paar Problemen konfrontiert, deren Lösung ich in diesem Beitrag beschreiben möchte.
+posts: true
+collection: blog
+---
+<section class="grid-container">
+	<article class="grid-60 prefix-20 tablet-grid-80 tablet-prefix-10 article__item">
+		<h2 class="article__headline">{{title}}</h2>
+		<div class="article__toolbar">
+			<time datetime="{{formatDate date "YYYY-MM-DD"}}T00:00" class="article__publishedDate">{{formatDate date "LL"}}</time>
+		</div>
+		
+		<p>
+			Für ein kürzlich zu realisierendes Projekt bestand eine Teilaufgabe darin, einen Produktkatalog zu realisieren, welcher später zu einem Online-Shop
+			umgebaut werden kann. Die Herausforderung lag in der Tatsache, dass die einzelnen Produkte nicht in Contao CMS gepflegt werden sollen, sondern in einem zentralen Produktverzeichnis eines Fremdanbieters. Der Anbieter bietet eine Schnittstelle an, um Daten in Form von XML oder JSON abzurufen. Diese Gegebenheiten waren für mich der Grund den Produktkatalog als VueJS-Applikation zu realisieren und diesen in Contao zu implementieren. Hierbei wurde ich mit ein paar Problemen konfrontiert, deren Lösung ich in diesem Beitrag beschreiben möchte.
+		</p>
+
+		<h3>JavaScript-Framework in Contao</h3>
+		<p>
+			Grundsätzlich kann natürlich jedes JS-Framework in Contao eingebunden werden. Waren es früher noch Bibliotheken wie jQuery oder MooTools sind es heutzutage React oder VueJS. Diese bieten den Entwicklern noch mehr Möglichkeiten vom einfachen ein- und ausblenden von Inhalten bis hin zum Rendern einzelner Views, welche über eine eigene URL angesprochen werden können. Weiter haben sich die Voraussetzungen, mit JavaScript ganze Applikationen zu bauen, deutlich verbessert. Mit ES6 und speziell den ES6-Modules können nun gekapselte Module für einen bestimmten Anwendungsfall zur Verfügung gestellt werden und durch das Zusammenstecken weiterer Module entsteht eine saubere Applikation.
+		</p>
+		<h3>Konzeption der Applikation</h3>
+		<p>
+			Meine Anwendung soll, wie schon beschrieben, innerhalb einer Contao-Seite laufen und eine Übersicht aller Produkte der jeweiligen Kategorie sowie eine Detailansicht eines einzelnen Produktes darstellen. Die Klickpfade sollen als URL angezeigt werden, so dass Besucher die Browsernavigation zum Vor- und Zurücknavigieren verwenden können oder bspw. um Produkte direkt zu Verlinken. Das Neuladen der Website sollte die Applikation auch mitmachen. 
+		</p>
+		<h3>Stolperstein: Routing der Applikation</h3>
+		<p>Für VueJS gibt es den VueRouter, welcher genau für die oben genannten Anwendungsfälle entwickelt wurde. Das bedeutet, dass nicht Contao sondern der VueRouter sich um das Routing innerhalb der Applikation kümmert. Hierfür musste ich in Contao ein paar Einstellungen anpassen. </p>
+		<p>
+			Zuerst habe ich eine neue, reguläre Seite mit dem Namen "Products" angelegt, in welche die Applikation geladen werden soll. Den Seitenalias habe ich abgeändert, was jedoch nur aus persönlicher Präferenz heraus geschehen ist. Diese Seite ist ein Kindelement der Seite "Produkte" und ist im Menü versteckt, damit die beiden Seiten "Products" und "Produkte" nicht gleichzeitig erscheinen.
+			<figure>
+				<img src="{{rootPath}}/assets/img/artikel/contao-regulaere-seite.jpg" alt="Reguläre Seite erstellen">
+				<figcaption>Erstellen einer regulären Seite und anpassen des Seitenalias</figcaption>
+			</figure>
+		</p>
+		<p>
+			Anschließend habe ich die übergeordnete Seite "Produkte" zum Seitentyp "Externe Weiterleitung" abgeändert und als Link-Adresse den zuvor angepassten Seitenalias der Seite "Products" eingetragen. Dadurch zeigt sich Contao nicht mehr für das Routing verantwortlich und die VueJS-Applikation kann dies von dort an übernehmen.
+			<figure>
+				<img src="{{rootPath}}/assets/img/artikel/contao-externe-weiterleitung.jpg" alt="Contao externe Weiterleitung">
+				<figcaption>Ändern des Seitentyps zu "Externe Weiterleitung"</figcaption>
+			</figure>
+		</p>
+		<p>
+			Im VueRouter kann für das Routing zwischen den Modis <a href="http://router.vuejs.org/en/api/options.html#mode" title="VueJS: Router Construction Options"><code>hash</code> (Standard), <code>history</code> und <code>abstract</code></a> gewählt werden. Ich nutze den Hashmode und habe aus diesem Grund den Eintrittspunkt in der Link-Adresse der Weiterleitungsseite schon dementsprechend durch die den Hash <code>#/products</code> ergänzt.
+		</p>
+
+		<h3>Anpassungen innerhalb der VueJS-Applikation</h3>
+		<p>
+			In der VueRouter-Instanz habe ich dem Property <a href="http://router.vuejs.org/en/api/options.html#base" title="VueJS: Router Construction Options"><code>base</code></a> den Wert des oben geänderten Seitenalias <code>produkte/index.html</code> gegeben. Weiter müssen natürlich die für die Applikation benötigten Routen dem <code>routes</code>-Property übergeben werden, so dass VueRouter das Routing übernehmen kann.
+		</p>
+		<h3>Templates</h3>
+		<p>VueJS bietet <a href="http://vuejsdevelopers.com/2017/03/24/vue-js-component-templates/" title="7 Ways To Define A Component Template in Vue.js">mehrere Möglickeiten für das Templating an</a>. Ich habe mich für die X-Templates entschieden. Hierfür wird das Template in ein Script-Element vom Typ <code>text/x-template</code> umschlossen. In VueJS wird das Template über die Script-Element-ID referenziert und geladen. Die Templates sind im Contao-Template-Verzeichnis abgelegt und werden über das Insert Tag <code>file</code> in die Seite eingebunden. Das ist sicherlich nicht die schönste Art, aber über diese Methode können im Template auf Werte von Contao zugegriffen werden und das Template lässt sich direkt im Contao Backend bearbeiten.
+			<figure>
+				<img src="{{rootPath}}/assets/img/artikel/contao-vue-template-uebersicht.jpg" alt="Vue-Templates in Contao">
+				<figcaption>Übersicht der Vue-Templates in Contao</figcaption>
+			</figure>
+			<figure>
+				<img src="{{rootPath}}/assets/img/artikel/contao-vue-template-bearbeiten.jpg" alt="Vue-Templates in Contao bearbeiten">
+				<figcaption>Bearbeiten eines Vue-Templates in Contao</figcaption>
+			</figure>
+		</p>
+
+		<h3>Zusammenfassend</h3>
+		<p>
+			Contao lässt sich problemlos durch moderne JavaScript-Frameworks erweitern. Es sind lediglich ein paar Kniffe notwendig, damit innerhalb der Applikation navigiert werden kann, aber ausgenommen davon, kann eine bestehende Applikation nach kürzester Zeit implementiert werden. Solche Art von Applikationen bieten sich gerade dann an, wenn die benötigten Daten extern liegen und nicht doppelt gepflegt werden sollen. jQuery werden die neuen Libraries und Frameworks in Contao kurz bis mittelfristig nicht ersetzen können, da zu viele Erweiterungen davon abhängig sind.
+		</p>
+
+	</article>
+	<div class="grid-60 prefix-20 tablet-grid-80 tablet-prefix-10">
+		{{> modules/contact-bar }}
+	</div>
+</section>
+{{> modules/pagination__article prev=previous next=next isProject=false}}
