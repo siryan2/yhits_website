@@ -8,7 +8,7 @@
 	{
 		"title": "Entwicklung",
 		"period":"",
-		"description": "HTML, CSS: Bootstrap, Material Design <br> Preprozessoren: Sass, LESS <br>JavaScript: jQuery, AngularJS, VueJS, Backbone, Marionette,<br> CommonJS, RequireJS, Handlebars  <br><br>Mobile First, Responsive Design, Cross-Browser-funktionale Umsetzung",
+		"description": "HTML, CSS: Bootstrap, Material Design <br> Preprozessoren: Sass/SCSS, LESS <br>JavaScript: jQuery, AngularJS, VueJS, Backbone, Marionette,<br> CommonJS, RequireJS, Handlebars  <br><br>Mobile First, Responsive Design, Cross-Browser-funktionale Umsetzung",
 		"position": "Frontend"
 	},
 	{
