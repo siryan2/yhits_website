@@ -1,5 +1,20 @@
 [
 	{
+		"name":"SEVENIT GmbH",
+		"image":"/assets/img/kunden/sevenit.png",
+		"url":"http://www.sevenit.de"
+	},
+	{
+		"name":"SE GmbH",
+		"image":"/assets/img/kunden/segmbh.png",
+		"url":"http://www.segmbh.com"
+	},
+	{
+		"name":"Web Commerce GmbH",
+		"image":"/assets/img/kunden/webcommerce.png",
+		"url":"http://www.w-commerce.de"
+	},
+	{
 		"name":"webtofly",
 		"image":"/assets/img/kunden/webtofly.png",
 		"url":"http://www.webtofly.de"
