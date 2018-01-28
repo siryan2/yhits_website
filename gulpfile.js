@@ -181,6 +181,15 @@ gulp.task('compress:js', () => {
 			extname: '.js'
 		}))
 		.pipe(gulp.dest(dir.dest + 'assets/js'));
+
+	gulp.src(['node_modules/intersection-observer/intersection-observer.js'])
+		.pipe(uglify({}))
+		.pipe(rename({
+			suffix: '.min',
+			extname: '.js'
+		}))
+		.pipe(gulp.dest(dir.dest + 'assets/js/'))
+	;
 });
 
 gulp.task('compress:plugins', () => {
@@ -228,7 +237,7 @@ gulp.task('copy:assets', () => {
 	 */
 	gulp.src(['node_modules/font-awesome/fonts/*'])
 	.pipe(gulp.dest(dir.dest+'assets/fonts'));
-	
+
 	/**
 	 * jQuery
 	 */
@@ -247,19 +256,16 @@ gulp.task('copy:plugins', () => {
 	gulp.src(['node_modules/owl.carousel/dist/**/*.*'])
 		.pipe(gulp.dest(dir.dest + 'assets/plugins/owl-carousel/'))
 	;
-	
+
 	// gulp.src(['node_modules/jquery-inview/jquery.inview.min.js'])
 	// 	.pipe(gulp.dest(app.templates + 'scripts/plugins/jquery-inview'))
 	// ;
 
-	// gulp.src(['node_modules/animate.css/animate.min.css'])
-	// 	.pipe(gulp.dest(app.templates + 'styles'))
-	// ;
 
 	// gulp.src(['node_modules/jquery.cookie/jquery.cookie.js'])
 	// 	.pipe(gulp.dest(app.templates + 'scripts/plugins/jquery.cookie'))
 	// ;
-	
+
 
 });
 
@@ -293,6 +299,6 @@ gulp.task('build', ['clean'], () => {
 
 	metadata.production = true;
 	runSequence(['html', 'build:css', 'compress:js', 'copy:assets', 'copy:plugins', 'imagemin']);
-	
+
 	console.log('Finish building website...');
 });
