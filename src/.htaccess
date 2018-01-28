@@ -21,9 +21,10 @@
 # http://enable-cors.org/
 # http://www.w3.org/TR/cors/
 
-# <IfModule mod_headers.c>
-#     Header set Access-Control-Allow-Origin "*"
-# </IfModule>
+<IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "*"
+    Header set Content-Security-Policy "default-src 'self'"
+</IfModule>
 
 # ----------------------------------------------------------------------
 # | Cross-origin images                                                |
