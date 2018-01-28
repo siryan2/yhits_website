@@ -5,7 +5,7 @@
  * @module: Project Cards
  * @desc: Cards
  * @author: Yannick Herzog
- * @last-modified: 2017-04-05
+ * @last-modified: 2018-01-28
  **/
 
 .project__card {
@@ -78,6 +78,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', end
 }
 
 .project__card-img {
+	display: block;
 	max-width: 100%;
+	min-height: 100px;
 }
 
