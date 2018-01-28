@@ -16,4 +16,37 @@
 	// 		}, 300);
 	// 	});
 	// }
-})(jQuery)
+
+
+	/**
+	 * Lazy load Images
+	 */
+	if('IntersectionObserver' in window) {
+
+		var images = document.querySelectorAll('.js-lazyload');
+
+		var config = {
+			root: null,
+			rootMargin: '0px 0px 50px 0px',
+			threshold: 0
+		};
+
+		var observer = new IntersectionObserver(function (entries, self) {
+			entries.forEach(function(entry) {
+
+				if(entry.isIntersecting) {
+
+					var src = $(entry.target).attr('data-src');
+					$(entry.target).attr('src', src);
+
+					self.unobserve(entry.target);
+				}
+			});
+		}, config);
+
+		images.forEach(function(image){
+			observer.observe(image);
+		});
+	}
+
+})(jQuery);
