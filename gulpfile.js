@@ -257,6 +257,10 @@ gulp.task('copy:plugins', () => {
 		.pipe(gulp.dest(dir.dest + 'assets/plugins/owl-carousel/'))
 	;
 
+	gulp.src(['node_modules/cookieconsent/build/**/*.*'])
+		.pipe(gulp.dest(dir.dest + 'assets/plugins/cookieconsent/'))
+	;
+
 	// gulp.src(['node_modules/jquery-inview/jquery.inview.min.js'])
 	// 	.pipe(gulp.dest(app.templates + 'scripts/plugins/jquery-inview'))
 	// ;
