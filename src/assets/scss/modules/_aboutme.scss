@@ -38,7 +38,7 @@
 		background: url(../img/portrait_980.jpg) no-repeat;
 		background-size: cover;
 	}
-	
+
 	.aboutme__text-wrapper {
 		p {
 			background: none;
@@ -76,7 +76,7 @@
 .cv__row {
 	color: $darkGray;
 	margin-top: 2rem;
-	font-family: $alternateBaseFont;
+	font-family: $baseFont;
 
 	&:first-child {
 		margin-top: 0;
