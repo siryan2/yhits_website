@@ -229,7 +229,7 @@ gulp.task('copy:assets', () => {
 	/**
 	 * Fonts
 	 */
-	gulp.src([app.src + 'fonts/**/*'])
+	gulp.src([app.src + 'assets/fonts/**/*'])
 	.pipe(gulp.dest(dir.dest+'assets/fonts'));
 
 	/**
