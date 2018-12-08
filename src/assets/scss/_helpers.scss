@@ -1,16 +1,18 @@
-@import '_variables';
+@import "_variables";
+@import "_helper-margin";
+@import "_helper-padding";
 
 /**
  * @module: Helpers
  * @desc: allgemeine Helferklassen
  * @author: Yannick Herzog
- * @last-modified: 2015-12-10
+ * @last-modified: 2018-12-08
  **/
 
 .text-right {
-	text-align: right;
+  text-align: right;
 }
 
 .text-center {
-	text-align: center;
+  text-align: center;
 }
