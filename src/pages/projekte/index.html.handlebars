@@ -23,21 +23,21 @@ data:
 	</div>
 </section>
 
-<section class="section">
+<section class="section section--dark p-t-2">
 	<div class="grid-container">
 		<div class="grid-100">
-			<h3 class="section__headline"><span>Weitere zufriedene Kunden</span></h3>
+			<h3 class="section__headline"><span>Meine zufriedenen Kunden</span></h3>
 		</div>
-		<div class="grid-70 prefix-15 grid-parent">
-			{{#withFirst data.kunden 6}}
-			<div class="grid-33 tablet-grid-33 mobile-grid-50">
+		<div class="grid-100 grid-parent">
+			{{#data.kunden}}
+			<div class="grid-25 tablet-grid-33 mobile-grid-50">
 				<div class="project__card">
 					<figure class="project__card-container">
-						<img data-src="{{image}}" alt="{{name}}" class="project__card-img js-lazyload">
+						<img data-src="{{image}}" alt="{{name}}" class="project__card-img js-lazyload" title="{{name}}">
 					</figure>
 				</div>
 			</div>
-			{{/withFirst}}
+			{{/data.kunden}}
 		</div>
 	</div>
 </section>
