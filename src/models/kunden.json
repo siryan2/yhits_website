@@ -25,11 +25,6 @@
     "url": "http://www.hs-offenburg.de"
   },
   {
-    "name": "webtofly",
-    "image": "/assets/img/kunden/webtofly.png",
-    "url": "http://www.webtofly.de"
-  },
-  {
     "name": "VIDA Logistik GmbH",
     "image": "/assets/img/kunden/vida-logistik.png",
     "url": "http://www.vida-logistik.de"
@@ -38,6 +33,11 @@
     "name": "Stefanie Engel - Handel mit Fliesen, Baustoffen, Bodenbelägen und Verlegearbeiten",
     "image": "/assets/img/kunden/fliesenengel.png",
     "url": "http://www.fliesenengel.com"
+  },
+  {
+    "name": "webtofly",
+    "image": "/assets/img/kunden/webtofly.png",
+    "url": "http://www.webtofly.de"
   },
   {
     "name": "Web Commerce GmbH",
