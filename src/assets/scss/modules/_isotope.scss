@@ -1,0 +1,22 @@
+@import "../_variables";
+
+/**
+ * @module: Isotope
+ * @desc: Isotope
+ * @author: Yannick Herzog
+ * @last-modified: 2018-12-10
+ **/
+
+.isotope {
+  &__grid-item {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+}
+
+.grid__filter {
+  &-item {
+    button {
+    }
+  }
+}
