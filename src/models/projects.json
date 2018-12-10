@@ -448,5 +448,32 @@
     "draft": false,
     "online": "Oktober 2017",
     "tags": "website"
+  },
+  {
+    "name": "fliesenengel",
+    "projectTitle": "sevDesk - Steuerberaterportal",
+    "detailUrl": "/projekte/sevdesk-steuerberaterportal.html",
+    "url": "http://steuerberater.sevdesk.de/app/",
+    "image": "/assets/img/projekte/sevdesk-steuerberater/steuerberaterportal_start.jpg",
+    "description": "<p></p>",
+    "projectTags": [
+      "Single Page Application (SPA)",
+      "HTML/CSS",
+      "JavaScript (VueJS)",
+      "UI-Framework Element UI",
+      "PHP/Zend Framework",
+      "RESTful API",
+      "Anbindung sevDesk-API"
+    ],
+    "images": [
+      "/assets/img/projekte/sevdesk-steuerberater/steuerberaterportal_start.jpg",
+      "/assets/img/projekte/sevdesk-steuerberater/steuerberaterportal_uebersicht.jpg",
+      "/assets/img/projekte/sevdesk-steuerberater/steuerberaterportal_details.jpg",
+      "/assets/img/projekte/sevdesk-steuerberater/steuerberaterportal_datev-export.jpg"
+    ],
+    "order": 18,
+    "draft": false,
+    "online": "September 2017",
+    "tags": "webapp"
   }
 ]
