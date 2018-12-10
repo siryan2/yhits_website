@@ -47,6 +47,7 @@
   "dependencies": {
     "font-awesome": "^4.7.0",
     "fontawesome": "^4.7.2",
+    "imagesloaded": "^4.1.4",
     "intersection-observer": "^0.5.1",
     "isotope-layout": "^3.0.6",
     "jquery": "^3.3.1",

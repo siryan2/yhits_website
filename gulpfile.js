@@ -279,6 +279,10 @@ gulp.task("copy:plugins", () => {
         gulp.dest(dir.dest + "assets/plugins/isotope-layout/")
     );
 
+    gulp.src(["node_modules/imagesloaded/imagesloaded.pkgd.min.js"]).pipe(
+        gulp.dest(dir.dest + "assets/plugins/imagesloaded/")
+    );
+
     // gulp.src(['node_modules/jquery.cookie/jquery.cookie.js'])
     // 	.pipe(gulp.dest(app.templates + 'scripts/plugins/jquery.cookie'))
     // ;
