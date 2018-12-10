@@ -36,7 +36,7 @@ $border-width: 1px;
   }
 
   @media screen and (min-width: $screen-md) {
-    border-bottom: $border-width solid $gray;
+    // border-bottom: $border-width solid $gray;
 
     &-item {
       margin-bottom: -#{$border-width};
@@ -44,12 +44,13 @@ $border-width: 1px;
       button {
         background-color: transparent;
         border: $border-width solid transparent;
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         margin-bottom: 0;
         outline: none;
 
         &.is-active {
           background-color: $lightGray;
+          box-shadow: 0 -3px 2px 0 rgba(134, 134, 134, 0.3);
           color: $baseColor;
           border-top-color: $gray;
           border-right-color: $gray;
