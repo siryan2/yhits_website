@@ -6,8 +6,8 @@
   },
   {
     "id": 2,
-    "name": "Web-Applikationen",
-    "selector": ".webapplikation"
+    "name": "Web-Apps",
+    "selector": ".webapp"
   },
   {
     "id": 3,
