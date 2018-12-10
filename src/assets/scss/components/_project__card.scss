@@ -5,14 +5,14 @@
  * @module: Project Cards
  * @desc: Cards
  * @author: Yannick Herzog
- * @last-modified: 2018-12-08
+ * @last-modified: 2018-12-10
  **/
 
 .project__card {
   margin-bottom: $gutter-half * 2;
   background-color: #ffffff;
 
-  &--shadow {
+  &--shine {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f7f7f7+1,fefefe+14,f7f7f7+32,fefefe+88,fafafa+99 */
     background: #f7f7f7; /* Old browsers */
     background: -moz-linear-gradient(
@@ -40,6 +40,11 @@
       #fafafa 99%
     ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#fafafa',GradientType=0 ); /* IE6-9 */
+  }
+
+  &--shadow {
+    box-shadow: 0 0 8px 0 transparentize($gray, 0.5);
+    border: 1px solid $mediumGray;
   }
 }
 

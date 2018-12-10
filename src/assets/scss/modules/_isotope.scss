@@ -7,6 +7,8 @@
  * @last-modified: 2018-12-10
  **/
 
+$border-width: 1px;
+
 .isotope {
   &__grid-item {
     padding-right: 0.5rem;
@@ -16,7 +18,51 @@
 
 .grid-filter {
   &-item {
-    button {
+    margin-top: 0;
+  }
+
+  button {
+    background-color: transparent;
+    border: 1px solid $baseColor;
+    border-radius: 4px;
+    color: #999999;
+    font-family: $navFont;
+    margin-bottom: 0.5rem;
+
+    &.is-active {
+      background-color: $baseColor;
+      color: #fff;
+    }
+  }
+
+  @media screen and (min-width: $screen-md) {
+    border-bottom: $border-width solid $gray;
+
+    &-item {
+      margin-bottom: -#{$border-width};
+
+      button {
+        background-color: transparent;
+        border: $border-width solid transparent;
+        font-size: 1.2rem;
+        margin-bottom: 0;
+        outline: none;
+
+        &.is-active {
+          background-color: $lightGray;
+          color: $baseColor;
+          border-top-color: $gray;
+          border-right-color: $gray;
+          border-left-color: $gray;
+          border-bottom-color: $lightGray;
+        }
+
+        &:hover,
+        &:focus {
+          background-color: $lightGray;
+          color: $baseColor;
+        }
+      }
     }
   }
 }

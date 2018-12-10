@@ -1,11 +1,11 @@
 {{!-- ToDo: Look for predefined filter and activate button for it --}}
 <ul class="list grid-filter flex flex-wrap a-center p-l-0 m-t-0 m-b-0">
     <li class="grid-filter-item p-r-half p-l-half m-t-0 m-t-1--xs">
-        <button class="btn btn__ghost--dark is-active" data-filter="*">Alle anzeigen</button>
+        <button class="btn is-active" data-filter="*">Alle</button>
     </li>
     {{#data.filter-items}}
     <li class="grid-filter-item p-r-half p-l-half m-t-0 m-t-1--xs">
-        <button class="btn btn__ghost--dark" data-filter="{{selector}}">{{name}}</button>
+        <button class="btn" data-filter="{{selector}}">{{name}}</button>
     </li>
     {{/data.filter-items}}
 </ul>
