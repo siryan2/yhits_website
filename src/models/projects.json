@@ -425,5 +425,28 @@
     "draft": false,
     "online": "März 2017",
     "tags": "website"
+  },
+  {
+    "name": "fliesenengel",
+    "projectTitle": "Stefanie Engel - Handel mit Fliesen, Baustoffen, Bodenbelägen und Verlegearbeiten",
+    "detailUrl": "/projekte/fliesenengel.html",
+    "url": "http://www.fliesenengel.com",
+    "image": "/assets/img/projekte/fliesenengel/fliesenengel_start.jpg",
+    "description": "<p>Mit Hilfe des Static Site Generators Metalsmith entwickelte ich in kürzester Zeit eine Website für das junge Unternehmen. Durch den komponenten-basierten Aufbau können viele Teile der Website wie Lego-Bausteine wiederverwendet werden. Dies spart Zeit und damit Geld.</p><p>Das Erweitern der Website durch neue Features ist unkompliziert. Erst kürzlich kamen die Bereiche Bodenbel&auml;ge und Karriere hinzu. Weitere folgen in den kommenden Monaten. Dadurch wächst die Website St&uuml;ck f&uuml;r St&uuml;ck mit dem Unternehmen mit.</p>",
+    "projectTags": [
+      "Static Site Generator - Metalsmith",
+      "HTML/CSS",
+      "JavaScript (jQuery)",
+      "Konzeption & Design"
+    ],
+    "images": [
+      "/assets/img/projekte/fliesenengel/fliesenengel_start.jpg",
+      "/assets/img/projekte/fliesenengel/fliesenengel_boden.jpg",
+      "/assets/img/projekte/fliesenengel/fliesenengel_karriere.jpg"
+    ],
+    "order": 17,
+    "draft": false,
+    "online": "Oktober 2017",
+    "tags": "website"
   }
 ]

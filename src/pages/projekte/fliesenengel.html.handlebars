@@ -1,0 +1,18 @@
+---
+layout: default.hbs
+title: Stefanie Engel - Handel mit Fliesen, Baustoffen, Bodenbelägen und Verlegearbeiten
+date: 2018-12-10
+name: projekte
+slider: true
+collection: projekte
+data:
+ projects: ../../models/projects.json
+---
+
+<section class="section">
+	<div class="grid-container">
+		{{> modules/project__desc data.projects.[17] }}
+	</div>
+</section>
+
+{{> modules/pagination__article prev=previous next=next isProject=true}}
