@@ -28,6 +28,7 @@ $border-width: 1px;
     color: #999999;
     font-family: $navFont;
     margin-bottom: 0.5rem;
+    text-transform: uppercase;
 
     &.is-active {
       background-color: $baseColor;
