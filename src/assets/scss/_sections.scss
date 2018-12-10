@@ -1,53 +1,56 @@
-@import '_variables';
+@import "_variables";
 
 /**
  * @module: Section
  * @desc: Section
  * @author: Yannick Herzog
- * @last-modified: 2017-04-05
+ * @last-modified: 2018-12-10
  **/
 
 .section {
-	padding-bottom: 6em;
+  padding-bottom: 6em;
+
+  &--p-b-0 {
+    padding-bottom: 0;
+  }
 }
 
 .section--dark {
-	background: $lightGray;
+  background: $lightGray;
 }
 
 .section--darker {
-	background: $baseColor;
+  background: $baseColor;
 }
 
 .section--underline {
-	border-bottom: 1px solid $mediumGray;
+  border-bottom: 1px solid $mediumGray;
 }
 
 .section__headline {
-	color: $baseColor;
-	font-family: 'Roboto', sans-serif;
-	font-size: 1.6em;
-	line-height: 1.6em;
-	font-weight: 700;
-	text-align: center;
-	text-transform: uppercase;
-	margin: 2em 0;
-	letter-spacing: 1px;
-	
-	span {
-		position: relative;
+  color: $baseColor;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6em;
+  line-height: 1.6em;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 2em 0;
+  letter-spacing: 1px;
 
-		&:after {
-			content:'';
-			display: block;
-			position: relative;
-			bottom: -0.1em;
-			width: 50px;
-			height: 5px;
-			background: $baseColor;
-			left: 50%;
-			margin-left: -25px;
-		}
-	}
-	
+  span {
+    position: relative;
+
+    &:after {
+      content: "";
+      display: block;
+      position: relative;
+      bottom: -0.1em;
+      width: 50px;
+      height: 5px;
+      background: $baseColor;
+      left: 50%;
+      margin-left: -25px;
+    }
+  }
 }
