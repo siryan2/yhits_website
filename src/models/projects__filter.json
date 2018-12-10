@@ -13,5 +13,10 @@
     "id": 3,
     "name": "Apps",
     "selector": ".app"
+  },
+  {
+    "id": 4,
+    "name": "Shops",
+    "selector": ".shop"
   }
 ]
