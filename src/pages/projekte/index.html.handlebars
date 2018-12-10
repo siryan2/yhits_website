@@ -10,6 +10,7 @@ data:
  filter-items: ../../models/projects__filter.json
 ---
 
+{{!-- Headline --}}
 <section class="section">
 	<div class="grid-container">
 		<div class="grid-100">
@@ -18,14 +19,14 @@ data:
 	</div>
 </section>
 
+{{!-- Filter --}}
 <section class="section section--p-b-0">
-	<div class="grid-container1">
-		<div class="m-t-2">
-			{{> modules/isotope__filter }}
-		</div>
+	<div class="m-t-1">
+		{{> modules/isotope__filter }}
 	</div>
 </section>
 
+{{!-- Project Grid --}}
 <section class="section section--dark p-t-3">
 	<div class="grid-container">
 		<div class="isotope__grid-items">
@@ -41,6 +42,7 @@ data:
 	</div>
 </section>
 
+{{!-- Customer Grid --}}
 <section class="section section--dark1 p-t-2">
 	<div class="grid-container">
 		<div class="grid-100">
