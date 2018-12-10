@@ -15,15 +15,25 @@ data:
 		<div class="grid-100">
 			{{> page__headline}}
 		</div>
-		
-		<div class="m-t-2 m-b-2">
+	</div>
+</section>
+
+<section class="section section--p-b-0">
+	<div class="grid-container">
+		<div class="m-t-2">
 			{{> modules/isotope__filter }}
 		</div>
+	</div>
+</section>
 
+<section class="section p-t-2">
+	<div class="grid-container">
 		<div class="grid-items">
 		{{#withSort data.projects "order" reverse="true"}}
 			{{#unless draft}}
+			<div class="isotope__grid-item {{tags}} w-50--sm w-33">
 				{{> modules/project__card }}
+			</div>
 			{{/unless}}
 		{{/withSort}}
 		</div>
