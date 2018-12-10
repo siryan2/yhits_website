@@ -475,5 +475,37 @@
     "draft": false,
     "online": "September 2017",
     "tags": "webapp"
+  },
+  {
+    "name": "saas-digitale-checklisten",
+    "projectTitle": "SaaS - digitale Checklisten",
+    "detailUrl": "/projekte/saas-digitale-checklisten.html",
+    "url": "",
+    "image": "/assets/img/projekte/saas-digitale-checklisten/saas-digitale-checklisten_allgsettings.jpg",
+    "description": "<p></p>",
+    "projectTags": [
+      "Software as a Service (SaaS)",
+      "Single Page Application (SPA) / Hyprid App",
+      "HTML/CSS",
+      "JavaScript (VueJS)",
+      "UI-Frameworks Element UI/Quasar Framework",
+      "native iOS/Android-App",
+      "Capacitor"
+    ],
+    "images": [
+      "/assets/img/projekte/saas-digitale-checklisten/saas-digitale-checklisten_allgsettings.jpg",
+      "/assets/img/projekte/saas-digitale-checklisten/saas-digitale-checklisten_designsettings.jpg",
+      "/assets/img/projekte/saas-digitale-checklisten/saas-digitale-checklisten_checklist1.jpg",
+      "/assets/img/projekte/saas-digitale-checklisten/saas-digitale-checklisten_checklist2.jpg",
+      "/assets/img/projekte/saas-digitale-checklisten/saas-digitale-checklisten_checklist3.jpg",
+      "/assets/img/projekte/saas-digitale-checklisten/saas-digitale-checklisten_location.jpg",
+      "/assets/img/projekte/saas-digitale-checklisten/saas-digitale-checklisten_task.jpg",
+      "/assets/img/projekte/saas-digitale-checklisten/saas-digitale-checklisten_verzeichnis-baum.jpg",
+      "/assets/img/projekte/saas-digitale-checklisten/saas-digitale-checklisten_verzeichnisse.jpg"
+    ],
+    "order": 19,
+    "draft": false,
+    "online": "Januar 2019",
+    "tags": "webapp app"
   }
 ]
