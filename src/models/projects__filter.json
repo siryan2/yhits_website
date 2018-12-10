@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "name": "Websites",
+    "selector": ".website"
+  },
+  {
+    "id": 2,
+    "name": "Web-Applikationen",
+    "selector": ".webapplikation"
+  },
+  {
+    "id": 3,
+    "name": "Apps",
+    "selector": ".app"
+  }
+]

@@ -1,0 +1,10 @@
+<ul class="list grid__filter flex flex-wrap a-center p-l-0 m-t-0 m-b-0">
+    <li class="grid__filter-item p-r-half p-l-half m-t-0 m-t-1--xs">
+        <button class="btn btn__ghost--dark" data-filter="*">Alle anzeigen</button>
+    </li>
+    {{#data.filter-items}}
+    <li class="grid__filter-item p-r-half p-l-half m-t-0 m-t-1--xs">
+        <button class="btn btn__ghost--dark" data-filter="{{selector}}">{{name}}</button>
+    </li>
+    {{/data.filter-items}}
+</ul>

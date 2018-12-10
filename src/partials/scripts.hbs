@@ -1,10 +1,52 @@
 <script>window.jQuery || document.write('<script src="/assets/vendor/jquery.min.js"><\/script>')</script>
 <script src="{{rootPath}}/assets/js/intersection-observer.min.js"></script>
+
 {{#if slider}}
 <script src="{{rootPath}}/assets/plugins/owl-carousel/owl.carousel.min.js"></script>
 {{/if}}
+
 {{#if posts}}
 	<script src="{{rootPath}}/assets/js/prism.js"></script>
 {{/if}}
+
+{{#if isotope}}
+	<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+	<script src="{{rootPath}}/assets/plugins/isotope-layout/isotope.pkgd.min.js"></script>
+	<script>
+		// Pre-select filter
+		var splitSearch = window.location.search.split('?filter=');
+		var filterValue = '*';
+		if(splitSearch.length > 1) {
+			//filterValue = splitSearch[1]; // Example: strategie
+		}
+
+		// init Isotope
+		var $grid = $('.grid-items').isotope({
+			itemSelector:'.isotope__grid-item',
+			layoutMode:'fitRows',
+			percentPosition: true,
+			filter: filterValue
+		});	
+
+		// layout Isotope after each image loads
+		$grid.imagesLoaded().progress( function() {
+			$grid.isotope({ filter: filterValue });
+			$grid.isotope('layout');
+		});
+
+		// filter items on button click
+		$('.grid__filter').on( 'click', 'button', function() {
+			var filterValue = $(this).attr('data-filter');
+			$grid.isotope({ filter: filterValue });
+			document.querySelectorAll('.isotope__filter button').forEach(function(button) {
+				button.classList.remove('is-active');
+			});
+
+			$(this).addClass('is-active');
+		});
+	</script>
+{{/if}}
+
 <script src="{{rootPath}}/assets/js/main.min.js"></script>
+
 {{> modules/cookieconsent }}
