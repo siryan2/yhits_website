@@ -78,6 +78,7 @@ $btn-radius: 40px;
   border-radius: $btn-radius;
   color: $baseColor;
 
+  &.is-active,
   &:hover,
   &:focus {
     background: $baseColor;
