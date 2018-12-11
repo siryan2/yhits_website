@@ -1,0 +1,232 @@
+@import "_variables";
+
+/**
+ * @description: Helpers
+ * @project: CampusApp
+ * @author: Yannick Herzog
+ * @modified: 2018-12-11
+ */
+
+/**
+ * PADDING
+ */
+.no-padding {
+  padding: 0 !important;
+}
+
+@for $i from 0 through 5 {
+  .p-#{$i} {
+    padding: $distance-1 * $i !important;
+
+    &--xs {
+      @media screen and (max-width: $screen-xs) {
+        padding: $distance-1 * $i;
+      }
+    }
+
+    &--sm {
+      @media screen and (max-width: $screen-md) {
+        padding: $distance-1 * $i;
+      }
+    }
+
+    &--md {
+      @media screen and (min-width: $screen-md) {
+        padding: $distance-1 * $i;
+      }
+    }
+
+    &--lg {
+      @media screen and (min-width: $screen-lg) {
+        padding: $distance-1 * $i;
+      }
+    }
+  }
+  $i: $i + 1;
+}
+
+.p-half {
+  padding: $distance-1 / 2;
+
+  &--sm {
+    @media screen and (max-width: $screen-md) {
+      padding: $distance-1 / 2;
+    }
+  }
+}
+
+/**
+ * PADDING TOP
+ */
+.p-t-small {
+  padding-top: $distance-sm;
+}
+
+.p-t-half {
+  padding-top: $distance-1 / 2;
+}
+
+@for $i from 0 through 5 {
+  .p-t-#{$i} {
+    padding-top: $distance-1 * $i;
+
+    &--xs {
+      @media screen and (max-width: $screen-xs) {
+        padding-top: $distance-1 * $i;
+      }
+    }
+
+    &--sm {
+      @media screen and (max-width: $screen-md) {
+        padding-top: $distance-1 * $i;
+      }
+    }
+
+    &--md {
+      @media screen and (min-width: $screen-md) {
+        padding-top: $distance-1 * $i;
+      }
+    }
+
+    &--lg {
+      @media screen and (min-width: $screen-lg) {
+        padding-top: $distance-1 * $i;
+      }
+    }
+  }
+  $i: $i + 1;
+}
+
+/**
+ * PADDING BOTTOM
+ */
+.p-b-small {
+  padding-bottom: $distance-sm;
+}
+
+.p-b-half {
+  padding-bottom: $distance-1 / 2;
+}
+
+@for $i from 0 through 5 {
+  .p-b-#{$i} {
+    padding-bottom: $distance-1 * $i;
+
+    &--xs {
+      @media screen and (max-width: $screen-xs) {
+        padding-bottom: $distance-1 * $i;
+      }
+    }
+
+    &--sm {
+      @media screen and (max-width: $screen-md) {
+        padding-bottom: $distance-1 * $i;
+      }
+    }
+
+    &--md {
+      @media screen and (min-width: $screen-md) {
+        padding-bottom: $distance-1 * $i;
+      }
+    }
+
+    &--lg {
+      @media screen and (min-width: $screen-lg) {
+        padding-bottom: $distance-1 * $i;
+      }
+    }
+  }
+  $i: $i + 1;
+}
+
+/**
+ * PADDING LEFT
+ */
+.p-l-small {
+  padding-left: $distance-sm;
+}
+
+.p-l-half {
+  padding-left: $distance-1 / 2;
+
+  &--sm {
+    @media screen and (max-width: $screen-md) {
+      padding-left: $distance-1 / 2;
+    }
+  }
+}
+
+@for $i from 0 through 5 {
+  .p-l-#{$i} {
+    padding-left: $distance-1 * $i;
+
+    &--xs {
+      @media screen and (max-width: $screen-xs) {
+        padding-left: $distance-1 * $i;
+      }
+    }
+
+    &--sm {
+      @media screen and (max-width: $screen-md) {
+        padding-left: $distance-1 * $i;
+      }
+    }
+
+    &--md {
+      @media screen and (min-width: $screen-md) {
+        padding-left: $distance-1 * $i;
+      }
+    }
+
+    &--lg {
+      @media screen and (min-width: $screen-lg) {
+        padding-left: $distance-1 * $i;
+      }
+    }
+  }
+  $i: $i + 1;
+}
+
+/**
+ * PADDING RIGHT
+ */
+.p-r-half {
+  padding-right: $distance-1 / 2;
+
+  &--sm {
+    @media screen and (max-width: $screen-md) {
+      padding-right: $distance-1 / 2;
+    }
+  }
+}
+
+@for $i from 0 through 5 {
+  .p-r-#{$i} {
+    padding-right: $distance-1 * $i;
+
+    &--xs {
+      @media screen and (max-width: $screen-xs) {
+        padding-right: $distance-1 * $i;
+      }
+    }
+
+    &--sm {
+      @media screen and (max-width: $screen-md) {
+        padding-right: $distance-1 * $i;
+      }
+    }
+
+    &--md {
+      @media screen and (min-width: $screen-md) {
+        padding-right: $distance-1 * $i;
+      }
+    }
+
+    &--lg {
+      @media screen and (min-width: $screen-lg) {
+        padding-right: $distance-1 * $i;
+      }
+    }
+  }
+  $i: $i + 1;
+}

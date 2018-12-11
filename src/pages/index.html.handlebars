@@ -17,6 +17,9 @@ data:
 			{{> section__headline }}
 		{{/parseJSON}}
 		</div>
+	</div>
+	
+	<div class="grid-container" style="max-width: 1400px;">
 		{{#each data.leistungen}}
 		<div class="grid-25 tablet-grid-50">
 			{{> modules/card }}
@@ -35,13 +38,13 @@ data:
 		</div>
 		
 		<div class="grid-33">
-			{{> modules/project__card data.projects.[16]}}
-		</div>
-		<div class="grid-33">
-			{{> modules/project__card data.projects.[13]}}
+			{{> modules/project__card data.projects.[18]}}
 		</div>
 		<div class="grid-33">
 			{{> modules/project__card data.projects.[8]}}
+		</div>
+		<div class="grid-33">
+			{{> modules/project__card data.projects.[19]}}
 		</div>
 		<div class="grid-100">
 			<div class="button-bar button-bar--center">
@@ -52,8 +55,8 @@ data:
 </section>
 
 {{!-- Prozess Timeline --}}
-<section class="section section__process-timeline section--light">
-	<div class="grid-container">
+<section class="section">
+	<div class="grid-container" style="max-width: 1600px;">
 		{{> modules/process__timeline}}
 	</div>
 </section>

@@ -1,38 +1,38 @@
 [
-	{
-		"title": "Architektur",
-		"period":"",
-		"description": "Einhaltung von Codekonventionen und Richtlinen für HTML, CSS (BEM) und JavaScript, Komponentenbasierte Entwicklung",
-		"position": ""
-	},
-	{
-		"title": "Entwicklung",
-		"period":"",
-		"description": "HTML, CSS: Bootstrap, Material Design <br> Preprozessoren: Sass/SCSS, LESS <br>JavaScript: jQuery, AngularJS, VueJS, Backbone, Marionette,<br> CommonJS, RequireJS, Handlebars  <br><br>Mobile First, Responsive Design, Cross-Browser-funktionale Umsetzung",
-		"position": "Frontend"
-	},
-	{
-		"title": "Entwicklung",
-		"period":"",
-		"description": "Node.js, Express, Passport, Socket.IO<br> PHP, MySQL, Smarty",
-		"position": "Backend"
-	},
-	{
-		"title": "Tools",
-		"period":"",
-		"description": "Git, Git Flow, Grunt, Gulp, npm, Bower, Assemble.io, Metalsmith",
-		"position": ""
-	},
-	{
-		"title": "CMS/Shop",
-		"period":"",
-		"description": "Contao, Isotope for Contao, ProcessWire, CS.Cart",
-		"position": ""
-	},
-	{
-		"title": "Design",
-		"period":"",
-		"description": "Photoshop, UI/UX",
-		"position": ""
-	}
+  {
+    "title": "Architektur",
+    "period": "",
+    "description": "Einhaltung von Codekonventionen und Richtlinen für HTML, CSS (BEM) und JavaScript, Komponentenbasierte Entwicklung",
+    "position": ""
+  },
+  {
+    "title": "Entwicklung",
+    "period": "",
+    "description": "HTML, CSS: Bootstrap, Material Design <br> Preprozessoren: Sass/SCSS, LESS <br>JavaScript: Vanilla JS, VueJS, AngularJS, jQuery, Backbone, Marionette,<br> CommonJS, RequireJS, Handlebars  <br><br>Entwicklung skalierbarer Single Page Application, Mobile First, Responsive Design, Cross-Browser-funktionale Umsetzung",
+    "position": "Frontend"
+  },
+  {
+    "title": "Entwicklung",
+    "period": "",
+    "description": "Node.js, Express, Passport, Socket.IO<br> PHP, MySQL, Smarty, Directus",
+    "position": "Backend"
+  },
+  {
+    "title": "Tools",
+    "period": "",
+    "description": "Git, Git Flow, Gulp, Webpack, npm, Metalsmith",
+    "position": ""
+  },
+  {
+    "title": "CMS/Shop",
+    "period": "",
+    "description": "Contao, Isotope for Contao, ProcessWire, Directus (Headless CMS)",
+    "position": ""
+  },
+  {
+    "title": "Design",
+    "period": "",
+    "description": "Photoshop, Sketch, UI/UX",
+    "position": ""
+  }
 ]

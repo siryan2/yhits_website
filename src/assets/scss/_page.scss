@@ -1,39 +1,38 @@
-@import '_variables';
+@import "_variables";
 
 /**
  * @module: Page
  * @desc: Page specific styles
  * @author: Yannick Herzog
- * @last-modified: 2017-04-04
+ * @last-modified: 2018-12-11
  **/
 
 .page__headline {
-	color: $baseColor;
-	font-size: 3rem;
-	font-family: $baseFont;
-	line-height: 3.2rem;
-	hyphens: auto;
-	text-align: center;
-	margin-bottom: 0;
+  color: $baseColor;
+  font-size: 3rem;
+  font-family: $baseFont;
+  line-height: 3.2rem;
+  hyphens: auto;
+  text-align: center;
+  margin-bottom: 0;
 }
 
 .page__headline--sub {
-	color: lighten($darkGray, 30%);
-	font-family: $baseFont;
-	font-size: 1.4rem;
-	line-height: 1.5rem;
-	text-align: center;
-	margin-top: 0.5rem;
+  color: lighten($darkGray, 30%);
+  font-family: $baseFont;
+  font-size: 1.4rem;
+  line-height: 1.5rem;
+  text-align: center;
+  margin-top: 0.5rem;
 }
 
 /*
  * Projekte
  */
 .projekte {
-	.page__headline {
-		font-size: 2rem;
-	}
-	.page__headline--sub {
-		
-	}
+  .page__headline {
+    // font-size: 2rem;
+  }
+  .page__headline--sub {
+  }
 }

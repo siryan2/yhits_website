@@ -1,140 +1,142 @@
-@import '../_variables';
+@import "../_variables";
 
 /**
  * @component: Buttons
  * @desc: Buttons
  * @author: Yannick Herzog
- * @last-modified: 2017-04-05
+ * @last-modified: 2018-12-10
  **/
 
 $btn-radius: 40px;
 
 .btn {
-	display: inline-block;
-	font-family: $secondaryFont;
-	font-size: 1em;
-	line-height: 1em;
-	padding: 1em 1.6em 1.2em;
-	text-decoration: none;
-	white-space: nowrap;
-	transition: background .3s ease-in-out, color .3s ease-in-out;
+  cursor: pointer;
+  display: inline-block;
+  font-family: $secondaryFont;
+  font-size: 1em;
+  line-height: 1em;
+  padding: 1em 1.6em 1.2em;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
 
-	&:hover,
-	&:focus {
-		text-decoration: none;
-	}
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
 }
 
 .btn__primary {
-	background: $baseColor;
-	color: #ffffff;
-	border: 2px solid transparent;
-	border-radius: $btn-radius;
-	transition: all .3s ease-in-out;
+  background: $baseColor;
+  color: #ffffff;
+  border: 2px solid transparent;
+  border-radius: $btn-radius;
+  transition: all 0.3s ease-in-out;
 
-	&:hover,
-	&:focus {
-		background: #ffffff;
-		color: $baseColor;
-		border-color: $baseColor;
-	}
+  &:hover,
+  &:focus {
+    background: #ffffff;
+    color: $baseColor;
+    border-color: $baseColor;
+  }
 }
 
 .btn__primary--rounded {
-	background: $baseColor;
-	border-radius: $btn-radius;
-	color: #ffffff;
+  background: $baseColor;
+  border-radius: $btn-radius;
+  color: #ffffff;
 
-	&:hover,
-	&:focus {
-		background: lighten($baseColor, 15%);
-	}
+  &:hover,
+  &:focus {
+    background: lighten($baseColor, 15%);
+  }
 }
 
 .btn__secondary {
-	background: $gray;
-	color: $baseColor;
-	font-family: 'Roboto', sans-serif;
-	font-size: 0.8em;
-	line-height: 0.8em;
-	padding: 0.8em 0.9em;
+  background: $gray;
+  color: $baseColor;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.8em;
+  line-height: 0.8em;
+  padding: 0.8em 0.9em;
 
-	&:hover,
-	&:focus {
-		background: darken($gray, 10%);
-		color: #ffffff;
-	}
+  &:hover,
+  &:focus {
+    background: darken($gray, 10%);
+    color: #ffffff;
+  }
 }
 
 .btn__secondary--big {
-	@extend .btn__secondary;
-	padding: 1.1em 1.3em;
+  @extend .btn__secondary;
+  padding: 1.1em 1.3em;
 }
 
 .btn__ghost--dark {
-	background: transparent;
-	border: 2px solid $baseColor;
-	border-radius: $btn-radius;
-	color: $baseColor;
+  background: transparent;
+  border: 2px solid $baseColor;
+  border-radius: $btn-radius;
+  color: $baseColor;
 
-	&:hover,
-	&:focus {
-		background: $baseColor;
-		color: #ffffff;
-	}
+  &.is-active,
+  &:hover,
+  &:focus {
+    background: $baseColor;
+    color: #ffffff;
+  }
 }
 
 .btn__ghost--light {
-	border: 1px solid #ffffff;
-	border-radius: $btn-radius;
-	color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: $btn-radius;
+  color: #ffffff;
 
-	&:hover,
-	&:focus {
-		background: #ffffff;
-		color: $baseColor;
-	}
+  &:hover,
+  &:focus {
+    background: #ffffff;
+    color: $baseColor;
+  }
 }
 
 .btn__ghost--light--filled {
-	background: lighten($baseColor, 10%);
-	border: 1px solid #ffffff;
-	border-radius: $btn-radius;
-	color: #ffffff;
+  background: lighten($baseColor, 10%);
+  border: 1px solid #ffffff;
+  border-radius: $btn-radius;
+  color: #ffffff;
 
-	&:hover,
-	&:focus {
-		background: #ffffff;
-		color: $baseColor;
-	}
+  &:hover,
+  &:focus {
+    background: #ffffff;
+    color: $baseColor;
+  }
 }
 
 .button-bar {
-	margin-top: 3em;
-	.btn {
-		margin-left: 1em;
-		&:first-child {
-			margin-left: 0;
-		}
-	}
+  margin-top: 3em;
+  .btn {
+    margin-left: 1em;
+    &:first-child {
+      margin-left: 0;
+    }
+  }
 }
 
 .button-bar--center {
-	text-align: center;
+  text-align: center;
 }
 
 @media screen and (max-width: $media-sm-max) {
-	.button-bar {
-		.btn {
-			display: block;
-			margin-top: 0.85em;
-			margin-left: 0;
-			&:not(:last-child) {
-				margin-bottom: 0.7em;
-			}
-			&:first-child {
-				margin-top: 0;
-			}
-		}
-	}
+  .button-bar {
+    .btn {
+      display: block;
+      margin-top: 0.85em;
+      margin-left: 0;
+      &:not(:last-child) {
+        margin-bottom: 0.7em;
+      }
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
 }

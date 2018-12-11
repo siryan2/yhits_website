@@ -1,71 +1,91 @@
-@import '../_variables';
+@import "../_variables";
 
 /**
  * @module: Cards
  * @desc: Cards
  * @author: Yannick Herzog
- * @last-modified: 2015-12-16
+ * @last-modified: 2018-12-11
  **/
 
 .card {
-	border: 1px solid $mediumGray;
-	padding: 1em;
+  background-color: #ffffff;
+  border: 1px solid $mediumGray;
+
+  display: flex;
+  flex-direction: column;
+
+  &--shadow {
+    box-shadow: 0 0 15px 0px transparentize($gray, 0.5);
+  }
+
+  &--round {
+    border-radius: 5px;
+  }
 }
 
 .no-csshyphens {
-	.card {
-		text-align: center;
-	}
+  .card {
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: $media-tablet-max) {
-	.card {
-		margin-bottom: $gutter-half * 2;
-	}
+  .card {
+    margin-bottom: $gutter-half * 2;
+  }
 }
 
 @media screen and (min-width: $media-desktop-min) {
-	.card {
-		min-height: 23em;
-	}
+  .card {
+    min-height: 23rem;
+  }
 }
 
 .card__header {
-	color: $baseColor;
-	text-align: center;
-	margin: 2.5em 0;
+  color: $baseColor;
+  text-align: center;
+  margin: 2.5rem 0 1.5rem;
 }
 
 .card__headline {
-	font-family: 'Roboto', sans-serif;
-	font-weight: 400;
-	text-transform: uppercase;
-	margin-top: 0.6em;
-	letter-spacing: 2px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 0.6rem;
+  letter-spacing: 2px;
 }
 
 .card__content {
-	color: $darkGray;
-	font-family: $baseFont;
-	font-size: 1em;
-	font-weight: 300;
-	line-height: 1.4em;
-	hyphens: auto;
+  flex: 1 0 auto;
+  padding-right: 1rem;
+  padding-left: 1rem;
+
+  p {
+    color: $darkGray;
+    font-family: $baseFont;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.4rem;
+    margin-top: 0;
+    hyphens: auto;
+  }
 }
 
 .card__footer {
-	text-align: right;
+  margin-top: 1.5rem;
+  text-align: right;
+  padding: 0 1rem 1rem 1rem;
 }
 
 .card__link {
-	color: $darkGray;
-	font-family: $navFont;
-	font-size: 1em;
-	font-weight: 300;
-	text-decoration: none;
+  color: $darkGray;
+  font-family: $navFont;
+  font-size: 1rem;
+  font-weight: 300;
+  text-decoration: none;
 
-	&:hover,
-	&:focus {
-		text-decoration: underline;
-	}
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
 }

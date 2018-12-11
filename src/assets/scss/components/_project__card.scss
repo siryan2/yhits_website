@@ -1,85 +1,115 @@
-@import '../_variables';
-@import '_loading';
+@import "../_variables";
+@import "_loading";
 
 /**
  * @module: Project Cards
  * @desc: Cards
  * @author: Yannick Herzog
- * @last-modified: 2018-01-28
+ * @last-modified: 2018-12-11
  **/
 
 .project__card {
-	margin-top: $gutter-half * 2;
-	margin-bottom: $gutter-half * 2;
+  margin-bottom: $gutter-half * 2;
+  background-color: #ffffff;
 
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f7f7f7+1,fefefe+14,f7f7f7+32,fefefe+88,fafafa+99 */
-background: #f7f7f7; /* Old browsers */
-background: -moz-linear-gradient(top,  #f7f7f7 1%, #fefefe 14%, #f7f7f7 32%, #fefefe 88%, #fafafa 99%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  #f7f7f7 1%,#fefefe 14%,#f7f7f7 32%,#fefefe 88%,#fafafa 99%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  #f7f7f7 1%,#fefefe 14%,#f7f7f7 32%,#fefefe 88%,#fafafa 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#fafafa',GradientType=0 ); /* IE6-9 */
+  &--shine {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f7f7f7+1,fefefe+14,f7f7f7+32,fefefe+88,fafafa+99 */
+    background: #f7f7f7; /* Old browsers */
+    background: -moz-linear-gradient(
+      top,
+      #f7f7f7 1%,
+      #fefefe 14%,
+      #f7f7f7 32%,
+      #fefefe 88%,
+      #fafafa 99%
+    ); /* FF3.6-15 */
+    background: -webkit-linear-gradient(
+      top,
+      #f7f7f7 1%,
+      #fefefe 14%,
+      #f7f7f7 32%,
+      #fefefe 88%,
+      #fafafa 99%
+    ); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(
+      to bottom,
+      #f7f7f7 1%,
+      #fefefe 14%,
+      #f7f7f7 32%,
+      #fefefe 88%,
+      #fafafa 99%
+    ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#fafafa',GradientType=0 ); /* IE6-9 */
+  }
 
+  &--shadow {
+    box-shadow: 0 0 8px 0 transparentize($gray, 0.5);
+    border: 1px solid $mediumGray;
+  }
+
+  &--round {
+    border-radius: 5px;
+  }
 }
 
 .project__card-container {
-	margin: 0;
-	position: relative;
-	line-height: 0;
-	overflow: hidden;
+  margin: 0;
+  position: relative;
+  line-height: 0;
+  overflow: hidden;
 
-	&:hover,
-	&:focus {
-		.project__card-caption {
-			transform: translateY(0);
-		}
-	}
+  &:hover,
+  &:focus {
+    .project__card-caption {
+      transform: translateY(0);
+    }
+  }
 }
 
 .project__card-caption {
-	background: transparentize($baseColor, 0.2);
-	position: absolute;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	transition: transform .3s ease-in-out;
-	transform: translateY(100%);
+  background: transparentize($baseColor, 0.2);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease-in-out;
+  transform: translateY(100%);
 }
 
 .project__card-caption-item-wrapper {
-	display: table;
-	height: 100%;
-	width: 100%;
+  display: table;
+  height: 100%;
+  width: 100%;
 }
 
 .project__card-caption-item {
-	margin-top: 1em;
-	&:first-child {
-		margin-top: 0;
-	}
-	text-align: center;
+  margin-top: 1em;
+  &:first-child {
+    margin-top: 0;
+  }
+  text-align: center;
 }
 
 .project__card-caption-item-link {
-	color: $lighterGray;
-	display: inline-block;
-	font-family: $secondaryFont;
-	font-size: 1.2em;
-	text-decoration: none;
+  color: $lighterGray;
+  display: inline-block;
+  font-family: $secondaryFont;
+  font-size: 1.2em;
+  text-decoration: none;
 
-	border-radius: 40px;
-	padding: .7em .9em;
-	border: 1px solid transparent;
+  border-radius: 40px;
+  padding: 0.7em 0.9em;
+  border: 1px solid transparent;
 
-	&:hover,
-	&:focus {
-		border-color: #ffffff;
-		text-decoration: none;
-	}
+  &:hover,
+  &:focus {
+    border-color: #ffffff;
+    text-decoration: none;
+  }
 }
 
 .project__card-img {
-	display: block;
-	max-width: 100%;
-	min-height: 100px;
+  display: block;
+  max-width: 100%;
+  min-height: 100px;
 }
-

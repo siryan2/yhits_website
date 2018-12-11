@@ -1,0 +1,256 @@
+@import "_variables";
+
+/**
+ * @description: Helpers
+ * @project: CampusApp
+ * @author: Yannick Herzog
+ * @modified: 2018-11-13
+ */
+
+/**
+ * MARGIN
+ */
+.no-margin {
+  margin: 0 !important;
+
+  &--sm {
+    @media screen and (max-width: $screen-md) {
+      margin: 0;
+    }
+  }
+}
+
+@for $i from 0 through 5 {
+  .m-#{$i} {
+    margin: $distance-1 * $i;
+
+    &--xs {
+      @media screen and (max-width: $screen-xs) {
+        margin: $distance-1 * $i;
+      }
+    }
+
+    &--sm {
+      @media screen and (max-width: $screen-md) {
+        margin: $distance-1 * $i;
+      }
+    }
+
+    &--md {
+      @media screen and (min-width: $screen-md) {
+        margin: $distance-1 * $i;
+      }
+    }
+
+    &--lg {
+      @media screen and (min-width: $screen-lg) {
+        margin: $distance-1 * $i;
+      }
+    }
+  }
+  $i: $i + 1;
+}
+
+/**
+ * MARGIN BOTTOM
+ */
+.m-t-half {
+  margin-top: $distance-1 / 2;
+
+  &--sm {
+    @media screen and (max-width: $screen-md) {
+      margin-top: $distance-1 / 2;
+    }
+  }
+}
+
+.m-t-small {
+  margin-top: $distance-sm;
+}
+
+@for $i from 0 through 5 {
+  .m-t-#{$i} {
+    margin-top: $distance-1 * $i;
+
+    &--xs {
+      @media screen and (max-width: $screen-xs) {
+        margin-top: $distance-1 * $i;
+      }
+    }
+
+    &--sm {
+      @media screen and (max-width: $screen-md) {
+        margin-top: $distance-1 * $i;
+      }
+    }
+
+    &--md {
+      @media screen and (min-width: $screen-md) {
+        margin-top: $distance-1 * $i;
+      }
+    }
+
+    &--lg {
+      @media screen and (min-width: $screen-lg) {
+        margin-top: $distance-1 * $i;
+      }
+    }
+  }
+  $i: $i + 1;
+}
+
+/**
+ * MARGIN BOTTOM
+ */
+.m-b-half {
+  margin-bottom: $distance-1 / 2;
+
+  &--sm {
+    @media screen and (max-width: $screen-md) {
+      margin-bottom: $distance-1 / 2;
+    }
+  }
+}
+
+.m-b-small {
+  margin-bottom: $distance-sm;
+}
+
+.m-b-md {
+  margin-bottom: $distance-md;
+}
+
+@for $i from 0 through 5 {
+  .m-b-#{$i} {
+    margin-bottom: $distance-1 * $i;
+
+    &--xs {
+      @media screen and (max-width: $screen-xs) {
+        margin-bottom: $distance-1 * $i;
+      }
+    }
+
+    &--sm {
+      @media screen and (max-width: $screen-md) {
+        margin-bottom: $distance-1 * $i;
+      }
+    }
+
+    &--md {
+      @media screen and (min-width: $screen-md) {
+        margin-bottom: $distance-1 * $i;
+      }
+    }
+
+    &--lg {
+      @media screen and (min-width: $screen-lg) {
+        margin-bottom: $distance-1 * $i;
+      }
+    }
+  }
+  $i: $i + 1;
+}
+
+/**
+ * MARGIN RIGHT
+ */
+.m-r-half {
+  margin-right: $distance-1 / 2;
+
+  &--sm {
+    @media screen and (max-width: $screen-md) {
+      margin-right: $distance-1 / 2;
+    }
+  }
+}
+
+.m-r-small {
+  margin-right: $distance-sm;
+}
+
+.m-r-md {
+  margin-right: $distance-md;
+}
+
+@for $i from 0 through 5 {
+  .m-r-#{$i} {
+    margin-right: $distance-1 * $i;
+
+    &--xs {
+      @media screen and (max-width: $screen-xs) {
+        margin-right: $distance-1 * $i;
+      }
+    }
+
+    &--sm {
+      @media screen and (max-width: $screen-md) {
+        margin-right: $distance-1 * $i;
+      }
+    }
+
+    &--md {
+      @media screen and (min-width: $screen-md) {
+        margin-right: $distance-1 * $i;
+      }
+    }
+
+    &--lg {
+      @media screen and (min-width: $screen-lg) {
+        margin-right: $distance-1 * $i;
+      }
+    }
+  }
+  $i: $i + 1;
+}
+
+/**
+ * MARGIN LEFT
+ */
+.m-l-small {
+  margin-left: $distance-sm;
+}
+
+.m-l-md {
+  margin-left: $distance-md;
+}
+
+.m-l-half {
+  margin-left: $distance-1 / 2;
+
+  &--sm {
+    @media screen and (max-width: $screen-md) {
+      margin-left: $distance-1 / 2;
+    }
+  }
+}
+
+@for $i from 0 through 5 {
+  .m-l-#{$i} {
+    margin-left: $distance-1 * $i !important;
+
+    &--xs {
+      @media screen and (max-width: $screen-xs) {
+        margin-left: $distance-1 * $i !important;
+      }
+    }
+
+    &--sm {
+      @media screen and (max-width: $screen-md) {
+        margin-left: $distance-1 * $i !important;
+      }
+    }
+
+    &--md {
+      @media screen and (min-width: $screen-md) {
+        margin-left: $distance-1 * $i !important;
+      }
+    }
+
+    &--lg {
+      @media screen and (min-width: $screen-lg) {
+        margin-left: $distance-1 * $i !important;
+      }
+    }
+  }
+  $i: $i + 1;
+}

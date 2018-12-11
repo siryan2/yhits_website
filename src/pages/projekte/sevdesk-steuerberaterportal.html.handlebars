@@ -1,0 +1,18 @@
+---
+layout: default.hbs
+title: SEVENIT GmbH
+date: 2017-12-10
+name: projekte
+slider: true
+collection: projekte
+data:
+ projects: ../../models/projects.json
+---
+
+<section class="section">
+	<div class="grid-container">
+		{{> modules/project__desc data.projects.[18] }}
+	</div>
+</section>
+
+{{> modules/pagination__article prev=previous next=next isProject=true}}

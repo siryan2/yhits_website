@@ -1,43 +1,43 @@
-@import 'node_modules/normalize-scss/fork-versions/default/_variables';
-@import 'node_modules/normalize-scss/fork-versions/default/_vertical-rhythm';
-@import 'node_modules/normalize-scss/fork-versions/default/_normalize';
-@import 'node_modules/unsemantic/assets/sass/unsemantic-grid-responsive-tablet-no-ie7';
-@import 'node_modules/font-awesome/scss/font-awesome';
+@import "node_modules/normalize-scss/fork-versions/default/_variables";
+@import "node_modules/normalize-scss/fork-versions/default/_vertical-rhythm";
+@import "node_modules/normalize-scss/fork-versions/default/_normalize";
+@import "node_modules/unsemantic/assets/sass/unsemantic-grid-responsive-tablet-no-ie7";
+@import "node_modules/font-awesome/scss/font-awesome";
 
 /**
  * Common
  */
-@import '_variables';
-@import '_base';
-@import '_helpers';
-@import '_page';
-@import '_header';
-@import '_footer';
-@import '_sections';
-@import '_fonts';
+@import "_variables";
+@import "_base";
+@import "_helpers";
+@import "_page";
+@import "_header";
+@import "_footer";
+@import "_sections";
+@import "_fonts";
 
 /**
  * Components
  */
-@import 'components/_lists';
-@import 'components/_tables';
-@import 'components/_forms';
-@import 'components/_buttons';
-@import 'components/_project__card';
-@import 'components/_cards';
-@import 'components/_claim';
+@import "components/_lists";
+@import "components/_tables";
+@import "components/_forms";
+@import "components/_buttons";
+@import "components/_project__card";
+@import "components/_cards";
+@import "components/_claim";
 
 /**
  * Modules
  */
-@import 'modules/_hero';
-@import 'modules/_nav';
-@import 'modules/_project_desc';
-@import 'modules/_notifications';
-@import 'modules/_aboutme';
-@import 'modules/_article';
-@import 'modules/_pagination__article';
-@import 'modules/_ruf_mich_an';
-@import 'modules/_process__timeline';
-@import 'modules/_contact-bar';
-
+@import "modules/_hero";
+@import "modules/_nav";
+@import "modules/_project_desc";
+@import "modules/_notifications";
+@import "modules/_aboutme";
+@import "modules/_article";
+@import "modules/_pagination__article";
+@import "modules/_ruf_mich_an";
+@import "modules/_process__timeline";
+@import "modules/_contact-bar";
+@import "modules/_isotope";

@@ -2,8 +2,8 @@
  * Colors
  */
 $baseColor: #123654;
-$lightBaseColor: lighten($baseColor, 20%);//#456987;
-$lighterBlue: #E4F1FE;
+$lightBaseColor: lighten($baseColor, 20%); //#456987;
+$lighterBlue: #e4f1fe;
 
 $lighterGray: #f9f9f9;
 $lightGray: #f3f3f3;
@@ -14,14 +14,14 @@ $darkGray: #333333;
 /*
  * Fonts
  */
-$baseFont: 'Roboto', sans-serif;
-$secondaryFont: 'Roboto Slab', serif;
+$baseFont: "Roboto", sans-serif;
+$secondaryFont: "Roboto Slab", serif;
 
-$navFont: 'Noto Sans', sans-serif;
+$navFont: "Noto Sans", sans-serif;
 $navFont--size: 1.1em;
 $navFont--weight: 700;
 
-$heroFont: 'Changa One', serif;
+$heroFont: "Changa One", serif;
 $heroFont--size: 4em;
 $heroFont--style: italic;
 
@@ -36,8 +36,24 @@ $heroFont--style: italic;
 $media-sm-max: 480px !default;
 $media-md-min: 481px !default;
 
+// Media queries
+$screen-xs: "420px";
+$screen-sm: "768px";
+$screen-md: "992px";
+$screen-lg: "1200px";
+$screen-xl: "1920px";
+
 // unsemantic
 // $media-mobile-max: 767px !default;
 // $media-tablet-min: 768px !default;
 // $media-tablet-max: 1024px !default;
 // $media-desktop-min: 1025px !default;
+
+// Margins & Paddings
+$distance-sm: 0.2rem;
+$distance-md: 0.6rem;
+$distance-1: 1rem;
+$distance-2: 2rem;
+$distance-3: 3rem;
+$distance-4: 4rem;
+$distance-5: 5rem;

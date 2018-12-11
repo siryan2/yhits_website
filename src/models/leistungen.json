@@ -1,26 +1,26 @@
 [
-	{
-		"name":"Webdesign",
-		"iconClass":"fa fa-desktop fa-3x",
-		"teaser":"Vom ersten handgezeichneten Strich auf Papier bis hin zum fertigen Layout erstelle ich nutzergerechte Interfaces mit Fokus auf zielgerichteter Ausführung.",
-		"link":""
-	},
-	{
-		"name":"Webentwicklung",
-		"iconClass":"fa fa-code fa-3x",
-		"teaser":"Mit modernen und zukunftssicheren Webtechnologien realisiere ich Ihr Projekt. Dabei achte ich auf die Semantik und gute Wartbarkeit durch Modularisierung.",
-		"link":""
-	},
-	{
-		"name":"(Web)-Apps",
-		"iconClass":"fa fa-mobile fa-3x",
-		"teaser":"Mit Anfragen zur Entwicklung einer individuellen Webapplikation oder einer hybriden App für iOS, Android und Windows Phone bin ich schnell Feuer und Flamme.",
-		"link":""
-	},
-	{
-		"name":"Wartung & Support",
-		"iconClass":"fa fa-dashboard fa-3x",
-		"teaser":"Meine Aufgabe ist nach Fertigstellung des Projektes nicht erfüllt. Ich übernehme die Pflege und aktualisiere Ihre Website mit den gewünschten Informationen.",
-		"link":""
-	}
+  {
+    "name": "Webdesign",
+    "iconClass": "fa fa-desktop fa-3x",
+    "teaser": "Vom ersten handgezeichneten Strich auf Papier bis hin zum fertigen Layout erstelle ich nutzergerechte Interfaces mit Fokus auf zielgerichteter Ausführung.",
+    "link": "/projekte/index.html#filter=.website"
+  },
+  {
+    "name": "Webentwicklung",
+    "iconClass": "fa fa-code fa-3x",
+    "teaser": "Mit modernen und zukunftssicheren Webtechnologien realisiere ich Ihr Projekt. Dabei achte ich auf die Semantik und gute Wartbarkeit durch Modularisierung.",
+    "link": "/projekte/index.html#filter=.webapp"
+  },
+  {
+    "name": "(Web)-Apps",
+    "iconClass": "fa fa-mobile fa-3x",
+    "teaser": "Mit Anfragen zur Entwicklung einer individuellen Webapplikation oder einer hybriden App für iOS, Android und Windows Phone bin ich schnell Feuer und Flamme.",
+    "link": "/projekte/index.html#filter=.app"
+  },
+  {
+    "name": "Wartung & Support",
+    "iconClass": "fa fa-dashboard fa-3x",
+    "teaser": "Meine Aufgabe ist nach Fertigstellung des Projektes nicht erfüllt. Ich übernehme die Pflege und aktualisiere Ihre Website mit den gewünschten Informationen.",
+    "link": ""
+  }
 ]

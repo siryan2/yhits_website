@@ -1,14 +1,16 @@
-<div class="card">
+<div class="card card--shadow card--round">
 	<header class="card__header">
 		<i class="card__icon {{iconClass}}"></i>
 		<h3 class="card__headline">{{name}}</h3>
 	</header>
+	
 	<main class="card__content">
 		<p>{{teaser}}</p>			
 	</main>
+	
 	{{#if link}}
 	<footer class="card__footer">
-		<a href="{{link}}" class="card__link">mehr <i class="fa fa-angle-right"></i></a>
+		<a href="{{link}}" class="card__link">mehr <i class="fa fa-angle-double-right m-l-small"></i></a>
 	</footer>
 	{{/if}}
 </div>

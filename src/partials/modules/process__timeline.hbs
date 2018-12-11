@@ -3,16 +3,28 @@
 	{{> section__headline }}
 {{/parseJSON}}
 </div>
-<div class="grid-100">
+
+<div class="flex" style="overflow-x: auto; -webkit-overflow-scrolling: touch;">
 {{#each data.process}}
-	<section class="process grid-20 tablet-grid-50 grid-parent">
-		<div class="process__icon-wrapper">
-			<div class="process__icon"><i class="{{iconClass}}"></i></div>
+	<div class="process w-25 p-l-1 p-r-1 m-b-2" style="">
+		<div class="card card--shadow card--round p-0">
+			<header class="card__header">
+				<span class="process__icon-wrapper">
+					<i class="process__icon {{iconClass}}"></i>
+				</span>
+				<h3 class="card__headline">{{name}}</h3>
+			</header>
+			
+			<main class="card__content">
+				<p>{{text}}</p>
+			</main>
+
+			{{#if link}}
+			<footer class="card__footer">
+				<a href="{{link}}" class="card__link">mehr <i class="fa fa-angle-double-right m-l-small"></i></a>
+			</footer>
+			{{/if}}
 		</div>
-		<div class="grid-100">
-			<h3 class="process__headline">{{name}}</h3>
-			<p class="process__text">{{{text}}}</p>
-		</div>
-	</section>
+	</div>
 {{/each}}
 </div>

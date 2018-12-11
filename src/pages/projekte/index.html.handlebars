@@ -2,42 +2,62 @@
 layout: default.hbs
 title: Projekte
 subtitle: Eine Auswahl meiner Arbeiten
+isotope: true
 name: projekte
 data:
  kunden: ../../models/kunden.json
  projects: ../../models/projects.json
+ filter-items: ../../models/projects__filter.json
 ---
 
+{{!-- Headline --}}
 <section class="section">
 	<div class="grid-container">
 		<div class="grid-100">
 			{{> page__headline}}
 		</div>
-		{{#withSort data.projects "order" reverse="true"}}
-			{{#unless draft}}
-				<div class="grid-33 tablet-grid-50">
-				{{> modules/project__card }}
-				</div>
-			{{/unless}}
-		{{/withSort}}
 	</div>
 </section>
 
-<section class="section">
+{{!-- Filter --}}
+<section class="section section--p-b-0">
+	<div class="m-t-1">
+		{{> modules/isotope__filter }}
+	</div>
+</section>
+
+{{!-- Project Grid --}}
+<section class="section section--dark section--shadow-top p-t-3">
+	<div class="grid-container">
+		<div class="isotope__grid-items">
+			{{!-- Grid Item --}}
+			{{#withSort data.projects "order" reverse="true"}}
+				{{#unless draft}}
+				<div class="isotope__grid-item {{tags}} w-50--sm w-33">
+					{{> modules/project__card }}
+				</div>
+				{{/unless}}
+			{{/withSort}}
+		</div>
+	</div>
+</section>
+
+{{!-- Customer Grid --}}
+<section class="section section--light p-t-2">
 	<div class="grid-container">
 		<div class="grid-100">
-			<h3 class="section__headline"><span>Weitere zufriedene Kunden</span></h3>
+			<h3 class="section__headline"><span>Meine zufriedenen Kunden</span></h3>
 		</div>
-		<div class="grid-70 prefix-15 grid-parent">
-			{{#withFirst data.kunden 6}}
-			<div class="grid-33 tablet-grid-33 mobile-grid-50">
-				<div class="project__card">
+		<div class="grid-100 grid-parent">
+			{{#data.kunden}}
+			<div class="grid-25 tablet-grid-33 mobile-grid-50">
+				<div class="project__card project__card--shadow project__card--round">
 					<figure class="project__card-container">
-						<img data-src="{{image}}" alt="{{name}}" class="project__card-img js-lazyload">
+						<img data-src="{{image}}" alt="{{name}}" class="project__card-img js-lazyload" title="{{name}}">
 					</figure>
 				</div>
 			</div>
-			{{/withFirst}}
+			{{/data.kunden}}
 		</div>
 	</div>
 </section>

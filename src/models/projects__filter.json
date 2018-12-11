@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "name": "Websites",
+    "selector": ".website"
+  },
+  {
+    "id": 2,
+    "name": "Web-Apps",
+    "selector": ".webapp"
+  },
+  {
+    "id": 3,
+    "name": "Apps",
+    "selector": ".app"
+  },
+  {
+    "id": 4,
+    "name": "Shops",
+    "selector": ".shop"
+  }
+]

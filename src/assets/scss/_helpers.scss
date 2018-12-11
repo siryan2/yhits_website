@@ -1,16 +1,260 @@
-@import '_variables';
+@import "_variables";
+@import "_helper-margin";
+@import "_helper-padding";
 
 /**
  * @module: Helpers
  * @desc: allgemeine Helferklassen
  * @author: Yannick Herzog
- * @last-modified: 2015-12-10
+ * @last-modified: 2018-12-11
  **/
 
 .text-right {
-	text-align: right;
+  text-align: right;
 }
 
 .text-center {
-	text-align: center;
+  text-align: center;
+}
+
+.a-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.a-right {
+  display: flex;
+  justify-content: flex-end;
+
+  &--sm {
+    @media screen and (min-width: $screen-sm) {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+
+  &--md {
+    @media screen and (min-width: $screen-md) {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}
+
+.a-bottom {
+  display: flex;
+  align-items: flex-end;
+}
+
+.text-overflow--ellipsis {
+  text-overflow: ellipsis;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-small {
+  font-size: 0.8rem;
+}
+
+.valign-center {
+  display: flex;
+  align-items: center;
+}
+
+.o-hidden {
+  overflow: hidden;
+}
+
+.o-visible {
+  overflow: visible;
+}
+
+.o-visible--y {
+  overflow-y: visible !important;
+}
+
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+.no-radius {
+  border-radius: 0;
+}
+
+.flex {
+  display: flex;
+
+  &--sm {
+    @media screen and (min-width: $screen-sm) {
+      display: flex;
+    }
+  }
+
+  &--md {
+    @media screen and (min-width: $screen-md) {
+      display: flex;
+    }
+  }
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-nowrap {
+  flex-wrap: nowrap;
+}
+
+.wrap {
+  white-space: normal;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.d-block {
+  display: block;
+
+  @media screen and (max-width: $screen-md) {
+    &--sm {
+      display: block;
+    }
+  }
+
+  @media screen and (min-width: $screen-md) {
+    &--md {
+      display: block;
+    }
+  }
+}
+
+.d-inline-block {
+  display: block;
+
+  @media screen and (max-width: $screen-md) {
+    &--sm {
+      display: inline-block;
+    }
+  }
+
+  @media screen and (min-width: $screen-md) {
+    &--md {
+      display: inline-block;
+    }
+  }
+}
+
+.pos-r {
+  position: relative;
+}
+
+/**
+ * FONT
+ */
+.font--smaller {
+  font-size: 0.625rem;
+}
+
+.font--small {
+  font-size: 0.8rem;
+}
+
+.font--regular {
+  font-size: 1rem;
+}
+
+.font--regular-plus {
+  font-size: 1.2rem;
+}
+
+.font--big {
+  font-size: 1.5rem;
+}
+
+.font--bigger {
+  font-size: 1.8rem;
+}
+
+.font--w-700 {
+  font-weight: 700;
+}
+
+.font-brand {
+  font-family: $baseFont;
+  font-weight: 500;
+}
+
+.font--bold {
+  font-weight: 700;
+}
+
+/**
+ * BACKGROUND
+ */
+.bg-color-white {
+  background-color: #ffffff;
+}
+
+.bg-color-gray {
+  background-color: $gray;
+}
+
+.bg-color-light-gray {
+  background-color: $lightGray !important;
+}
+
+.bg-color-lighter-gray {
+  background-color: $lighterGray !important;
+}
+
+.bg-color-light-brand {
+  background-color: $lighterBlue;
+}
+
+/**
+ * WIDTH
+ **/
+@for $i from 10 through 100 {
+  .w-#{$i} {
+    width: 1% * $i !important;
+
+    &--xs {
+      @media screen and (max-width: $screen-sm) {
+        width: 1% * $i !important;
+      }
+    }
+
+    &--sm {
+      @media screen and (max-width: $screen-md) {
+        width: 1% * $i !important;
+      }
+    }
+
+    &--md {
+      @media screen and (min-width: $screen-md) {
+        width: 1% * $i !important;
+      }
+    }
+
+    &--lg {
+      @media screen and (min-width: $screen-lg) {
+        width: 1% * $i !important;
+      }
+    }
+  }
+
+  $i: $i + 10;
 }

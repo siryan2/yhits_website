@@ -1,77 +1,67 @@
 [
-	{
-		"name":"SEVENIT GmbH",
-		"image":"/assets/img/kunden/sevenit.png",
-		"url":"http://www.sevenit.de"
-	},
-	{
-		"name":"SE GmbH",
-		"image":"/assets/img/kunden/segmbh.png",
-		"url":"http://www.segmbh.com"
-	},
-	{
-		"name":"Web Commerce GmbH",
-		"image":"/assets/img/kunden/webcommerce.png",
-		"url":"http://www.w-commerce.de"
-	},
-	{
-		"name":"webtofly",
-		"image":"/assets/img/kunden/webtofly.png",
-		"url":"http://www.webtofly.de"
-	},
-	{
-		"name":"Turnverein Lahr e.v.",
-		"image":"/assets/img/kunden/tv-lahr.png",
-		"url":"http://www.turnverein-lahr.de"
-	},
-	{
-		"name":"Neumaier Brunnen",
-		"image":"/assets/img/kunden/neumaierbrunnen.png",
-		"url":"http://www.neumaier-brunnen.de"
-	},
-	{
-		"name":"Ernst Umformtechnik GmbH",
-		"image":"/assets/img/kunden/ernst.png",
-		"url":"http://www.ernst.de"
-	},
-	{
-		"name":"kurhaus production Film & Medien GmbH",
-		"image":"/assets/img/kunden/kurhausproduction.png",
-		"url":"http://www.kurhausproduction.de"
-	},
-	{
-		"name":"Labor Medienforschung",
-		"image":"/assets/img/kunden/labormedienforschung.png",
-		"url":"http://medienforschung.hs-offenburg.de"
-	},
-	{
-		"name":"Fahrschule Hohenbaden GmbH",
-		"image":"/assets/img/kunden/fahrschulehohenbaden.png",
-		"url":"http://www.fahrschule-hohenbaden.de"
-	},
-	{
-		"name":"Vallée Verte Handelsgesellschaft für Naturprodukte",
-		"image":"/assets/img/kunden/valleeverte.png",
-		"url":"http://www.vallee-verte.de"
-	},
-	{
-		"name":"Hochschule Offenburg",
-		"image":"/assets/img/kunden/hsoffenburg.png",
-		"url":"http://www.hs-offenburg.de"
-	},
-	{
-		"name":"Raumgestaltung Baas & Dulsan",
-		"image":"/assets/img/kunden/baas-dulsan.png",
-		"url":"http://www.baas-dulsan.de"
-	},
-	{
-		"name":"Nautic Club Kehl e.V.",
-		"image":"/assets/img/kunden/nauticclubkehl.png",
-		"url":"http://www.nautic-club-kehl.de"
-	},
-	{
-		"name":"cdesign",
-		"image":"/assets/img/kunden/cdesign.png",
-		"url":"http://www.createyoursign.de"
-	}
+  {
+    "name": "Baas & Dulsan GmbH & Co. KG",
+    "image": "/assets/img/kunden/baas-dulsan.png",
+    "url": "http://www.baas-dulsan.de"
+  },
+  {
+    "name": "Stefanie Engel - Handel mit Fliesen, Baustoffen, Bodenbelägen und Verlegearbeiten",
+    "image": "/assets/img/kunden/fliesenengel.png",
+    "url": "http://www.fliesenengel.com"
+  },
+  {
+    "name": "Ernst Umformtechnik GmbH",
+    "image": "/assets/img/kunden/ernst.png",
+    "url": "http://www.ernst.de"
+  },
+  {
+    "name": "Hochschule Offenburg",
+    "image": "/assets/img/kunden/hsoffenburg.png",
+    "url": "http://www.hs-offenburg.de"
+  },
+  {
+    "name": "Nautic Club Kehl e.V.",
+    "image": "/assets/img/kunden/nauticclubkehl.png",
+    "url": "http://www.nautic-club-kehl.de"
+  },
+  {
+    "name": "SE GmbH",
+    "image": "/assets/img/kunden/segmbh.png",
+    "url": "http://www.segmbh.com"
+  },
+  {
+    "name": "SEVENIT GmbH",
+    "image": "/assets/img/kunden/sevenit.png",
+    "url": "http://www.sevenit.de"
+  },
+  {
+    "name": "Sichtwechsel Medien GmbH",
+    "image": "/assets/img/kunden/sichtwechsel.png",
+    "url": "http://www.sichtwechsel.com"
+  },
+  {
+    "name": "Turnverein Lahr e.v.",
+    "image": "/assets/img/kunden/tv-lahr.png",
+    "url": "http://www.turnverein-lahr.de"
+  },
+  {
+    "name": "Vallée Verte Handelsgesellschaft für Naturprodukte",
+    "image": "/assets/img/kunden/valleeverte.png",
+    "url": "http://www.vallee-verte.de"
+  },
+  {
+    "name": "VIDA Logistik GmbH",
+    "image": "/assets/img/kunden/vida-logistik.png",
+    "url": "http://www.vida-logistik.de"
+  },
+  {
+    "name": "Web Commerce GmbH",
+    "image": "/assets/img/kunden/webcommerce.png",
+    "url": "http://www.w-commerce.de"
+  },
+  {
+    "name": "webtofly",
+    "image": "/assets/img/kunden/webtofly.png",
+    "url": "http://www.webtofly.de"
+  }
 ]
