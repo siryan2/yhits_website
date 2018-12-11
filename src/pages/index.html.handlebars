@@ -17,6 +17,9 @@ data:
 			{{> section__headline }}
 		{{/parseJSON}}
 		</div>
+	</div>
+	
+	<div class="grid-container" style="max-width: 1400px;">
 		{{#each data.leistungen}}
 		<div class="grid-25 tablet-grid-50">
 			{{> modules/card }}
@@ -53,7 +56,7 @@ data:
 
 {{!-- Prozess Timeline --}}
 <section class="section section__process-timeline section--light">
-	<div class="grid-container">
+	<div class="grid-container" style="max-width: 1600px;">
 		{{> modules/process__timeline}}
 	</div>
 </section>
