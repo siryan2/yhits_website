@@ -1,33 +1,8 @@
 [
   {
-    "name": "SE GmbH",
-    "image": "/assets/img/kunden/segmbh.png",
-    "url": "http://www.segmbh.com"
-  },
-  {
-    "name": "Sichtwechsel Medien GmbH",
-    "image": "/assets/img/kunden/sichtwechsel.png",
-    "url": "http://www.sichtwechsel.com"
-  },
-  {
-    "name": "SEVENIT GmbH",
-    "image": "/assets/img/kunden/sevenit.png",
-    "url": "http://www.sevenit.de"
-  },
-  {
-    "name": "Vallée Verte Handelsgesellschaft für Naturprodukte",
-    "image": "/assets/img/kunden/valleeverte.png",
-    "url": "http://www.vallee-verte.de"
-  },
-  {
-    "name": "Hochschule Offenburg",
-    "image": "/assets/img/kunden/hsoffenburg.png",
-    "url": "http://www.hs-offenburg.de"
-  },
-  {
-    "name": "VIDA Logistik GmbH",
-    "image": "/assets/img/kunden/vida-logistik.png",
-    "url": "http://www.vida-logistik.de"
+    "name": "Baas & Dulsan GmbH & Co. KG",
+    "image": "/assets/img/kunden/baas-dulsan.png",
+    "url": "http://www.baas-dulsan.de"
   },
   {
     "name": "Stefanie Engel - Handel mit Fliesen, Baustoffen, Bodenbelägen und Verlegearbeiten",
@@ -35,14 +10,14 @@
     "url": "http://www.fliesenengel.com"
   },
   {
-    "name": "webtofly",
-    "image": "/assets/img/kunden/webtofly.png",
-    "url": "http://www.webtofly.de"
+    "name": "Ernst Umformtechnik GmbH",
+    "image": "/assets/img/kunden/ernst.png",
+    "url": "http://www.ernst.de"
   },
   {
-    "name": "Web Commerce GmbH",
-    "image": "/assets/img/kunden/webcommerce.png",
-    "url": "http://www.w-commerce.de"
+    "name": "Hochschule Offenburg",
+    "image": "/assets/img/kunden/hsoffenburg.png",
+    "url": "http://www.hs-offenburg.de"
   },
   {
     "name": "Nautic Club Kehl e.V.",
@@ -50,18 +25,43 @@
     "url": "http://www.nautic-club-kehl.de"
   },
   {
+    "name": "SE GmbH",
+    "image": "/assets/img/kunden/segmbh.png",
+    "url": "http://www.segmbh.com"
+  },
+  {
+    "name": "SEVENIT GmbH",
+    "image": "/assets/img/kunden/sevenit.png",
+    "url": "http://www.sevenit.de"
+  },
+  {
+    "name": "Sichtwechsel Medien GmbH",
+    "image": "/assets/img/kunden/sichtwechsel.png",
+    "url": "http://www.sichtwechsel.com"
+  },
+  {
     "name": "Turnverein Lahr e.v.",
     "image": "/assets/img/kunden/tv-lahr.png",
     "url": "http://www.turnverein-lahr.de"
   },
   {
-    "name": "Ernst Umformtechnik GmbH",
-    "image": "/assets/img/kunden/ernst.png",
-    "url": "http://www.ernst.de"
+    "name": "Vallée Verte Handelsgesellschaft für Naturprodukte",
+    "image": "/assets/img/kunden/valleeverte.png",
+    "url": "http://www.vallee-verte.de"
   },
   {
-    "name": "Raumgestaltung Baas & Dulsan",
-    "image": "/assets/img/kunden/baas-dulsan.png",
-    "url": "http://www.baas-dulsan.de"
+    "name": "VIDA Logistik GmbH",
+    "image": "/assets/img/kunden/vida-logistik.png",
+    "url": "http://www.vida-logistik.de"
+  },
+  {
+    "name": "Web Commerce GmbH",
+    "image": "/assets/img/kunden/webcommerce.png",
+    "url": "http://www.w-commerce.de"
+  },
+  {
+    "name": "webtofly",
+    "image": "/assets/img/kunden/webtofly.png",
+    "url": "http://www.webtofly.de"
   }
 ]
