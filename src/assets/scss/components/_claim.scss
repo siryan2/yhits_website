@@ -1,38 +1,40 @@
-@import '../_variables';
+@import "../_variables";
 
 /**
  * @module: Claim
  * @desc: Claim
  * @author: Yannick Herzog
- * @last-modified: 2017-04-05
+ * @last-modified: 2018-12-11
  **/
 
 .claim {
-	display: block;
-	hyphens: auto;
-	text-align: center;
+  display: block;
+  hyphens: auto;
+  text-align: center;
 }
 
 .claim__container--dark {
-	color: $baseColor;
+  color: $baseColor;
 }
 
 .claim__container--light {
 }
 
 .claim--big {
-	color: #ffffff;
-	font-size: 2em;
-	margin-top: 1.7em;
+  color: #ffffff;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  margin-top: 1.7rem;
 }
 
 .claim--sub {
-	color: $gray;
-	font-size: 1.3em;
-	margin-top: 0.5em;
-	margin-bottom: 2em;
+  color: $gray;
+  font-size: 1.7rem;
+  line-height: 2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 .claim__button {
-	margin: 0 0 3em;
+  margin: 0 0 3rem;
 }
