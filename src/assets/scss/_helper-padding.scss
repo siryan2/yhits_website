@@ -4,7 +4,7 @@
  * @description: Helpers
  * @project: CampusApp
  * @author: Yannick Herzog
- * @modified: 2018-11-06
+ * @modified: 2018-12-11
  */
 
 /**
@@ -16,7 +16,7 @@
 
 @for $i from 0 through 5 {
   .p-#{$i} {
-    padding: $distance-1 * $i;
+    padding: $distance-1 * $i !important;
 
     &--xs {
       @media screen and (max-width: $screen-xs) {
