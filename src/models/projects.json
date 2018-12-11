@@ -409,7 +409,7 @@
     "detailUrl": "/projekte/vida-logistik.html",
     "url": "http://www.vida-logistik.de",
     "image": "/assets/img/projekte/vida-logistik/vida-logistik_home.jpg",
-    "description": "<p>Das Logistikunternehmen ViDa Logistik GmbH hat sich auf den Transport von Lebensmitteln spezialisiert und punktet hier vor Allem durch Pünktlichkeit und Zuverlässigkeit.</p><p>Meine Aufgabe bestand darin, die Website technisch sowie gestalterisch zu modernisieren und für künftige Projekte (Sendungsverfolgung) vorzubereiten.</p>",
+    "description": "<p>Das Logistikunternehmen ViDa Logistik GmbH hat sich auf den Transport von Lebensmitteln spezialisiert und punktet hier vor Allem durch Pünktlichkeit und Zuverlässigkeit.</p><p>Meine Aufgabe bestand darin, die Website technisch sowie gestalterisch zu modernisieren und für künftige Projekte (Sendungsverfolgung) vorzubereiten.</p><p>Im Dezember 2018 wurde die Website um ein Fahrzeugportal erweitert. Hier bietet das Unternehmen ihre Fahrzeuge zum Kaufen oder Vermieten an. Mit ProcessWire konnte diese Aufgabe binnen weniger Stunden realisiert werden.</p>",
     "projectTags": [
       "ProcessWire",
       "HTML/CSS (Sass)",
@@ -419,7 +419,9 @@
     "images": [
       "/assets/img/projekte/vida-logistik/vida-logistik_home.jpg",
       "/assets/img/projekte/vida-logistik/vida-logistik_unternehmen.jpg",
-      "/assets/img/projekte/vida-logistik/vida-logistik_home-mobile.jpg"
+      "/assets/img/projekte/vida-logistik/vida-logistik_home-mobile.jpg",
+      "/assets/img/projekte/vida-logistik/vida-logistik_fahrzeug-liste.jpg",
+      "/assets/img/projekte/vida-logistik/vida-logistik_fahrzeug-details.jpg"
     ],
     "order": 16,
     "draft": false,
