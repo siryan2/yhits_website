@@ -14,23 +14,29 @@
 	<script>
 		(function($) {							
 			// Pre-select filter
-			var splitSearch = window.location.search.split('?filter=');
+			var splitHash = window.location.hash.split('#filter=');
 			var filterValue = '*';
-			if(splitSearch.length > 1) {
-				//filterValue = splitSearch[1]; // Example: strategie
-			}
-
-			// init Isotope
-			var $grid = $('.isotope__grid-items').isotope({
-				itemSelector:'.isotope__grid-item',
-				layoutMode:'fitRows',
-				percentPosition: true,
-				filter: filterValue
-			});	
+			var btnCurrentFilter = null;
 
 			var images = document.querySelectorAll('.isotope__grid-item img');
 			var totalImages = images.length;
 			var imagesCount = 0;
+			
+			if(splitHash.length > 1) {
+				filterValue = splitHash[1]; // Example: webapp
+				// Get Button with filter value
+				btnCurrentFilter = document.querySelector('.grid-filter-item button[data-filter="'+filterValue+'"]');
+			}
+
+			var isotopOptions = {
+				itemSelector:'.isotope__grid-item',
+				layoutMode:'fitRows',
+				percentPosition: true,
+				//filter: filterValue
+			};
+
+			// init Isotope
+			var $grid = $('.isotope__grid-items').isotope( isotopOptions );			
 
 			// Add event listener to all images
 			images.forEach(function(image){
@@ -40,6 +46,11 @@
 					// Initialize isotope after all images has been loaded
 					if(totalImages === imagesCount) {
 						$grid.isotope('layout');
+						
+						// Activate button for current filter
+						if(btnCurrentFilter) {
+							btnCurrentFilter.click();
+						}
 					}
 				});
 			});
@@ -47,7 +58,11 @@
 			// filter items on button click
 			$('.grid-filter').on( 'click', 'button', function() {
 				var filterValue = $(this).attr('data-filter');
+				// Set current filter
 				$grid.isotope({ filter: filterValue });
+				// Update current filter in url
+				window.location.hash = '#filter=' + filterValue;
+				
 				document.querySelectorAll('.grid-filter button').forEach(function(button) {
 					button.classList.remove('is-active');
 				});
