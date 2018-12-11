@@ -4,15 +4,16 @@
  * @module: Cards
  * @desc: Cards
  * @author: Yannick Herzog
- * @last-modified: 2018-12-10
+ * @last-modified: 2018-12-11
  **/
 
 .card {
+  background-color: #ffffff;
   border: 1px solid $mediumGray;
   padding: 1em;
 
   &--shadow {
-    box-shadow: 0 0 8px 0px transparentize($gray, 0.5);
+    box-shadow: 0 0 15px 0px transparentize($gray, 0.5);
   }
 
   &--round {
