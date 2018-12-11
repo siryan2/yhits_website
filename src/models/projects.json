@@ -457,7 +457,7 @@
     "detailUrl": "/projekte/sevdesk-steuerberaterportal.html",
     "url": "http://steuerberater.sevdesk.de/app/",
     "image": "/assets/img/projekte/sevdesk-steuerberater/steuerberaterportal_start.jpg",
-    "description": "<p></p>",
+    "description": "<p>Das Offenburger Startup SEVENIT hat mit sevDesk eine Software as a Service für Selbständige, kleine Unternehmen und Freiberufler entwickelt, um deren Buchhaltung durch Digitalisierung zu vereinfachen.</p><p>Ich wurde damit beauftragt, eine Software zu entwickeln, damit Steuerberater nach erfolgeicher Verknüpfung mit ihren Mandanten (sevDesk-Kunden) auf Daten ihrer Mandanten zugreifen können. <br> Die Listen- und Detailansicht informiert die Steuerberater über den aktuellen Stand der Buchhaltung ihrer Mandanten. Weiter kann direkt aus der Anwendung heraus ein DATEV-Export generiert werden, um diesen weiterverarbeiten zu können.</p><p>Bislang nutzen täglich mehr als 1.000 Steuerberater aus dem deutschsprachigen Raum diese Plattform.</p>",
     "projectTags": [
       "Single Page Application (SPA)",
       "HTML/CSS",
@@ -484,7 +484,7 @@
     "detailUrl": "/projekte/produktkonfigurator.html",
     "url": "",
     "image": "/assets/img/projekte/produktkonfigurator/produktkonfig_login.jpg",
-    "description": "<p></p>",
+    "description": "<p>Für ein mittelständisches Unternehmen im Bereich der Spül-Technik konzipierte und realisierte ich das Frontend für einen Produktkonfigurator, welcher durch Auswahl der unterschiedlichsten Bauteile und Maschinenelemente eine individuelle und für den Kunden passgenaue Geschirr- oder Waschstrasse zusammenstellt und im Anschluss sämtliche Unterlagen zur Weiterverarbeitung generiert.</p><p>Das Frontend wird hierbei vom Backend gesteuert, so dass die Mitarbeiterinnen und Mitarbeiter über ein Service-Tool die Ausgabe der einzelnen Komponenten beeinflussen können. Damit ist die Anwendung sehr flexibel und für jede Datenstruktur geeignet.</p>",
     "projectTags": [
       "Single Page Application (SPA)",
       "HTML/CSS",
@@ -508,7 +508,7 @@
     "detailUrl": "/projekte/saas-digitale-checklisten.html",
     "url": "",
     "image": "/assets/img/projekte/saas-digitale-checklisten/saas-digitale-checklisten_allgsettings.jpg",
-    "description": "<p></p>",
+    "description": "<p>Für ein schweizer Startup, die sich auf digitale Checklisten spezialisiert haben, durfte ich den Relaunch ihres Produktes begleiten. Während dieser Zeit entwickelte ich das Frontend mit Webtechnologien, die es ermöglichen die Anwendung zum Einen im Browser als gewöhnliche Web-App aber auch als native App für iOS und Android betreiben zu können.</p><p>Um allen Plattformen gerecht werden zu können, setzte ich auf Element UI, einem Desktop-UI-Framework und Quasar, einem Mobile-UI-Framework. Letzteres liefert viele nützliche Komponenten, um eine bestmögliche Nutzererfahrung auf mobilen Endgeräten zu erzielen.</p><p>Die Anwendung konnte dadurch binnen weniger Monate komplett neu und für alle Plattformen entwickelt werden und ist auch in Zukunft durch die gemeinsame Code-Basis leicht zu Pflegen und zu Erweitern.</p>",
     "projectTags": [
       "Software as a Service (SaaS)",
       "Single Page Application (SPA) / Hyprid App",
