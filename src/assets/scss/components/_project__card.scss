@@ -5,7 +5,7 @@
  * @module: Project Cards
  * @desc: Cards
  * @author: Yannick Herzog
- * @last-modified: 2018-12-10
+ * @last-modified: 2018-12-11
  **/
 
 .project__card {
@@ -45,6 +45,10 @@
   &--shadow {
     box-shadow: 0 0 8px 0 transparentize($gray, 0.5);
     border: 1px solid $mediumGray;
+  }
+
+  &--round {
+    border-radius: 5px;
   }
 }
 
