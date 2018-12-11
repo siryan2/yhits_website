@@ -452,7 +452,7 @@
     "tags": "website"
   },
   {
-    "name": "fliesenengel",
+    "name": "sevdesk-steuerberaterportal",
     "projectTitle": "sevDesk - Steuerberaterportal",
     "detailUrl": "/projekte/sevdesk-steuerberaterportal.html",
     "url": "http://steuerberater.sevdesk.de/app/",
@@ -476,6 +476,30 @@
     "order": 18,
     "draft": false,
     "online": "September 2017",
+    "tags": "webapp"
+  },
+  {
+    "name": "produktkonfigurator",
+    "projectTitle": "Produktkonfigurator",
+    "detailUrl": "/projekte/produktkonfigurator.html",
+    "url": "",
+    "image": "/assets/img/projekte/produktkonfigurator/produktkonfig_login.jpg",
+    "description": "<p></p>",
+    "projectTags": [
+      "Single Page Application (SPA)",
+      "HTML/CSS",
+      "JavaScript (VueJS)",
+      "Element UI (UI-Framework)"
+    ],
+    "images": [
+      "/assets/img/projekte/produktkonfigurator/produktkonfig_login.jpg",
+      "/assets/img/projekte/produktkonfigurator/produktkonfig_ma-details.jpg",
+      "/assets/img/projekte/produktkonfigurator/produktkonfig_auswahl.jpg",
+      "/assets/img/projekte/produktkonfigurator/produktkonfig_maschinenelemente.jpg"
+    ],
+    "order": 19,
+    "draft": false,
+    "online": "August 2018",
     "tags": "webapp"
   },
   {
@@ -505,7 +529,7 @@
       "/assets/img/projekte/saas-digitale-checklisten/saas-digitale-checklisten_verzeichnis-baum.jpg",
       "/assets/img/projekte/saas-digitale-checklisten/saas-digitale-checklisten_verzeichnisse.jpg"
     ],
-    "order": 19,
+    "order": 20,
     "draft": false,
     "online": "Januar 2019",
     "tags": "webapp app"
