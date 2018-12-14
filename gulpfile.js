@@ -27,6 +27,9 @@ const Metalsmith = require("metalsmith"),
     (permalinks = require("metalsmith-permalinks")),
     (drafts = require("metalsmith-drafts"));
 
+const fs = require('fs');
+const packageJson = JSON.parse(fs.readFileSync('./package.json'));
+
 /**
  * VARIABLES
  **/
@@ -60,7 +63,8 @@ const metadata = {
         description:
             "Yannick Herzog, Webentwickler für moderne Websites und Webapplikationen in HTML/CSS und JavaScript.",
         navigation: require(dir.source + "models/nav__main.json"),
-        notifications: require(dir.source + "models/notifications.json")
+        notifications: require(dir.source + "models/notifications.json"),
+        version: packageJson.version
     },
     production: false
 };
