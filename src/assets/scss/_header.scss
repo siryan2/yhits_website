@@ -4,10 +4,11 @@
  * @module: Header
  * @desc: allgemeiner Header
  * @author: Yannick Herzog
- * @last-modified: 2017-04-05
+ * @last-modified: 2018-12-14
  **/
 
 .page__header {
+	background-color: transparent;
 	border-top: 8px solid $baseColor;
 	padding-top: 2em;
 	padding-bottom: 2em;
@@ -41,5 +42,5 @@
 		.logo {
 			width: 80px;
 		}
-	}	
+	}
 }
