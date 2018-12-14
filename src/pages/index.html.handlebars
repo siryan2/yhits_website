@@ -1,7 +1,7 @@
 ---
 title: Home
-name: 
-data: 
+name:
+data:
  projects: ../models/projects.json
  leistungen: ../models/leistungen.json
  process: ../models/process__timeline.json
@@ -18,7 +18,7 @@ data:
 		{{/parseJSON}}
 		</div>
 	</div>
-	
+
 	<div class="grid-container" style="max-width: 1400px;">
 		{{#each data.leistungen}}
 		<div class="grid-25 tablet-grid-50">
@@ -36,7 +36,7 @@ data:
 			{{> section__headline }}
 		{{/parseJSON}}
 		</div>
-		
+
 		<div class="grid-33">
 			{{> modules/project__card data.projects.[18]}}
 		</div>
@@ -48,7 +48,7 @@ data:
 		</div>
 		<div class="grid-100">
 			<div class="button-bar button-bar--center">
-				<a href="/projekte" class="btn btn__ghost--dark">mehr Projekte anzeigen</a>
+				<a href="/projekte" class="btn btn__ghost--dark">weitere Projekte anzeigen</a>
 			</div>
 		</div>
 	</div>

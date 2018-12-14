@@ -4,22 +4,33 @@
  * @module: Cards
  * @desc: Cards
  * @author: Yannick Herzog
- * @last-modified: 2018-12-11
+ * @last-modified: 2018-12-14
  **/
 
 .card {
   background-color: #ffffff;
-  border: 1px solid $mediumGray;
 
   display: flex;
   flex-direction: column;
 
+  &--border {
+    border: 1px solid $mediumGray;
+  }
+
   &--shadow {
-    box-shadow: 0 0 15px 0px transparentize($gray, 0.5);
+    box-shadow: 0 0 15px 0px transparentize($gray, 0.2);
   }
 
   &--round {
     border-radius: 5px;
+  }
+
+  &--animate {
+    transition: all .2s ease-in-out;
+
+    &:hover {
+      transform: translateY(-6px);
+    }
   }
 }
 
