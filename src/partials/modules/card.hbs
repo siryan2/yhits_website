@@ -1,13 +1,13 @@
-<div class="card card--shadow card--round">
+<div class="card card--shadow card--round {{#if link}}card--animate{{/if}}">
 	<header class="card__header">
 		<i class="card__icon {{iconClass}}"></i>
 		<h3 class="card__headline">{{name}}</h3>
 	</header>
-	
+
 	<main class="card__content">
-		<p>{{teaser}}</p>			
+		<p>{{teaser}}</p>
 	</main>
-	
+
 	{{#if link}}
 	<footer class="card__footer">
 		<a href="{{link}}" class="card__link">mehr <i class="fa fa-angle-double-right m-l-small"></i></a>
