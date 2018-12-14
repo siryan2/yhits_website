@@ -12,7 +12,7 @@
 {{#if isotope}}
 	<script src="{{rootPath}}/assets/plugins/isotope-layout/isotope.pkgd.min.js"></script>
 	<script>
-		(function($) {							
+		(function($) {
 			// Pre-select filter
 			var splitHash = window.location.hash.split('#filter=');
 			var filterValue = '*';
@@ -21,7 +21,7 @@
 			var images = document.querySelectorAll('.isotope__grid-item img');
 			var totalImages = images.length;
 			var imagesCount = 0;
-			
+
 			if(splitHash.length > 1) {
 				filterValue = splitHash[1]; // Example: webapp
 				// Get Button with filter value
@@ -36,17 +36,17 @@
 			};
 
 			// init Isotope
-			var $grid = $('.isotope__grid-items').isotope( isotopOptions );			
+			var $grid = $('.isotope__grid-items').isotope( isotopOptions );
 
 			// Add event listener to all images
 			images.forEach(function(image){
 				image.addEventListener('load',function(e) {
 					imagesCount++;
-					
+
 					// Initialize isotope after all images has been loaded
 					if(totalImages === imagesCount) {
 						$grid.isotope('layout');
-						
+
 						// Activate button for current filter
 						if(btnCurrentFilter) {
 							btnCurrentFilter.click();
@@ -62,17 +62,17 @@
 				$grid.isotope({ filter: filterValue });
 				// Update current filter in url
 				window.location.hash = '#filter=' + filterValue;
-				
+
 				document.querySelectorAll('.grid-filter button').forEach(function(button) {
 					button.classList.remove('is-active');
 				});
 
 				$(this).addClass('is-active');
-			});					
+			});
 		})(jQuery);
 	</script>
 {{/if}}
 
-<script src="{{rootPath}}/assets/js/main.min.js"></script>
+<script src="{{rootPath}}/assets/js/main.min.js?v={{site.version}}"></script>
 
 {{> modules/cookieconsent }}
