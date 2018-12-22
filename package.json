@@ -1,6 +1,6 @@
 {
   "name": "relaunch2017",
-  "version": "1.9.2",
+  "version": "1.9.3",
   "description": "Relaunch for my personal website",
   "main": "index.js",
   "scripts": {
