@@ -4,25 +4,29 @@
  * @module: aboutm
  * @desc: About Me Section
  * @author: Yannick Herzog
- * @last-modified: 2018-12-18
+ * @last-modified: 2018-12-22
  **/
 
 .aboutme__section {
-  background: url(../img/portrait_840.jpg) no-repeat;
-  background-size: cover;
-  background-position: 70% top;
+  background-image: url(../img/portrait_840.jpg);
+  background-position: 60% 50px;
   background-attachment: fixed;
   background-repeat: no-repeat;
+
+  min-height: 100vh;
 
   display: flex;
   align-items: center;
 
   @media screen and (min-width: $screen-sm) {
     background-image: url(../img/portrait_980.jpg);
+    background-size: cover;
+    background-position: 80% top;
   }
 
   @media screen and (min-width: $screen-md) {
     background-image: url(../img/portrait.jpg);
+    background-position: 70% top;
     min-height: 60vh;
   }
 
@@ -34,6 +38,18 @@
 .aboutme__text-wrapper {
   padding-top: 2em;
   padding-bottom: 2em;
+
+  padding: 0.5rem 0.7rem;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 5px;
+  box-shadow: 0 0 6px 0 rgba(127, 127, 127, 0.5);
+
+  @media screen and (min-width: $screen-sm) {
+    background-color: transparent;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
   p {
     color: #000000;
     font-size: 1em;
@@ -47,6 +63,7 @@
   font-family: $baseFont;
   font-size: 1.6em;
   line-height: 1.6em;
+  margin-top: 0;
 }
 
 @media screen and (min-width: $media-tablet-min) {
