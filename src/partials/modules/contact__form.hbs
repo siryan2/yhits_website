@@ -14,8 +14,7 @@
 			<textarea name="comments" id="inputMessage" cols="30" rows="10" class="form__field" placeholder="Nennen Sie mir Ihr Anliegen."></textarea>
 		</div>
 		<div class="form-group text-center">
-			 <div class="g-recaptcha" data-sitekey="6LfvGIYUAAAAAJXB64mKxhExbvjIaX9-rxNRCCIc"></div>
-			<input type="submit" class="btn btn__primary" id="btnSubmit" value="Jetzt senden!">
+			<button type="submit" class="btn btn__primary is-disabled" id="btnSubmit">Anfrage senden</button>
 		</div>
 		<div>
 			<p style="margin-top:3rem;">
@@ -29,9 +28,8 @@
 			grecaptcha.ready(function() {
 				grecaptcha.execute('6LfvGIYUAAAAAJXB64mKxhExbvjIaX9-rxNRCCIc', {action: 'contact'})
 					.then(function(token) {
-					// Verify the token on the server.
-					document.querySelector('input[name="g-recaptcha-response"]').value = token;
-					console.log('token', token ,document.querySelector('input[name="g-recaptcha-response"]').value);
+						document.querySelector('button[type="submit"]').classList.remove('is-disabled');
+						document.querySelector('input[name="g-recaptcha-response"]').value = token;
 				});
 			});
 		</script>
