@@ -1,5 +1,6 @@
 <section>
 	<form action="/form.php" class="form" method="POST">
+	<input type="hidden" name="g-recaptcha-response">
 		<div class="form-group">
 			<label for="inputName" class="form__label">Name</label>
 			<input type="text" class="form__field" id="inputName" placeholder="Bitte geben Sie hier Ihren Namen ein." required name="name">
@@ -29,7 +30,8 @@
 				grecaptcha.execute('6LfvGIYUAAAAAJXB64mKxhExbvjIaX9-rxNRCCIc', {action: 'contact'})
 					.then(function(token) {
 					// Verify the token on the server.
-					console.log('token', token);
+					document.querySelector('input[name="g-recaptcha-response"]').value = token;
+					console.log('token', token ,document.querySelector('input[name="g-recaptcha-response"]').value);
 				});
 			});
 		</script>
