@@ -23,7 +23,7 @@
       "/assets/img/projekte/fvbodersweier/fvbodersweier_mobile_galerie.jpg"
     ],
     "order": 1,
-    "draft": false,
+    "draft": true,
     "online": "März 2016",
     "tags": "website"
   },
@@ -270,7 +270,7 @@
       "/assets/img/projekte/nauticclubkehl/nautic-club-kehl_menu_mobile.jpg"
     ],
     "order": 11,
-    "draft": false,
+    "draft": true,
     "online": "März 2016",
     "tags": "website"
   },
@@ -298,7 +298,7 @@
       "/assets/img/projekte/thinknew/thinknew_menu_mobile.jpg"
     ],
     "order": 12,
-    "draft": false,
+    "draft": true,
     "online": "März 2016",
     "tags": "website"
   },
@@ -350,7 +350,7 @@
       "/assets/img/projekte//webers-oelmuehle/webers-oelmuehle_home_mobile.jpg"
     ],
     "order": 14,
-    "draft": false,
+    "draft": true,
     "online": "September 2016",
     "tags": "website"
   },
@@ -399,7 +399,7 @@
       "/assets/img/projekte/dob-aktiv/dob-aktiv-home-mobile.jpg"
     ],
     "order": 15,
-    "draft": false,
+    "draft": true,
     "online": "November 2016",
     "tags": "website"
   },
