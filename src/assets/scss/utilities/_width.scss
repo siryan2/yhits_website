@@ -1,0 +1,58 @@
+/**
+ * @description: Width utilities
+ * @project: Utility Framework
+ * @author: Yannick Herzog
+ * @modified: 2019-11-05
+ */
+@for $i from 10 through 100 {
+  .w-#{$i} {
+    width: 1% * $i;
+
+    &--sm {
+      @media screen and (max-width: $screen-md) {
+        width: 1% * $i;
+      }
+    }
+
+    &--md {
+      @media screen and (min-width: $screen-md) {
+        width: 1% * $i;
+      }
+    }
+
+    &--lg {
+      @media screen and (min-width: $screen-lg) {
+        width: 1% * $i;
+      }
+    }
+  }
+  $i: $i + 10;
+}
+
+/**
+ * VW
+ */
+@for $i from 10 through 100 {
+  .w-#{$i}vw {
+    width: 1vw * $i;
+
+    &--sm {
+      @media screen and (max-width: $screen-md) {
+        width: 1vw * $i;
+      }
+    }
+
+    &--md {
+      @media screen and (min-width: $screen-md) {
+        width: 1vw * $i;
+      }
+    }
+
+    &--lg {
+      @media screen and (min-width: $screen-lg) {
+        width: 1vw * $i;
+      }
+    }
+  }
+  $i: $i + 10;
+}

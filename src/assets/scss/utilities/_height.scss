@@ -1,0 +1,12 @@
+/**
+ * @description: Height utilities
+ * @project: Utility Framework
+ * @author: Yannick Herzog
+ * @modified: 2019-03-19
+ */
+@for $i from 10 through 100 {
+  .h-#{$i} {
+    height: 1% * $i;
+  }
+  $i: $i + 10;
+}

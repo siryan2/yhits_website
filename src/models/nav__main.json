@@ -18,21 +18,27 @@
 		"order":3
 	},
 	{
+		"name":"sevdesk-schnittstelle",
+		"title":"sevDesk Schnittstelle",
+		"href":"/sevdesk-schnittstelle/",
+		"order":4
+	},
+	{
 		"name":"kontakt",
 		"title":"Kontakt",
 		"href":"/kontakt.html",
-		"order":4
+		"order":5
 	},
 	{
 		"name":"datenschutzerklaerung",
 		"title":"Datenschutzerklärung",
 		"href":"/datenschutzerklaerung.html",
-		"order":5
+		"order":6
 	},
 	{
 		"name":"impressum",
 		"title":"Impressum",
 		"href":"/impressum.html",
-		"order":6
+		"order":7
 	}
 ]

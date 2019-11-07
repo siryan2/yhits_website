@@ -1,6 +1,6 @@
 @import "_variables";
-@import "_helper-margin";
-@import "_helper-padding";
+// @import "_helper-margin";
+// @import "_helper-padding";
 
 /**
  * @module: Helpers
@@ -9,121 +9,121 @@
  * @last-modified: 2018-12-11
  **/
 
-.text-right {
-  text-align: right;
-}
+// .text-right {
+//   text-align: right;
+// }
 
-.text-center {
-  text-align: center;
-}
+// .text-center {
+//   text-align: center;
+// }
 
-.a-center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+// .a-center {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+// }
 
-.a-right {
-  display: flex;
-  justify-content: flex-end;
+// .a-right {
+//   display: flex;
+//   justify-content: flex-end;
 
-  &--sm {
-    @media screen and (min-width: $screen-sm) {
-      display: flex;
-      justify-content: flex-end;
-    }
-  }
+//   &--sm {
+//     @media screen and (min-width: $screen-sm) {
+//       display: flex;
+//       justify-content: flex-end;
+//     }
+//   }
 
-  &--md {
-    @media screen and (min-width: $screen-md) {
-      display: flex;
-      justify-content: flex-end;
-    }
-  }
-}
+//   &--md {
+//     @media screen and (min-width: $screen-md) {
+//       display: flex;
+//       justify-content: flex-end;
+//     }
+//   }
+// }
 
-.a-bottom {
-  display: flex;
-  align-items: flex-end;
-}
+// .a-bottom {
+//   display: flex;
+//   align-items: flex-end;
+// }
 
-.text-overflow--ellipsis {
-  text-overflow: ellipsis;
-}
+// .text-overflow--ellipsis {
+//   text-overflow: ellipsis;
+// }
 
-.text-uppercase {
-  text-transform: uppercase;
-}
+// .text-uppercase {
+//   text-transform: uppercase;
+// }
 
-.text-small {
-  font-size: 0.8rem;
-}
+// .text-small {
+//   font-size: 0.8rem;
+// }
 
-.valign-center {
-  display: flex;
-  align-items: center;
-}
+// .valign-center {
+//   display: flex;
+//   align-items: center;
+// }
 
-.o-hidden {
-  overflow: hidden;
-}
+// .o-hidden {
+//   overflow: hidden;
+// }
 
-.o-visible {
-  overflow: visible;
-}
+// .o-visible {
+//   overflow: visible;
+// }
 
-.o-visible--y {
-  overflow-y: visible !important;
-}
+// .o-visible--y {
+//   overflow-y: visible !important;
+// }
 
-.hidden {
-  display: none;
-  visibility: hidden;
-}
+// .hidden {
+//   display: none;
+//   visibility: hidden;
+// }
 
-.no-radius {
-  border-radius: 0;
-}
+// .no-radius {
+//   border-radius: 0;
+// }
 
-.flex {
-  display: flex;
+// .flex {
+//   display: flex;
 
-  &--sm {
-    @media screen and (min-width: $screen-sm) {
-      display: flex;
-    }
-  }
+//   &--sm {
+//     @media screen and (min-width: $screen-sm) {
+//       display: flex;
+//     }
+//   }
 
-  &--md {
-    @media screen and (min-width: $screen-md) {
-      display: flex;
-    }
-  }
-}
+//   &--md {
+//     @media screen and (min-width: $screen-md) {
+//       display: flex;
+//     }
+//   }
+// }
 
-.flex-column {
-  flex-direction: column;
-}
+// .flex-column {
+//   flex-direction: column;
+// }
 
-.flex-row {
-  flex-direction: row;
-}
+// .flex-row {
+//   flex-direction: row;
+// }
 
-.flex-wrap {
-  flex-wrap: wrap;
-}
+// .flex-wrap {
+//   flex-wrap: wrap;
+// }
 
-.flex-nowrap {
-  flex-wrap: nowrap;
-}
+// .flex-nowrap {
+//   flex-wrap: nowrap;
+// }
 
 .wrap {
   white-space: normal;
 }
 
-.space-between {
-  justify-content: space-between;
-}
+// .space-between {
+//   justify-content: space-between;
+// }
 
 .d-block {
   display: block;
@@ -157,9 +157,9 @@
   }
 }
 
-.pos-r {
-  position: relative;
-}
+// .pos-r {
+//   position: relative;
+// }
 
 /**
  * FONT
@@ -227,34 +227,34 @@
 /**
  * WIDTH
  **/
-@for $i from 10 through 100 {
-  .w-#{$i} {
-    width: 1% * $i !important;
+// @for $i from 10 through 100 {
+//   .w-#{$i} {
+//     width: 1% * $i !important;
 
-    &--xs {
-      @media screen and (max-width: $screen-sm) {
-        width: 1% * $i !important;
-      }
-    }
+//     &--xs {
+//       @media screen and (max-width: $screen-sm) {
+//         width: 1% * $i !important;
+//       }
+//     }
 
-    &--sm {
-      @media screen and (max-width: $screen-md) {
-        width: 1% * $i !important;
-      }
-    }
+//     &--sm {
+//       @media screen and (max-width: $screen-md) {
+//         width: 1% * $i !important;
+//       }
+//     }
 
-    &--md {
-      @media screen and (min-width: $screen-md) {
-        width: 1% * $i !important;
-      }
-    }
+//     &--md {
+//       @media screen and (min-width: $screen-md) {
+//         width: 1% * $i !important;
+//       }
+//     }
 
-    &--lg {
-      @media screen and (min-width: $screen-lg) {
-        width: 1% * $i !important;
-      }
-    }
-  }
+//     &--lg {
+//       @media screen and (min-width: $screen-lg) {
+//         width: 1% * $i !important;
+//       }
+//     }
+//   }
 
-  $i: $i + 10;
-}
+//   $i: $i + 10;
+// }

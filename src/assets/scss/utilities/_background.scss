@@ -1,0 +1,25 @@
+/**
+ * @description: Background utilities
+ * @project: Utility Framework
+ * @author: Yannick Herzog
+ * @modified: 2019-10-18
+ */
+.bg-color-white {
+  background-color: #ffffff !important;
+}
+
+.bg-color-gray {
+  background-color: $c-gray !important;
+}
+
+.bg-color-light-gray {
+  background-color: $c-light-gray !important;
+}
+
+.bg-color-lighter-gray {
+  background-color: $c-lighter-gray !important;
+}
+
+.bg-color-light-brand {
+  background-color: transparentize($c-brand, 0.8) !important;
+}

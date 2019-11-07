@@ -18,9 +18,9 @@
     "link": "/projekte/index.html#filter=.app"
   },
   {
-    "name": "Wartung & Support",
-    "iconClass": "fa fa-dashboard fa-3x",
-    "teaser": "Meine Aufgabe ist nach Fertigstellung des Projektes nicht erfüllt. Ich übernehme die Pflege und aktualisiere Ihre Website mit den gewünschten Informationen.",
-    "link": ""
+    "name": "sevDesk Schnittstelle",
+    "iconClass": "fa fa-cogs fa-3x",
+    "teaser": "Benötigen Sie eine individuelle Funktion, die es in sevDesk nicht gibt? Ich liefere Lösungen zu Ihren Problemen.",
+    "link": "/sevdesk-schnittstelle/"
   }
 ]

@@ -1,0 +1,43 @@
+/**
+ * @description: Font utilities
+ * @project: Utility Framework
+ * @author: Yannick Herzog
+ * @modified: 2019-08-10
+ */
+.font--smaller {
+  font-size: 0.625rem;
+}
+
+.font--small {
+  font-size: 0.8rem;
+}
+
+.font--regular {
+  font-size: 1rem;
+}
+
+.font--regular-plus {
+  font-size: 1.2rem;
+}
+
+.font--big {
+  font-size: 1.5rem;
+}
+
+.font--bigger {
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+}
+
+.font--w-700 {
+  font-weight: 700;
+}
+
+.font-brand {
+  font-family: $font-brand;
+  font-weight: 500;
+}
+
+.font--bold {
+  font-weight: 700;
+}

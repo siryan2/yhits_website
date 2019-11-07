@@ -1,0 +1,45 @@
+/**
+ * @description: Color utilities
+ * @project: Utility Framework
+ * @author: Yannick Herzog
+ * @modified: 2019-03-19
+ */
+.color-black {
+  color: $c-black !important;
+}
+
+.color-gray {
+  color: $c-gray;
+}
+
+.color-dark-gray {
+  color: $c-dark-gray;
+}
+
+.color-medium-gray {
+  color: $c-medium-gray;
+}
+
+.color-light-gray {
+  color: $c-light-gray;
+}
+
+.color-white {
+  color: #ffffff;
+}
+
+.color-brand {
+  color: $c-brand !important;
+}
+
+.color-danger {
+  color: $c-danger;
+}
+
+.color-success {
+  color: $c-success;
+}
+
+.color-info {
+  color: $c-info;
+}
