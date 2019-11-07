@@ -1,0 +1,63 @@
+---
+layout: default.hbs
+title: sevDesk
+subtitle: Individuelle Entwicklung
+name: sevdesk-schnittstelle
+data:
+ leistungen: ../../models/sevdesk-leistungen.json
+---
+
+<section class="section" style="">
+	<div class="grid-container flex--md">
+        <div class="w-100--sm w-60"
+            class="grid-60"
+            style="background-image: url(/assets/img/hugo-productive-work.png); background-size: cover; min-height: 50vh;">
+            &nbsp;
+        </div>
+
+        <div class="w-100--sm w-40">
+            <div class="flex flex-column a-center valign-center h-100">
+                <figure>
+                    <img src="/assets/img/kunden/sevdesk-logo.svg" alt="sevDesk Logo">
+                </figure>
+                <h2 class="font-brand font--bold m-0 m-t-1 text-center" style="font-size: 3rem; line-height: 1.3em;">
+                    individuelle <br>
+                    sevDesk Schnittstellen
+                </h2>
+
+                <div class="flex space-between m-t-3">
+                    <a href="#features" class="btn font-brand">mehr erfahren</a>
+                    <a href="/kontakt.html" class="btn btn__ghost--dark">Jetzt anfragen</a>
+                </div>
+            </div>
+        </div>
+	</div>
+</section>
+
+<section class="section section--light" id="features">
+    <div class="grid-container">
+        <div class="grid-100">
+            <h2 class="text-center font-brand font--bigger m-t-4">Benötigen Sie eine individuelle Funktion, die es in sevDesk nicht gibt?</h2>
+            <h3 class="text-center font-brand font--big m-t-1">Ich liefere Lösungen zu Ihren Problemen</h3>
+        </div>
+    </div>
+
+    <div class="grid-container m-t-3">
+        {{#each data.leistungen}}
+        <div class="grid-33 tablet-grid-50">
+            {{> modules/card }}
+        </div>
+        {{/each}}
+    </div>
+</section>
+
+{{!-- <section class="p-t-3 p-b-3">
+    <div class="grid-container">
+        <div class="grid-100">
+            <h2 class="text-center font-brand font--bigger">Sie haben noch keinen sevDesk-Account?</h2>
+            <p class="text-center">
+                <a href="/kontakt.html" class="btn btn__ghost--dark">Jetzt bei sevDesk registrieren</a>
+            </p>
+        </div>
+    </div>
+</section> --}}

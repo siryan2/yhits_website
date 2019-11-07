@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Import",
+    "iconClass": "fa fa-database fa-3x",
+    "teaser": "Stapelverarbeitung von mehreren hundert oder tausend Belege, Rechnungen, Stornos oder Gutschriften per CSV in sevDesk.",
+    "link": "/kontakt.html"
+  },
+  {
+    "name": "Dashboard",
+    "iconClass": "fa fa-bar-chart fa-3x",
+    "teaser": "Behalten Sie die Überblick über Ihre Einnahmen und Ausgaben in einem übersichtlichen Dashboard mit Charts und TOP-Listen.",
+    "link": "/kontakt.html"
+  },
+  {
+    "name": "Integration",
+    "iconClass": "fa fa-cogs fa-3x",
+    "teaser": "Integrieren Sie sämtliche Daten aus sevDesk automatisch in Ihre Anwendung und halten Sie somit alles synchron.",
+    "link": "/kontakt.html"
+  }
+]
