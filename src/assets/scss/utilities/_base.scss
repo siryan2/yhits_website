@@ -1,0 +1,233 @@
+/**
+ * @description: Base utilities
+ * @project: Utility Framework
+ * @author: Yannick Herzog
+ * @modified: 2019-10-19
+ */
+
+.block {
+  display: block;
+}
+
+.hide-sm {
+  display: none;
+
+  @media screen and (min-width: $screen-md) {
+    display: inline-block;
+  }
+}
+
+.hide-md {
+  display: none;
+
+  @media screen and (max-width: $screen-md) {
+    display: inline-block;
+  }
+}
+
+.a-center {
+  display: flex;
+  // align-items: center;
+  justify-content: center;
+
+  &--sm {
+    @media screen and (min-width: $screen-sm) {
+      display: flex;
+      // align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &--md {
+    @media screen and (min-width: $screen-md) {
+      display: flex;
+      // align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+.a-right {
+  display: flex;
+  justify-content: flex-end;
+
+  &--sm {
+    @media screen and (min-width: $screen-sm) {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+
+  &--md {
+    @media screen and (min-width: $screen-md) {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+
+  &--sm {
+    @media screen and (max-width: $screen-md) {
+      text-align: center;
+    }
+  }
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-overflow--ellipsis {
+  text-overflow: ellipsis;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-small {
+  font-size: 0.8rem;
+}
+
+.valign-center {
+  display: flex !important;
+  align-items: center !important;
+}
+
+.valign-top {
+  display: flex;
+  align-items: flex-start !important;
+}
+
+.valign-bottom {
+  display: flex;
+  align-items: flex-end !important;
+}
+
+.o-hidden {
+  overflow: hidden;
+
+  &--sm {
+    @media screen and (max-width: $screen-sm) {
+      overflow: hidden;
+    }
+  }
+
+  &--md {
+    @media screen and (max-width: $screen-md) {
+      overflow: hidden;
+    }
+  }
+}
+
+.o-visible {
+  overflow: visible !important;
+}
+
+.o-visible--y {
+  overflow-y: visible !important;
+}
+
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+.invisible {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px
+}
+
+.no-radius {
+  border-radius: 0;
+}
+
+.flex {
+  display: flex;
+
+  &--sm {
+    @media screen and (max-width: $screen-md) {
+      display: flex;
+    }
+  }
+
+  &--md {
+    @media screen and (min-width: $screen-md) {
+      display: flex;
+    }
+  }
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-nowrap {
+  flex-wrap: nowrap;
+}
+
+.wrap {
+  white-space: normal;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.d-block {
+  display: block;
+
+  @media screen and (max-width: $screen-md) {
+    &--sm {
+      display: block;
+    }
+  }
+
+  @media screen and (min-width: $screen-md) {
+    &--md {
+      display: block;
+    }
+  }
+}
+
+.d-inline-block {
+  display: inline-block;
+
+  @media screen and (max-width: $screen-md) {
+    &--sm {
+      display: inline-block;
+    }
+  }
+
+  @media screen and (min-width: $screen-md) {
+    &--md {
+      display: inline-block;
+    }
+  }
+}
+
+.pos-r {
+  position: relative;
+}
+

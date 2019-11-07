@@ -1,0 +1,19 @@
+/**
+ * @description: Pull utilities
+ * @project: Utility Framework
+ * @author: Yannick Herzog
+ * @modified: 2019-10-20
+ */
+@for $i from 0 through 15 {
+  .pull-up-#{$i} {
+    transform: translate3d(0, -1rem * $i, 0);
+  }
+  $i: $i + 1;
+}
+
+@for $i from 0 through 15 {
+  .pull-down-#{$i} {
+    transform: translate3d(0, 1rem * $i, 0);
+  }
+  $i: $i + 1;
+}

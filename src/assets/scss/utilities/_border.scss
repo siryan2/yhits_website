@@ -1,0 +1,117 @@
+/**
+ * @description: Border utilities
+ * @project: Utility Framework
+ * @author: Yannick Herzog
+ * @modified: 2019-10-20
+ */
+.no-border {
+  border: none !important;
+}
+
+.b-1 {
+  border: 1px solid $c-medium-gray;
+
+  &--sm {
+    @media screen and (max-width: $screen-md) {
+      border: 1px solid $c-medium-gray;
+    }
+  }
+
+  &--md {
+    @media screen and (min-width: $screen-md) {
+      border: 1px solid $c-medium-gray;
+    }
+  }
+}
+
+.b-1--light {
+  border: 1px solid $c-light-gray;
+
+  &--sm {
+    @media screen and (max-width: $screen-md) {
+      border: 1px solid $c-light-gray;
+    }
+  }
+
+  &--md {
+    @media screen and (min-width: $screen-md) {
+      border: 1px solid $c-light-gray;
+    }
+  }
+}
+
+.b-r {
+  border-right: 1px solid $c-light-gray;
+
+  &--sm {
+    @media screen and (max-width: $screen-md) {
+      border-right: 1px solid $c-light-gray;
+    }
+  }
+
+  &--md {
+    @media screen and (min-width: $screen-md) {
+      border-right: 1px solid $c-light-gray;
+    }
+  }
+}
+
+.b-l {
+  border-left: 1px solid $c-light-gray;
+
+  &--sm {
+    @media screen and (max-width: $screen-md) {
+      border-left: 1px solid $c-light-gray;
+    }
+  }
+
+  &--md {
+    @media screen and (min-width: $screen-md) {
+      border-left: 1px solid $c-light-gray;
+    }
+  }
+}
+
+.b-t {
+  border-top: 1px solid $c-light-gray;
+
+  &--sm {
+    @media screen and (max-width: $screen-md) {
+      border-top: 1px solid $c-light-gray;
+    }
+  }
+}
+
+.b-t-0 {
+  border-top-color: transparent;
+
+  &--md {
+    @media screen and (min-width: $screen-md) {
+      border-top-color: transparent;
+    }
+  }
+}
+
+.b-t-1 {
+  border-top: 1px solid $c-light-gray;
+
+  &--md {
+    @media screen and (min-width: $screen-md) {
+      border-top: 1px solid $c-light-gray;
+    }
+  }
+
+  &--lighter {
+    border-top: 1px solid lighten($c-light-gray, 10%);
+  }
+}
+
+.b-b {
+  border-bottom: 1px solid $c-light-gray;
+
+  &--sm {
+    @media screen and (max-width: $screen-md) {
+      border-bottom: 1px solid $c-light-gray;
+    }
+  }
+}

@@ -15,6 +15,7 @@ $darkGray: #333333;
  * Fonts
  */
 $baseFont: "Roboto", sans-serif;
+$font-brand: $baseFont;
 $secondaryFont: "Roboto Slab", serif;
 
 $navFont: "Noto Sans", sans-serif;
@@ -43,12 +44,6 @@ $screen-md: "992px";
 $screen-lg: "1200px";
 $screen-xl: "1920px";
 
-// unsemantic
-// $media-mobile-max: 767px !default;
-// $media-tablet-min: 768px !default;
-// $media-tablet-max: 1024px !default;
-// $media-desktop-min: 1025px !default;
-
 // Margins & Paddings
 $distance-sm: 0.2rem;
 $distance-md: 0.6rem;
@@ -57,3 +52,6 @@ $distance-2: 2rem;
 $distance-3: 3rem;
 $distance-4: 4rem;
 $distance-5: 5rem;
+$distance-6: 6rem;
+$distance-7: 7rem;
+$distance-8: 8rem;
