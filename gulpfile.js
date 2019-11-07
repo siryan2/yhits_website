@@ -289,7 +289,7 @@ gulp.task("copy:plugins", () => {
 });
 
 gulp.task("imagemin", () => {
-    gulp.src(dir.source + "assets/img/**/*.{jpg,gif,png}")
+    gulp.src(dir.source + "assets/img/**/*.{jpg,gif,png,svg}")
         .pipe(imagemin())
         .pipe(gulp.dest(dir.dest + "assets/img"));
 });
