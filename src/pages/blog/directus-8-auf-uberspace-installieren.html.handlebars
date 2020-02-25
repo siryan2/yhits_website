@@ -1,0 +1,61 @@
+---
+layout: default.hbs
+title: Directus 8 auf einem Uberspace installieren
+published: true
+tags:
+- Uberspace
+- Directus
+- CMS
+categories:
+- Directus
+- CMS
+date: 2020-02-25
+teaser: Die Installation von Directus 8 auf einem Uberspace empfand ich selbst als nicht trivial und möchte deshalb beschreiben, welche Schritte ich unternommen habe, um das Content-Management-System in Betrieb zu nehmen.
+posts: true
+collection: blog
+---
+<section class="grid-container">
+	<article class="grid-60 prefix-20 tablet-grid-80 tablet-prefix-10 article__item">
+		<h2 class="article__headline">{{title}}</h2>
+		<div class="article__toolbar">
+			<time datetime="{{formatDate date "YYYY-MM-DD"}}T00:00" class="article__publishedDate">{{formatDate date "LL"}}</time>
+		</div>
+
+		<p>{{teaser}}</p>
+
+		<h4>Mit diesen zwei Anpassungen gelang mir die Installation von Directus 8</h4>
+
+		<p>
+			In meinem Uberspace habe ich neben dem DocRoot-Verzeichnis <code>html</code> ein zusätzliches Verzeichnis namens <code>directus.yannickherzog.de</code> angelegt und dieses als Subdomain mit dem Uberspace-Kommando <code>uberspace web domain add directus.yannickherzog.de</code> veröffentlicht.
+		</p>
+		<p>
+			In dieses Verzeichnis habe das Directus-Repository von <code>https://github.com/directus/directus.git</code> geklont und anschließend darin per <code>composer install</code> alle Abhängigkeiten installiert.
+		</p>
+		<h4>1. Neue <code>.htaccess</code> erstellen</h4>
+		<p>Entgegen der Anweisung in der Directus-Dokumentation: <a href="https://docs.directus.io/installation/git.html#point-apache-to-the-directus-public-folder" target="_blank" title="Directus-Dokumentation"><q>Make sure the DocumentRoot in your Apache configration points to the public folder in Directus</q></a> habe ich im Verzechnis <code>directus.yannickherzog.de</code> eine <code>.htaccess</code>-Datei mit folgendem Inhalt angelegt:</p>
+		<p>
+			<pre><code>
+RewriteEngine on
+RewriteCond %{REQUEST_URI} !^/directus/public
+RewriteRule ^(.*)$ /directus/public/$1 [NC,L]
+</code></pre>
+		</p>
+
+		<p>Dadurch erreichen wir das Gleiche. Mit einem Symlink auf das <code>public</code>-Verzeichnis hat es leider nicht geklappt.</p>
+		<h4>2. Bestehende <code>.htaccess</code> ergänzen</h4>
+		<p>Als nächstes muss die <code>.htaccess</code> im <code>public</code>-Verzeichnis von Directus mit dem <code>RewriteBase</code> zu Beginn der Datei ergänzt werden:</p>
+		<p>
+			<pre><code>
+RewriteBase /
+...
+</code></pre>
+		</p>
+
+		<p>Erscheint beim Lesen dann doch recht einfach - der Weg dorthin war es jedoch bei nichten.</p>
+
+	</article>
+	<div class="grid-60 prefix-20 tablet-grid-80 tablet-prefix-10">
+		{{> modules/contact-bar }}
+	</div>
+</section>
+{{> modules/pagination__article prev=previous next=next isProject=false}}
