@@ -49,7 +49,7 @@
     "fontawesome": "^4.7.2",
     "intersection-observer": "^0.5.1",
     "isotope-layout": "^3.0.6",
-    "jquery": "^3.3.1",
+    "jquery": "^3.5.0",
     "metalsmith-data-loader": "^1.1.2",
     "metalsmith-markdown": "^0.2.2",
     "metalsmith-models": "0.0.3",
