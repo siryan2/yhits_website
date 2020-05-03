@@ -2,7 +2,7 @@
  * @description: Base utilities
  * @project: Utility Framework
  * @author: Yannick Herzog
- * @modified: 2019-10-19
+ * @modified: 2020-05-03
  */
 
 .block {
@@ -90,6 +90,10 @@
 
 .text-uppercase {
   text-transform: uppercase;
+}
+
+.text-underline {
+  text-decoration: underline;
 }
 
 .text-small {
@@ -230,4 +234,3 @@
 .pos-r {
   position: relative;
 }
-
