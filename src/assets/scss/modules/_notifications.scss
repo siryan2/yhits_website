@@ -4,17 +4,21 @@
  * @module: Notifications
  * @desc: Benachrichtigungen
  * @author: Yannick Herzog
- * @last-modified: 2015-12-16
+ * @last-modified: 2020-05-03
  **/
 
 .notification {
-	background: $baseColor;
+	background-color: $baseColor;
 	color: #ffffff;
 	overflow: hidden;
+
+	&--yellow {
+		background-color: #d3b13b !important;
+	}
 }
 
 .notification--oldBrowser {
-	background: #F22613;
+	background-color: #F22613;
 }
 
 .notification--noJS {
