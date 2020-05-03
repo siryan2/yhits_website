@@ -1,6 +1,6 @@
 {
-  "name": "relaunch2017",
-  "version": "1.13.0",
+  "name": "yhits-website",
+  "version": "1.14.0",
   "description": "Relaunch for my personal website",
   "main": "index.js",
   "scripts": {
