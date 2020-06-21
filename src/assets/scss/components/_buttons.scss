@@ -4,7 +4,7 @@
  * @component: Buttons
  * @desc: Buttons
  * @author: Yannick Herzog
- * @last-modified: 2018-12-10
+ * @last-modified: 2020-06-21
  **/
 
 $btn-radius: 40px;
@@ -23,6 +23,10 @@ $btn-radius: 40px;
   &:hover,
   &:focus {
     text-decoration: none;
+  }
+
+  &--dark {
+    color: $baseColor;
   }
 }
 
@@ -113,8 +117,10 @@ $btn-radius: 40px;
 
 .button-bar {
   margin-top: 3em;
+
   .btn {
     margin-left: 1em;
+
     &:first-child {
       margin-left: 0;
     }
@@ -131,9 +137,11 @@ $btn-radius: 40px;
       display: block;
       margin-top: 0.85em;
       margin-left: 0;
+
       &:not(:last-child) {
         margin-bottom: 0.7em;
       }
+
       &:first-child {
         margin-top: 0;
       }
