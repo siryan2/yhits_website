@@ -1,5 +1,4 @@
-[
-  {
+[{
     "title": "Architektur",
     "period": "",
     "description": "Einhaltung von Codekonventionen und Richtlinen für HTML, CSS (BEM) und JavaScript, Komponentenbasierte Entwicklung",
@@ -8,7 +7,7 @@
   {
     "title": "Entwicklung",
     "period": "",
-    "description": "HTML, CSS: Bootstrap, Material Design <br> Preprozessoren: Sass/SCSS, LESS <br>JavaScript: Vanilla JS, VueJS, AngularJS, jQuery, Backbone, Marionette,<br> CommonJS, RequireJS, Handlebars  <br><br>Entwicklung skalierbarer Single Page Application, Mobile First, Responsive Design, Cross-Browser-funktionale Umsetzung",
+    "description": "HTML, CSS: Bootstrap, Material Design <br> Preprozessoren: Sass/SCSS, LESS <br>JavaScript: Vanilla JS, VueJS, AngularJS, jQuery, Backbone, Marionette,<br> CommonJS, RequireJS, Handlebars <br><br>VueJS-Ecosystem: NuxtJS, Vuetify, Quasar Framework, ElementUI  <br><br>Entwicklung skalierbarer Single Page Application (SPA) und Server-Side-Rendered Application (SSR), Mobile First, Responsive Design, Cross-Browser-funktionale Umsetzung",
     "position": "Frontend"
   },
   {
@@ -20,7 +19,7 @@
   {
     "title": "Tools",
     "period": "",
-    "description": "Git, Git Flow, Gulp, Webpack, npm, Metalsmith",
+    "description": "Git, Git Flow, Gulp, Webpack, npm, Metalsmith, Eleventy",
     "position": ""
   },
   {
@@ -32,7 +31,7 @@
   {
     "title": "Design",
     "period": "",
-    "description": "Photoshop, Sketch, UI/UX",
+    "description": "Adobe Creative Cloud, Sketch, Affinity Photo, UI/UX",
     "position": ""
   }
 ]
