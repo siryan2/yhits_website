@@ -1,5 +1,4 @@
-[
-  {
+[{
     "name": "Baas & Dulsan GmbH & Co. KG",
     "image": "/assets/img/kunden/baas-dulsan.png",
     "url": "http://www.baas-dulsan.de"
@@ -15,14 +14,19 @@
     "url": "http://www.ernst.de"
   },
   {
+    "name": "Flinkback GmbH",
+    "image": "/assets/img/kunden/flinkback.png",
+    "url": "http://www.flinkback.com"
+  },
+  {
     "name": "Hochschule Offenburg",
     "image": "/assets/img/kunden/hsoffenburg.png",
     "url": "http://www.hs-offenburg.de"
   },
   {
-    "name": "Nautic Club Kehl e.V.",
-    "image": "/assets/img/kunden/nauticclubkehl.png",
-    "url": "http://www.nautic-club-kehl.de"
+    "name": "KPMG",
+    "image": "/assets/img/kunden/kpmg.png",
+    "url": "http://www.kpmg.fr"
   },
   {
     "name": "SE GmbH",
@@ -30,19 +34,14 @@
     "url": "http://www.segmbh.com"
   },
   {
-    "name": "SEVENIT GmbH",
-    "image": "/assets/img/kunden/sevenit.png",
-    "url": "http://www.sevenit.de"
+    "name": "sevDesk GmbH",
+    "image": "/assets/img/kunden/sevdesk.png",
+    "url": "http://www.sevdesk.de"
   },
   {
     "name": "Sichtwechsel Medien GmbH",
     "image": "/assets/img/kunden/sichtwechsel.png",
     "url": "http://www.sichtwechsel.com"
-  },
-  {
-    "name": "Turnverein Lahr e.v.",
-    "image": "/assets/img/kunden/tv-lahr.png",
-    "url": "http://www.turnverein-lahr.de"
   },
   {
     "name": "Vallée Verte Handelsgesellschaft für Naturprodukte",
@@ -58,6 +57,11 @@
     "name": "Web Commerce GmbH",
     "image": "/assets/img/kunden/webcommerce.png",
     "url": "http://www.w-commerce.de"
+  },
+  {
+    "name": "webplus",
+    "image": "/assets/img/kunden/webplus.png",
+    "url": "http://www.webplus.at"
   },
   {
     "name": "webtofly",
