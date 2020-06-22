@@ -9,7 +9,7 @@
 
 .aboutme__section {
   background-image: url(../img/portrait_840.jpg);
-  background-position: 60% 50px;
+  background-position: 60% 150px;
   background-attachment: fixed;
   background-repeat: no-repeat;
 
@@ -22,24 +22,43 @@
     background-image: url(../img/portrait_980.jpg);
     background-size: cover;
     background-position: 0% top;
+    min-height: 80vh;
   }
 
   @media screen and (min-width: $screen-md) {
     background-image: url(../img/portrait.jpg);
-    background-position: 0% 0%;
+    background-position: -400px 0;
     min-height: 60vh;
   }
 
-  @media screen and (min-width: $screen-xl) {
+  @media screen and (min-width: $screen-lg) {
+    background-position: 0 0;
     max-height: 50vh;
   }
+
+
+  @media screen and (min-width: $screen-xl) {
+    background-position: 0 0;
+    max-height: 50vh;
+  }
+
+  @media screen and (min-width: $screen-lg) and (min-height: 1000px) {
+    background-position: -200px 0;
+  }
+
+  @media screen and (min-height: 1300px) and (max-width: $screen-xl) {
+    background-position: -270px -220px;
+    max-height: auto;
+    min-height: 40vh;
+  }
+
+  @media screen and (min-height: 1400px) and (max-width: $screen-xl) {
+    background-position: -1000px -400px;
+  }
+
 }
 
 .aboutme__text-wrapper {
-  // padding-top: 2em;
-  // padding-bottom: 2em;
-
-  // padding: 0.5rem 0.7rem;
   padding: 2em 0.7rem;
   background-color: rgba(255, 255, 255, 0.7);
   border-radius: 5px;
@@ -54,7 +73,6 @@
   @media screen and (min-width: $screen-md) {
     border-radius: 5px;
     padding: 1.5em 2em;
-    // background-color: rgba(255, 255, 255, 0.7);
   }
 
   p {
