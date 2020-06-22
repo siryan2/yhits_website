@@ -33,11 +33,6 @@ const packageJson = JSON.parse(fs.readFileSync('./package.json'));
 /**
  * VARIABLES
  **/
-const app = {
-    src: "src/",
-    dist: "dist/"
-};
-
 const dir = {
     base: __dirname + "/",
     lib: __dirname + "/lib/",
@@ -188,7 +183,7 @@ gulp.task("build:css", () => {
 
 gulp.task("scss-lint", () => {
     return gulp
-        .src(app.src + "scss/**/*.scss")
+        .src(dir.source + "scss/**/*.scss")
         .pipe(sasslint())
         .pipe(sasslint.format())
         .pipe(sasslint.failOnError());
@@ -253,7 +248,7 @@ gulp.task("copy:assets", () => {
     /**
      * Fonts
      */
-    gulp.src([app.src + "assets/fonts/**/*"]).pipe(gulp.dest(dir.dest + "assets/fonts"));
+    gulp.src([dir.source + "assets/fonts/**/*"]).pipe(gulp.dest(dir.dest + "assets/fonts"));
 
     /**
      * Fontawesome
