@@ -40,5 +40,11 @@
 		"title":"Impressum",
 		"href":"/impressum.html",
 		"order":7
+	},
+	{
+		"name":"agb",
+		"title":"AGB",
+		"href":"/agb.html",
+		"order":8
 	}
 ]

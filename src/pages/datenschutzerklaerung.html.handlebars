@@ -3,6 +3,8 @@ layout: default.hbs
 title: Datenschutzerklärung
 subtitle:
 name: datenschutzerklaerung
+data:
+ contact: ../models/contact__informations.json
 ---
 
 <section class="section">
@@ -12,8 +14,9 @@ name: datenschutzerklaerung
 		</div>
 		<div class="grid-70 prefix-15 tablet-grid-80 tablet-prefix-10">
 			<h3>Anbieter und verantwortliche Stelle im Sinne des Datenschutzgesetzes</h3>
-
-			<p>Yannick Herzog IT Services<br>Yannick Herzog<br>Zum Hühnerbünd 2<br>77694 Kehl</p>
+			{{#data.contact}}
+			<p>{{name}} {{companyname}}<br>{{name}}<br>{{adress.[0].street}} {{adress.[0].number}}<br>{{adress.[0].zip}} {{adress.[0].city}}</p>
+			{{/data.contact}}
 
 			<h3>Ihre Betroffenenrechte</h3>
 			<p>Unter den angegebenen Kontaktdaten unseres Datenschutzbeauftragten können Sie jederzeit folgende Rechte ausüben:</p>

@@ -4,15 +4,15 @@
 		"companyname":"IT Services",
 		"adress": [
 			{
-				"street":"Zum Hühnerbünd",
+				"street":"Am Storchenturm",
 				"number":"2",
-				"zip":"77694",
-				"city":"Kehl"
+				"zip":"77731",
+				"city":"Willstätt"
 			}
 		],
 		"email":"info@hit-services.net",
 		"email_text":"info[ät]hit-services.net",
 		"mobile":"+49 171 2 33 44 94",
-		"phone":"+49 7851 88 65 926"
+		"phone":"+49 171 2 33 44 94"
 	}
 ]
