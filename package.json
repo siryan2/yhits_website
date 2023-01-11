@@ -38,7 +38,7 @@
     "metalsmith-layouts": "^1.8.1",
     "metalsmith-navigation": "^0.2.9",
     "metalsmith-paths": "^3.0.1",
-    "metalsmith-permalinks": "^0.5.0",
+    "metalsmith-permalinks": "^2.2.0",
     "metalsmith-register-helpers": "^0.3.0",
     "metalsmith-rootpath": "^1.0.4",
     "normalize-scss": "^6.0.0",
@@ -52,7 +52,7 @@
     "isotope-layout": "^3.0.6",
     "jquery": "^3.3.1",
     "metalsmith-data-loader": "^1.1.2",
-    "metalsmith-markdown": "^0.2.2",
+    "metalsmith-markdown": "^1.3.0",
     "metalsmith-models": "0.0.3",
     "metalsmith-sitemap": "^1.2.2",
     "unsemantic": "^1.2.3"
